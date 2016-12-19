@@ -14,13 +14,14 @@ int main( void )
 	Entity* block2 = new Entity();
 	block2->addSprite("assets/pencils.tga");
 	block->addChild(block2);
+	block->position = Vector2(100, 300);
+	block2->position = Vector2(150,200);
+	block2->scale = Vector2(0.5f, 0.5f);
+
 
 	do {
 		block->rotation += 0.5f * renderer->getDeltaTime();
-		block->position = Vector2(100, 300);
-		block2->position = Vector2(150,200);
 		block2->rotation += 2.0f * renderer->getDeltaTime();
-		block2->scale = Vector2(0.5f, 0.5f);
 
 		renderer->renderScene(Myscene);
 	}

@@ -1,0 +1,73 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2580260910/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2580260910.dir/build.make CMakeFiles/cmTryCompileExec2580260910.dir/build
+make[1]: Entering directory `/home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2580260910.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2580260910.dir/CheckSymbolExists.c.o   -c /home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2580260910
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2580260910.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2580260910.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2580260910 -rdynamic 
+CMakeFiles/cmTryCompileExec2580260910.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2580260910] Error 1
+make[1]: Leaving directory `/home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2580260910/fast] Error 2
+
+File /home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec75717815/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec75717815.dir/build.make CMakeFiles/cmTryCompileExec75717815.dir/build
+make[1]: Entering directory `/home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec75717815.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec75717815.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec75717815
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec75717815.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec75717815.dir/CheckFunctionExists.c.o  -o cmTryCompileExec75717815 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec75717815] Error 1
+make: *** [cmTryCompileExec75717815/fast] Error 2
+
+
+Determining if the function glXGetProcAddressEXT exists failed with the following output:
+Change Dir: /home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1037919997/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1037919997.dir/build.make CMakeFiles/cmTryCompileExec1037919997.dir/build
+make[1]: Entering directory `/home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1037919997.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddressEXT   -o CMakeFiles/cmTryCompileExec1037919997.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1037919997
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1037919997.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddressEXT    CMakeFiles/cmTryCompileExec1037919997.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1037919997 -rdynamic -lGL 
+CMakeFiles/cmTryCompileExec1037919997.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `glXGetProcAddressEXT'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/naomi/Desktop/framework_gl/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1037919997] Error 1
+make: *** [cmTryCompileExec1037919997/fast] Error 2
+
+

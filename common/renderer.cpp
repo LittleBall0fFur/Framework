@@ -47,7 +47,6 @@ void Renderer::renderEntity(glm::mat4 &modelmatrix, Entity* _entity, Camera* _ca
 {
   modelmatrix *= this->getModelMatrix(_entity->getPosition(), _entity->getScale(), _entity->getRotation());
   if(_entity->getSprite() != NULL){
-    _entity->setPosition(Vector2(_camera->getPosition().x,_camera->getPosition().y));
     texture = _entity->getSprite()->getTexture();
   	mesh = new Mesh(texture->getWidth() , texture->getHeight(), _entity->getSprite()->getTexture()->getTextureBuffer());
   	glm::mat4 MVP = projectionMatrix * _camera->getViewMatrix() * modelmatrix;

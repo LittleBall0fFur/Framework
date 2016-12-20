@@ -1,3 +1,9 @@
+/**
+*@file camera.h
+*
+*@brief Camera header file.
+*
+*/
 #ifndef CAMERA_H
 #define CAMERA_H
 
@@ -23,6 +29,4 @@ private:
   glm::vec3 cursor;
   glm::mat4 ViewMatrix;
 };
-
-
 #endif

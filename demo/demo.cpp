@@ -16,16 +16,15 @@ int main( void )
 	block2->addSprite("assets/pencils.tga");
 	block->addChild(block2);
 	block->position = Vector2(100, 300);
-//	block2->position = Vector2(150,200);
+	block2->position = Vector2(150,200);
 	block2->scale = Vector2(0.5f, 0.5f);
 
-//	block2->position = vector->moveTowards(block2->position, Vector2(700, 200)) * 10 * renderer->getDeltaTime();
 
 	do {
-		//block->rotation += 0.5f * renderer->getDeltaTime();
-		//block2->rotation += 2.0f * renderer->getDeltaTime();
+		block->rotation += 0.5f * renderer->getDeltaTime();
+		block2->rotation += 2.0f * renderer->getDeltaTime();
 		//block2->position += vector->addForce(Vector2(0.0f, 0.9f));
-		std::cout<< block2->position.x * renderer->getDeltaTime() <<std::endl;
+		block2->position -= vector->moveTowards(block2->position, Vector2(700, 200), 50.0f) * renderer->getDeltaTime();
 
 		renderer->renderScene(Myscene);
 	}

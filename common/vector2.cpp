@@ -1,8 +1,4 @@
 #include "vector2.h"
-#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string>
 
 Vector2::Vector2(float _x, float _y){
   x = _x;
@@ -28,17 +24,30 @@ Vector2 Vector2::addForce(Vector2 force){
   return velocity;
 }
 
-Vector2 Vector2::moveTowards(Vector2 from, Vector2 to){
-  float newX = to.x - from.x;
-  float newY = to.y - from.y;
-  Vector2 newPos = Vector2(newX, newY);
-  return newPos;
+Vector2 Vector2::moveTowards(Vector2 _start, Vector2 _target, float speed){
+		float _x = _start.x - _target.x;
+		float _y = _start.y - _target.y;
+		float c = this->distancePoints(_start, _target);
+		return Vector2(speed * _x / c, speed * _y / c);
+}
+
+float Vector2::distancePoints(Vector2 _a, Vector2 _b){
+		float _x = _a.x - _b.x;
+		float _y = _a.y - _b.y;
+		return sqrt((_x * _x) + (_y * _y));
 }
 
 Vector2& Vector2::operator+=(const Vector2& rhs)
 {
 	x += rhs.x;
 	y += rhs.y;
+	return *this;
+}
+
+Vector2& Vector2::operator-=(const Vector2& rhs)
+{
+	x -= rhs.x;
+	y -= rhs.y;
 	return *this;
 }
 

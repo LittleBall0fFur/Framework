@@ -32,7 +32,6 @@ public:
 	Vector2& operator-=(const Vector2& rhs);
 
 private:
-
 };
 
 #endif

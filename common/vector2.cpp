@@ -15,12 +15,8 @@ Vector2::~Vector2(){
 }
 
 Vector2 Vector2::addForce(Vector2 force){
-  Vector2 acceleration = Vector2(0,0);
-  Vector2 velocity = Vector2(0,0);
-
-  acceleration += force;
-  velocity += acceleration;
-  std::cout<< force.y << std::endl;
+  Vector2 acceleration = acceleration + force;
+  Vector2 velocity = velocity + acceleration;
   return velocity;
 }
 

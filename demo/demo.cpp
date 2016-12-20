@@ -21,9 +21,11 @@ int main( void )
 
 
 	do {
-		block->rotation += 0.5f * renderer->getDeltaTime();
-		block2->rotation += 2.0f * renderer->getDeltaTime();
-		//block2->position += vector->addForce(Vector2(0.0f, 0.9f));
+		//block->rotation += 0.5f * renderer->getDeltaTime();
+		block2->rotation += 3.0f * renderer->getDeltaTime();
+		//block2->position += vector->addForce(Vector2(0.0f, 0.9f)) * renderer->getDeltaTime();
+		std::cout<<block2->position.y<<std::endl;
+		if(block2->position.y >= 800)block2->position.y = 0;
 		block2->position -= vector->moveTowards(block2->position, Vector2(700, 200), 50.0f) * renderer->getDeltaTime();
 
 		renderer->renderScene(Myscene);

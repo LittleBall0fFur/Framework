@@ -10,8 +10,15 @@ public:
 
 	virtual ~Vector2();
 
+	Vector2 moveTowards(Vector2 from, Vector2 to);
+	Vector2 addForce(Vector2 force);
+
 	float x;
 	float y;
+
+	Vector2& operator+=(const Vector2& rhs);
+	Vector2 operator+(const Vector2& rhs) const;
+	Vector2 operator*(const float rhs) const;
 
 private:
 

@@ -161,6 +161,30 @@ common/camera.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/camera.cpp.s
 .PHONY : common/camera.cpp.s
 
+common/core.o: common/core.cpp.o
+.PHONY : common/core.o
+
+# target to build an object file
+common/core.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/core.cpp.o
+.PHONY : common/core.cpp.o
+
+common/core.i: common/core.cpp.i
+.PHONY : common/core.i
+
+# target to preprocess a source file
+common/core.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/core.cpp.i
+.PHONY : common/core.cpp.i
+
+common/core.s: common/core.cpp.s
+.PHONY : common/core.s
+
+# target to generate assembly for a file
+common/core.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/core.cpp.s
+.PHONY : common/core.cpp.s
+
 common/entity.o: common/entity.cpp.o
 .PHONY : common/entity.o
 
@@ -353,6 +377,30 @@ common/vector2.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/vector2.cpp.s
 .PHONY : common/vector2.cpp.s
 
+demo/ai.o: demo/ai.cpp.o
+.PHONY : demo/ai.o
+
+# target to build an object file
+demo/ai.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/ai.cpp.o
+.PHONY : demo/ai.cpp.o
+
+demo/ai.i: demo/ai.cpp.i
+.PHONY : demo/ai.i
+
+# target to preprocess a source file
+demo/ai.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/ai.cpp.i
+.PHONY : demo/ai.cpp.i
+
+demo/ai.s: demo/ai.cpp.s
+.PHONY : demo/ai.s
+
+# target to generate assembly for a file
+demo/ai.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/ai.cpp.s
+.PHONY : demo/ai.cpp.s
+
 demo/demo.o: demo/demo.cpp.o
 .PHONY : demo/demo.o
 
@@ -377,6 +425,30 @@ demo/demo.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/demo.cpp.s
 .PHONY : demo/demo.cpp.s
 
+demo/myscene.o: demo/myscene.cpp.o
+.PHONY : demo/myscene.o
+
+# target to build an object file
+demo/myscene.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/myscene.cpp.o
+.PHONY : demo/myscene.cpp.o
+
+demo/myscene.i: demo/myscene.cpp.i
+.PHONY : demo/myscene.i
+
+# target to preprocess a source file
+demo/myscene.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/myscene.cpp.i
+.PHONY : demo/myscene.cpp.i
+
+demo/myscene.s: demo/myscene.cpp.s
+.PHONY : demo/myscene.s
+
+# target to generate assembly for a file
+demo/myscene.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/myscene.cpp.s
+.PHONY : demo/myscene.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -391,6 +463,9 @@ help:
 	@echo "... common/camera.o"
 	@echo "... common/camera.i"
 	@echo "... common/camera.s"
+	@echo "... common/core.o"
+	@echo "... common/core.i"
+	@echo "... common/core.s"
 	@echo "... common/entity.o"
 	@echo "... common/entity.i"
 	@echo "... common/entity.s"
@@ -415,9 +490,15 @@ help:
 	@echo "... common/vector2.o"
 	@echo "... common/vector2.i"
 	@echo "... common/vector2.s"
+	@echo "... demo/ai.o"
+	@echo "... demo/ai.i"
+	@echo "... demo/ai.s"
 	@echo "... demo/demo.o"
 	@echo "... demo/demo.i"
 	@echo "... demo/demo.s"
+	@echo "... demo/myscene.o"
+	@echo "... demo/myscene.i"
+	@echo "... demo/myscene.s"
 .PHONY : help
 
 

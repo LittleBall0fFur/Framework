@@ -1,5 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/demo.dir/demo/demo.cpp.o"
+  "CMakeFiles/demo.dir/demo/myscene.cpp.o"
+  "CMakeFiles/demo.dir/demo/ai.cpp.o"
   "CMakeFiles/demo.dir/common/shader.cpp.o"
   "CMakeFiles/demo.dir/common/camera.cpp.o"
   "CMakeFiles/demo.dir/common/texture.cpp.o"
@@ -9,6 +11,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/demo.dir/common/entity.cpp.o"
   "CMakeFiles/demo.dir/common/scene.cpp.o"
   "CMakeFiles/demo.dir/common/sprite.cpp.o"
+  "CMakeFiles/demo.dir/common/core.cpp.o"
   "demo.pdb"
   "demo"
 )

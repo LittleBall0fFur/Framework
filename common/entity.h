@@ -41,6 +41,8 @@ public:
 
 	void setScale(Vector2 _scale);
 
+	virtual void update(float deltaTime) = 0;
+
 private:
 	int guid;
 	int nextGuid;

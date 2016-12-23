@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/naomi/Desktop/framework_gl/common/camera.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/camera.cpp.o"
+  "/home/naomi/Desktop/framework_gl/common/core.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/core.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/entity.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/entity.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/mesh.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/mesh.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/renderer.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/renderer.cpp.o"
@@ -13,7 +14,9 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/naomi/Desktop/framework_gl/common/sprite.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/sprite.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/texture.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/texture.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/vector2.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/vector2.cpp.o"
+  "/home/naomi/Desktop/framework_gl/demo/ai.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/ai.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/demo.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/demo.cpp.o"
+  "/home/naomi/Desktop/framework_gl/demo/myscene.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/myscene.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

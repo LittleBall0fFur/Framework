@@ -4,9 +4,6 @@ Renderer::Renderer(){
   window_width = 1920;
   window_height = 1080;
 
-  fpsCounter = 0.0f;
- 	fps = 0;
-
   window = NULL;
 
   fragment_shader	= "shaders/sprite.frag";
@@ -34,13 +31,9 @@ void Renderer::renderScene(Scene* _scene)
   glm::mat4 modelMatrix = this->getModelMatrix(_scene->position,_scene->scale, _scene->rotation);
 
   this->renderEntity(modelMatrix, _scene, _scene->getCamera());
-
-  calculateDeltaTime();
   // Swap buffers
   glfwSwapBuffers(window);
   glfwPollEvents();
-
-  //showFps();
 }
 
 void Renderer::renderEntity(glm::mat4 &modelmatrix, Entity* _entity, Camera* _camera)
@@ -120,27 +113,6 @@ void Renderer::renderMesh(Mesh* _mesh, glm::mat4 _MVP)
 
   glDisableVertexAttribArray(vertexPosition_modelspaceID);
   glDisableVertexAttribArray(vertexUVID);
-}
-
-double Renderer::calculateDeltaTime()
-{
-	static double lastTime = glfwGetTime();
-	double startTime = glfwGetTime();
-	deltaTime = startTime - lastTime;
-	lastTime = startTime;
-
-	return deltaTime;
-}
-
-void Renderer::showFps() {
-  calculateDeltaTime();
-	fpsCounter += deltaTime;
-	fps++;
-	if (fpsCounter >= 1.0f) {
-		fpsCounter = fmod(fpsCounter, deltaTime);
-		std::cout << "FPS: " << fps << std::endl;
-		fps = 0;
-	}
 }
 
 glm::mat4 Renderer::getModelMatrix(Vector2 _position, Vector2 _scale, float _rotation)

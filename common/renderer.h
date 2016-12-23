@@ -32,10 +32,6 @@ public:
 
 	bool quit();
 	void renderScene(Scene* _scene);
-	//remove later
-  void showFps();
-  double calculateDeltaTime();
-  float getDeltaTime(){return deltaTime;};
 
 private:
 	GLFWwindow* window;
@@ -66,11 +62,6 @@ private:
   void init();
   void renderMesh(Mesh* _mesh, glm::mat4 _MVP);
 	void renderEntity(glm::mat4 &modelmatrix, Entity* _entity, Camera* camera);
-
-//remove later
-  float fpsCounter;
-  int fps;
-  double deltaTime;
 };
 
 #endif

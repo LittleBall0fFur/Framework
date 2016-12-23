@@ -11,13 +11,14 @@ public:
 	Scene();
 	virtual ~Scene();
 
-	void update(float deltaTime);
+	void updateScene(float deltaTime);
 
 	Camera* getCamera() { return camera; };
 
 	Camera* camera;
 
 private:
+	void updateEntity(Entity* entity, float deltaTime);
 };
 
 #endif

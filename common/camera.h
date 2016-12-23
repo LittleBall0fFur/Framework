@@ -20,6 +20,7 @@ public:
   ~Camera();
 
   void computeMatricesFromInputs(GLFWwindow* window);
+  void updateCamera(float _deltaTime);
   glm::mat4 getViewMatrix();
   glm::vec3 getCursor();
 
@@ -28,5 +29,7 @@ private:
   glm::vec3 position;
   glm::vec3 cursor;
   glm::mat4 ViewMatrix;
+
+  float deltaTime;
 };
 #endif

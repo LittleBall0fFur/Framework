@@ -52,6 +52,11 @@ add_definitions(
 # Demo
 add_executable(demo
 	demo/demo.cpp
+  demo/myscene.cpp
+  demo/myscene.h
+  demo/ai.cpp
+  demo/ai.h
+
 	common/shader.cpp
   common/shader.h
 	common/camera.cpp
@@ -70,6 +75,8 @@ add_executable(demo
   common/scene.h
   common/sprite.cpp
   common/sprite.h
+  common/core.cpp
+  common/core.h
 )
 target_link_libraries(demo
 	${ALL_LIBS}

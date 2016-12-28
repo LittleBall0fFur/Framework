@@ -36,7 +36,7 @@ void Entity::removeChild(Entity* _child)
 			++it;
 		}
 	}
-	//_child->parent = this;
+	//child->parent = this;
 }
 
 void Entity::addSprite(std::string _path)
@@ -55,4 +55,8 @@ void Entity::setScale(Vector2 _scale){
 
 void Entity::setPosition(Vector2 newPos){
 	position = newPos;
+}
+
+bool Entity::hitTestObject(Entity* entity){
+	return collider.collided(entity->position, entity->getSprite()->getTexture(), this->position, this->getSprite()->getTexture());
 }

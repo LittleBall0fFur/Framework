@@ -161,6 +161,30 @@ common/camera.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/camera.cpp.s
 .PHONY : common/camera.cpp.s
 
+common/collision.o: common/collision.cpp.o
+.PHONY : common/collision.o
+
+# target to build an object file
+common/collision.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/collision.cpp.o
+.PHONY : common/collision.cpp.o
+
+common/collision.i: common/collision.cpp.i
+.PHONY : common/collision.i
+
+# target to preprocess a source file
+common/collision.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/collision.cpp.i
+.PHONY : common/collision.cpp.i
+
+common/collision.s: common/collision.cpp.s
+.PHONY : common/collision.s
+
+# target to generate assembly for a file
+common/collision.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/collision.cpp.s
+.PHONY : common/collision.cpp.s
+
 common/core.o: common/core.cpp.o
 .PHONY : common/core.o
 
@@ -463,6 +487,9 @@ help:
 	@echo "... common/camera.o"
 	@echo "... common/camera.i"
 	@echo "... common/camera.s"
+	@echo "... common/collision.o"
+	@echo "... common/collision.i"
+	@echo "... common/collision.s"
 	@echo "... common/core.o"
 	@echo "... common/core.i"
 	@echo "... common/core.s"

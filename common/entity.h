@@ -13,6 +13,7 @@
 
 #include <common/texture.h>
 #include <common/sprite.h>
+#include <common/collision.h>
 
 class Entity
 {
@@ -41,6 +42,8 @@ public:
 
 	void setScale(Vector2 _scale);
 
+	bool hitTestObject(Entity* entity);
+
 	virtual void update(float deltaTime) = 0;
 
 private:
@@ -50,6 +53,7 @@ private:
 	Entity* parent;
 	Sprite* sprite;
 	std::vector<Entity*> children;
+	Collision collider;
 };
 
 #endif

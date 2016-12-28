@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/naomi/Desktop/framework_gl/common/camera.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/camera.cpp.o"
+  "/home/naomi/Desktop/framework_gl/common/collision.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/collision.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/core.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/core.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/entity.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/entity.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/mesh.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/mesh.cpp.o"

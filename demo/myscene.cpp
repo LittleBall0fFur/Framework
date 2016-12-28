@@ -8,10 +8,10 @@ Myscene::Myscene(): Scene(){
  	block2->addSprite("assets/pencils.tga");
  	//addChild
  	this->addChild(block);
- 	block->addChild(block2);
+ 	this->addChild(block2);
  	//Transform of entity's
  	block->position = Vector2(100, 300);
- 	block2->position = Vector2(150,200);
+ 	block2->position = Vector2(1500,300);
  	block2->scale = Vector2(0.5f, 0.5f);
  	block->scale = Vector2(1,1);
  	//Initialize variables
@@ -21,12 +21,14 @@ Myscene::Myscene(): Scene(){
 
 void Myscene::update(float _deltaTime){
 
-  block->rotation += 0.5f * _deltaTime;
-  block2->rotation += 3.0f * _deltaTime;
+  //block->rotation += 0.5f * _deltaTime;
+  //block2->rotation += 3.0f * _deltaTime;
   //block2->position += vector->addForce(Vector2(0.0f, 0.9f)) * _deltaTime;
   if(block2->position.y >= 800)block2->position.y = 0;
-  block2->position -= vector.moveTowards(block2->position, Vector2(700, 200), 50.0f) * _deltaTime;
-
+  block2->position -= vector.moveTowards(block2->position, block->position, 100.0f) * _deltaTime;
+  if(block->hitTestObject(block2)){
+    std::cout<<1<<std::endl;
+  }
 /**if(block->scale.x >= 0.5f && down){
     block->scale -= Vector2(0.1f, 0.1f) * _deltaTime;
     if(block->scale.x <= 0.5f)down = false;

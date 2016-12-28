@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+.././common/camera.h
+glfw3.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+
+.././common/collision.h
+common/vector2.h
+-
+common/texture.h
+-
+
 .././common/entity.h
 stdio.h
 -
@@ -26,6 +40,14 @@ common/vector2.h
 common/texture.h
 -
 common/sprite.h
+-
+common/collision.h
+-
+
+.././common/scene.h
+common/entity.h
+-
+common/camera.h
 -
 
 .././common/sprite.h
@@ -818,11 +840,49 @@ detail/type_vec4.hpp
 detail/func_vector_relational.hpp
 ../external/glm-0.9.7.0/glm/detail/func_vector_relational.hpp
 
-/home/naomi/Desktop/framework_gl/demo/ai.cpp
-ai.h
-/home/naomi/Desktop/framework_gl/demo/ai.h
+/home/naomi/Desktop/framework_gl/common/entity.cpp
+entity.h
+/home/naomi/Desktop/framework_gl/common/entity.h
+
+/home/naomi/Desktop/framework_gl/common/entity.h
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+string
+-
+vector
+-
+algorithm
+-
+glm/glm.hpp
+-
+common/vector2.h
+-
+common/texture.h
+-
+common/sprite.h
+-
+common/collision.h
+-
 
 /home/naomi/Desktop/framework_gl/demo/ai.h
 common/entity.h
 -
+
+/home/naomi/Desktop/framework_gl/demo/myscene.cpp
+myscene.h
+/home/naomi/Desktop/framework_gl/demo/myscene.h
+
+/home/naomi/Desktop/framework_gl/demo/myscene.h
+common/entity.h
+-
+common/scene.h
+-
+common/vector2.h
+-
+ai.h
+/home/naomi/Desktop/framework_gl/demo/ai.h
 

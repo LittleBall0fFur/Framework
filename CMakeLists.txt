@@ -77,6 +77,8 @@ add_executable(demo
   common/sprite.h
   common/core.cpp
   common/core.h
+  common/collision.cpp
+  common/collision.h
 )
 target_link_libraries(demo
 	${ALL_LIBS}

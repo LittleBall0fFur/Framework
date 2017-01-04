@@ -13,11 +13,12 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/naomi/Desktop/framework_gl/common/scene.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/scene.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/shader.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/shader.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/sprite.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/sprite.cpp.o"
+  "/home/naomi/Desktop/framework_gl/common/spritesheet.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/spritesheet.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/texture.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/texture.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/vector2.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/vector2.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/ai.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/ai.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/demo.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/demo.cpp.o"
-  "/home/naomi/Desktop/framework_gl/demo/myscene.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/myscene.cpp.o"
+  "/home/naomi/Desktop/framework_gl/demo/mainscene.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/mainscene.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

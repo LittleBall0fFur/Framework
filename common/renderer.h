@@ -33,6 +33,9 @@ public:
 	bool quit();
 	void renderScene(Scene* _scene);
 
+	int getWindowWidth(){return window_width;}
+	int getWindowHeight(){return window_height;}
+
 private:
 	GLFWwindow* window;
 

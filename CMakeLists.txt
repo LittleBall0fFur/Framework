@@ -52,8 +52,8 @@ add_definitions(
 # Demo
 add_executable(demo
 	demo/demo.cpp
-  demo/myscene.cpp
-  demo/myscene.h
+  demo/mainscene.cpp
+  demo/mainscene.h
   demo/ai.cpp
   demo/ai.h
 
@@ -79,6 +79,8 @@ add_executable(demo
   common/core.h
   common/collision.cpp
   common/collision.h
+  common/spritesheet.cpp
+  common/spritesheet.h
 )
 target_link_libraries(demo
 	${ALL_LIBS}

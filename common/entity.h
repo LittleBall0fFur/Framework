@@ -13,6 +13,7 @@
 
 #include <common/texture.h>
 #include <common/sprite.h>
+#include <common/spritesheet.h>
 #include <common/collision.h>
 
 class Entity
@@ -29,22 +30,23 @@ public:
 	void removeChild(Entity* _child);
 
 	void addSprite(std::string path);
+	void addSpriteAsSpriteSheet(std::string _path, int _spriteWidth, int _spriteHeight, int _spritesPerRow, int _rows);
 
-	void setPosition(Vector2 newPos);
-	Vector2 getPosition(){return position;};
-	Vector2 getScale(){return scale;};
-	float getRotation(){return rotation;};
-
-	const std::vector<Entity*>& getChildren() { return children; };
+	void setPosition(Vector2 _newPos);
+	Vector2 getPosition(){return position;}
+	Vector2 getScale(){return scale;}
+	float getRotation(){return rotation;}
+	Spritesheet* getSpriteSheet(){return spritesheet;}
+	const std::vector<Entity*>& getChildren(){return children;}
 
 	Entity* getParent() { return parent; };
 	Sprite* getSprite() { return sprite; };
 
 	void setScale(Vector2 _scale);
 
-	bool hitTestObject(Entity* entity);
+	bool hitTestObject(Entity* _entity);
 
-	virtual void update(float deltaTime) = 0;
+	virtual void update(float _deltaTime) = 0;
 
 private:
 	int guid;
@@ -52,6 +54,8 @@ private:
 
 	Entity* parent;
 	Sprite* sprite;
+	Spritesheet* spritesheet;
+
 	std::vector<Entity*> children;
 	Collision collider;
 };

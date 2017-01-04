@@ -72,28 +72,28 @@ CMakeFiles/demo.dir/demo/demo.cpp.o.provides: CMakeFiles/demo.dir/demo/demo.cpp.
 
 CMakeFiles/demo.dir/demo/demo.cpp.o.provides.build: CMakeFiles/demo.dir/demo/demo.cpp.o
 
-CMakeFiles/demo.dir/demo/myscene.cpp.o: CMakeFiles/demo.dir/flags.make
-CMakeFiles/demo.dir/demo/myscene.cpp.o: ../demo/myscene.cpp
+CMakeFiles/demo.dir/demo/mainscene.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/demo/mainscene.cpp.o: ../demo/mainscene.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/demo/myscene.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo/myscene.cpp.o -c /home/naomi/Desktop/framework_gl/demo/myscene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/demo/mainscene.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo/mainscene.cpp.o -c /home/naomi/Desktop/framework_gl/demo/mainscene.cpp
 
-CMakeFiles/demo.dir/demo/myscene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/demo/myscene.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/demo/myscene.cpp > CMakeFiles/demo.dir/demo/myscene.cpp.i
+CMakeFiles/demo.dir/demo/mainscene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/demo/mainscene.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/demo/mainscene.cpp > CMakeFiles/demo.dir/demo/mainscene.cpp.i
 
-CMakeFiles/demo.dir/demo/myscene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/demo/myscene.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/demo/myscene.cpp -o CMakeFiles/demo.dir/demo/myscene.cpp.s
+CMakeFiles/demo.dir/demo/mainscene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/demo/mainscene.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/demo/mainscene.cpp -o CMakeFiles/demo.dir/demo/mainscene.cpp.s
 
-CMakeFiles/demo.dir/demo/myscene.cpp.o.requires:
-.PHONY : CMakeFiles/demo.dir/demo/myscene.cpp.o.requires
+CMakeFiles/demo.dir/demo/mainscene.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/demo/mainscene.cpp.o.requires
 
-CMakeFiles/demo.dir/demo/myscene.cpp.o.provides: CMakeFiles/demo.dir/demo/myscene.cpp.o.requires
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/myscene.cpp.o.provides.build
-.PHONY : CMakeFiles/demo.dir/demo/myscene.cpp.o.provides
+CMakeFiles/demo.dir/demo/mainscene.cpp.o.provides: CMakeFiles/demo.dir/demo/mainscene.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/mainscene.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/demo/mainscene.cpp.o.provides
 
-CMakeFiles/demo.dir/demo/myscene.cpp.o.provides.build: CMakeFiles/demo.dir/demo/myscene.cpp.o
+CMakeFiles/demo.dir/demo/mainscene.cpp.o.provides.build: CMakeFiles/demo.dir/demo/mainscene.cpp.o
 
 CMakeFiles/demo.dir/demo/ai.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/demo/ai.cpp.o: ../demo/ai.cpp
@@ -371,10 +371,33 @@ CMakeFiles/demo.dir/common/collision.cpp.o.provides: CMakeFiles/demo.dir/common/
 
 CMakeFiles/demo.dir/common/collision.cpp.o.provides.build: CMakeFiles/demo.dir/common/collision.cpp.o
 
+CMakeFiles/demo.dir/common/spritesheet.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/common/spritesheet.cpp.o: ../common/spritesheet.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/spritesheet.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/spritesheet.cpp.o -c /home/naomi/Desktop/framework_gl/common/spritesheet.cpp
+
+CMakeFiles/demo.dir/common/spritesheet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/common/spritesheet.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/common/spritesheet.cpp > CMakeFiles/demo.dir/common/spritesheet.cpp.i
+
+CMakeFiles/demo.dir/common/spritesheet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/common/spritesheet.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/common/spritesheet.cpp -o CMakeFiles/demo.dir/common/spritesheet.cpp.s
+
+CMakeFiles/demo.dir/common/spritesheet.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/common/spritesheet.cpp.o.requires
+
+CMakeFiles/demo.dir/common/spritesheet.cpp.o.provides: CMakeFiles/demo.dir/common/spritesheet.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/spritesheet.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/common/spritesheet.cpp.o.provides
+
+CMakeFiles/demo.dir/common/spritesheet.cpp.o.provides.build: CMakeFiles/demo.dir/common/spritesheet.cpp.o
+
 # Object files for target demo
 demo_OBJECTS = \
 "CMakeFiles/demo.dir/demo/demo.cpp.o" \
-"CMakeFiles/demo.dir/demo/myscene.cpp.o" \
+"CMakeFiles/demo.dir/demo/mainscene.cpp.o" \
 "CMakeFiles/demo.dir/demo/ai.cpp.o" \
 "CMakeFiles/demo.dir/common/shader.cpp.o" \
 "CMakeFiles/demo.dir/common/camera.cpp.o" \
@@ -386,13 +409,14 @@ demo_OBJECTS = \
 "CMakeFiles/demo.dir/common/scene.cpp.o" \
 "CMakeFiles/demo.dir/common/sprite.cpp.o" \
 "CMakeFiles/demo.dir/common/core.cpp.o" \
-"CMakeFiles/demo.dir/common/collision.cpp.o"
+"CMakeFiles/demo.dir/common/collision.cpp.o" \
+"CMakeFiles/demo.dir/common/spritesheet.cpp.o"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
 demo: CMakeFiles/demo.dir/demo/demo.cpp.o
-demo: CMakeFiles/demo.dir/demo/myscene.cpp.o
+demo: CMakeFiles/demo.dir/demo/mainscene.cpp.o
 demo: CMakeFiles/demo.dir/demo/ai.cpp.o
 demo: CMakeFiles/demo.dir/common/shader.cpp.o
 demo: CMakeFiles/demo.dir/common/camera.cpp.o
@@ -405,6 +429,7 @@ demo: CMakeFiles/demo.dir/common/scene.cpp.o
 demo: CMakeFiles/demo.dir/common/sprite.cpp.o
 demo: CMakeFiles/demo.dir/common/core.cpp.o
 demo: CMakeFiles/demo.dir/common/collision.cpp.o
+demo: CMakeFiles/demo.dir/common/spritesheet.cpp.o
 demo: CMakeFiles/demo.dir/build.make
 demo: /usr/lib/x86_64-linux-gnu/libGLU.so
 demo: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -434,7 +459,7 @@ CMakeFiles/demo.dir/build: demo
 .PHONY : CMakeFiles/demo.dir/build
 
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/demo.cpp.o.requires
-CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/myscene.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/mainscene.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/ai.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/shader.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/camera.cpp.o.requires
@@ -447,6 +472,7 @@ CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/scene.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/sprite.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/core.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/collision.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/spritesheet.cpp.o.requires
 .PHONY : CMakeFiles/demo.dir/requires
 
 CMakeFiles/demo.dir/clean:

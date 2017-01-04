@@ -17,10 +17,13 @@ public:
 
 	GLuint setupSprite(const std::string& filename);
 	void setSpriteScale(Vector2 _scale);
-	void setTextureSize(Vector2 size);
+	void setTextureSize(Vector2 _size);
+	void setUvSize(Vector2 _size);
+	void setUvOffset(Vector2 _offset);
 
 	Vector2 getSpriteScale(){return scale;};
 	Vector2 getUvOffset(){return uvOffset;};
+	Vector2 getUvSize(){return uvSize;};
 
 	Texture* getTexture(){return texture;};
 private:
@@ -29,6 +32,8 @@ private:
 	Vector2 textureSize;
 	std::string texturename;
 	Texture* texture;
+
+	Vector2 uvSize;
 };
 
 #endif

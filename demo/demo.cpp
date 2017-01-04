@@ -1,5 +1,5 @@
 #include <common/core.h>
-#include "myscene.h"
+#include "mainscene.h"
 
 #include <stdio.h>
 
@@ -7,11 +7,11 @@ int main( void )
 {
 	//Initialize new variables
 	Core* core = new Core();
-	Scene* myscene = new Myscene();
+	Scene* scene = new MainScene();
 
-	core->run(myscene);
+	core->run(scene);
 
 	delete core;
-	delete myscene;
+	delete scene;
 	return 0;
 }

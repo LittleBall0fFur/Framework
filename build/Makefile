@@ -353,6 +353,30 @@ common/sprite.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/sprite.cpp.s
 .PHONY : common/sprite.cpp.s
 
+common/spritesheet.o: common/spritesheet.cpp.o
+.PHONY : common/spritesheet.o
+
+# target to build an object file
+common/spritesheet.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/spritesheet.cpp.o
+.PHONY : common/spritesheet.cpp.o
+
+common/spritesheet.i: common/spritesheet.cpp.i
+.PHONY : common/spritesheet.i
+
+# target to preprocess a source file
+common/spritesheet.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/spritesheet.cpp.i
+.PHONY : common/spritesheet.cpp.i
+
+common/spritesheet.s: common/spritesheet.cpp.s
+.PHONY : common/spritesheet.s
+
+# target to generate assembly for a file
+common/spritesheet.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/spritesheet.cpp.s
+.PHONY : common/spritesheet.cpp.s
+
 common/texture.o: common/texture.cpp.o
 .PHONY : common/texture.o
 
@@ -449,29 +473,29 @@ demo/demo.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/demo.cpp.s
 .PHONY : demo/demo.cpp.s
 
-demo/myscene.o: demo/myscene.cpp.o
-.PHONY : demo/myscene.o
+demo/mainscene.o: demo/mainscene.cpp.o
+.PHONY : demo/mainscene.o
 
 # target to build an object file
-demo/myscene.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/myscene.cpp.o
-.PHONY : demo/myscene.cpp.o
+demo/mainscene.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/mainscene.cpp.o
+.PHONY : demo/mainscene.cpp.o
 
-demo/myscene.i: demo/myscene.cpp.i
-.PHONY : demo/myscene.i
+demo/mainscene.i: demo/mainscene.cpp.i
+.PHONY : demo/mainscene.i
 
 # target to preprocess a source file
-demo/myscene.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/myscene.cpp.i
-.PHONY : demo/myscene.cpp.i
+demo/mainscene.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/mainscene.cpp.i
+.PHONY : demo/mainscene.cpp.i
 
-demo/myscene.s: demo/myscene.cpp.s
-.PHONY : demo/myscene.s
+demo/mainscene.s: demo/mainscene.cpp.s
+.PHONY : demo/mainscene.s
 
 # target to generate assembly for a file
-demo/myscene.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/myscene.cpp.s
-.PHONY : demo/myscene.cpp.s
+demo/mainscene.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/mainscene.cpp.s
+.PHONY : demo/mainscene.cpp.s
 
 # Help Target
 help:
@@ -511,6 +535,9 @@ help:
 	@echo "... common/sprite.o"
 	@echo "... common/sprite.i"
 	@echo "... common/sprite.s"
+	@echo "... common/spritesheet.o"
+	@echo "... common/spritesheet.i"
+	@echo "... common/spritesheet.s"
 	@echo "... common/texture.o"
 	@echo "... common/texture.i"
 	@echo "... common/texture.s"
@@ -523,9 +550,9 @@ help:
 	@echo "... demo/demo.o"
 	@echo "... demo/demo.i"
 	@echo "... demo/demo.s"
-	@echo "... demo/myscene.o"
-	@echo "... demo/myscene.i"
-	@echo "... demo/myscene.s"
+	@echo "... demo/mainscene.o"
+	@echo "... demo/mainscene.i"
+	@echo "... demo/mainscene.s"
 .PHONY : help
 
 

@@ -37,7 +37,7 @@ void Camera::computeMatricesFromInputs(GLFWwindow* window)
 	glm::vec3 up = glm::vec3(0, -1, 0);
 
 	// Move up
-	if (glfwGetKey( window, GLFW_KEY_UP ) == GLFW_PRESS){
+/*	if (glfwGetKey( window, GLFW_KEY_UP ) == GLFW_PRESS){
 		position += up * deltaTime * speed;
 	}
 	// Move down
@@ -51,7 +51,7 @@ void Camera::computeMatricesFromInputs(GLFWwindow* window)
 	// Strafe left
 	if (glfwGetKey( window, GLFW_KEY_LEFT ) == GLFW_PRESS){
 		position -= right * deltaTime * speed;
-	}
+	}*/
 
 	// View matrix
 	ViewMatrix = glm::lookAt(

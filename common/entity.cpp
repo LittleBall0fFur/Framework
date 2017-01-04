@@ -12,10 +12,12 @@ Entity::Entity(){
 	scale = Vector2(1.0f, 1.0f);
 
 	parent = NULL;
+	spritesheet = new Spritesheet();
 }
 
 Entity::~Entity(){
 	delete sprite;
+	delete spritesheet;
 }
 
 void Entity::addChild(Entity* _child){
@@ -49,14 +51,20 @@ void Entity::addSprite(std::string _path)
 	sprite->setupSprite(_path);
 }
 
+void Entity::addSpriteAsSpriteSheet(std::string _path, int _spriteWidth, int _spriteHeight, int _spritesPerRow, int _rows)
+{
+	spritesheet->setUpSpriteSheet(_path, _spriteWidth, _spriteHeight, _spritesPerRow, _rows);
+	this->sprite = spritesheet->getSprite();
+}
+
 void Entity::setScale(Vector2 _scale){
 	scale = _scale;
 }
 
-void Entity::setPosition(Vector2 newPos){
-	position = newPos;
+void Entity::setPosition(Vector2 _newPos){
+	position = _newPos;
 }
 
-bool Entity::hitTestObject(Entity* entity){
-	return collider.collided(entity->position, entity->getSprite()->getTexture(), this->position, this->getSprite()->getTexture());
+bool Entity::hitTestObject(Entity* _entity){
+	return collider.collided(_entity->position, _entity->getSprite()->getTexture(), this->position, this->getSprite()->getTexture());
 }

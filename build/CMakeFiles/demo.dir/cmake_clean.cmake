@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/demo.dir/demo/demo.cpp.o"
-  "CMakeFiles/demo.dir/demo/myscene.cpp.o"
+  "CMakeFiles/demo.dir/demo/mainscene.cpp.o"
   "CMakeFiles/demo.dir/demo/ai.cpp.o"
   "CMakeFiles/demo.dir/common/shader.cpp.o"
   "CMakeFiles/demo.dir/common/camera.cpp.o"
@@ -13,6 +13,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/demo.dir/common/sprite.cpp.o"
   "CMakeFiles/demo.dir/common/core.cpp.o"
   "CMakeFiles/demo.dir/common/collision.cpp.o"
+  "CMakeFiles/demo.dir/common/spritesheet.cpp.o"
   "demo.pdb"
   "demo"
 )

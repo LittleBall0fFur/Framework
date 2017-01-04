@@ -2,6 +2,7 @@
 
 Sprite::Sprite(){
   scale = Vector2(1.0f,1.0f);
+  uvSize = Vector2(1, 1);
   uvOffset = Vector2();
   textureSize = Vector2();
 }
@@ -22,7 +23,15 @@ void Sprite::setSpriteScale(Vector2 _scale){
   scale = _scale;
 }
 
-void Sprite::setTextureSize(Vector2 size)
+void Sprite::setTextureSize(Vector2 _size)
 {
-	this->textureSize = size;
+	textureSize = _size;
+}
+
+void Sprite::setUvSize(Vector2 _size){
+  uvSize = _size;
+}
+
+void Sprite::setUvOffset(Vector2 _offset){
+  uvOffset = _offset;
 }

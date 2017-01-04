@@ -56,11 +56,11 @@ CMAKE_BINARY_DIR = /home/naomi/Desktop/framework_gl/build
 # Target rules for target CMakeFiles/demo.dir
 
 # All Build rule for target.
-CMakeFiles/demo.dir/all: external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/all
 CMakeFiles/demo.dir/all: external/CMakeFiles/GLEW_190.dir/all
+CMakeFiles/demo.dir/all: external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/all
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/depend
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  20 21 22 23 24 25 26 27 28 29 30 31 32 33
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
 	@echo "Built target demo"
 .PHONY : CMakeFiles/demo.dir/all
 
@@ -70,7 +70,7 @@ all: CMakeFiles/demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 34
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 0
 .PHONY : CMakeFiles/demo.dir/rule

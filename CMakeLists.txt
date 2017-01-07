@@ -56,6 +56,18 @@ add_executable(demo
   demo/mainscene.h
   demo/ai.cpp
   demo/ai.h
+  demo/factory.cpp
+  demo/factory.h
+  demo/map.cpp
+  demo/map.h
+  demo/bullet.cpp
+  demo/bullet.h
+  demo/building.cpp
+  demo/building.h
+  demo/base.cpp
+  demo/base.h
+  demo/healthsystem.cpp
+  demo/healthsystem.h
 
 	common/shader.cpp
   common/shader.h

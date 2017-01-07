@@ -118,9 +118,147 @@ CMakeFiles/demo.dir/demo/ai.cpp.o.provides: CMakeFiles/demo.dir/demo/ai.cpp.o.re
 
 CMakeFiles/demo.dir/demo/ai.cpp.o.provides.build: CMakeFiles/demo.dir/demo/ai.cpp.o
 
+CMakeFiles/demo.dir/demo/factory.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/demo/factory.cpp.o: ../demo/factory.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/demo/factory.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo/factory.cpp.o -c /home/naomi/Desktop/framework_gl/demo/factory.cpp
+
+CMakeFiles/demo.dir/demo/factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/demo/factory.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/demo/factory.cpp > CMakeFiles/demo.dir/demo/factory.cpp.i
+
+CMakeFiles/demo.dir/demo/factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/demo/factory.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/demo/factory.cpp -o CMakeFiles/demo.dir/demo/factory.cpp.s
+
+CMakeFiles/demo.dir/demo/factory.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/demo/factory.cpp.o.requires
+
+CMakeFiles/demo.dir/demo/factory.cpp.o.provides: CMakeFiles/demo.dir/demo/factory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/factory.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/demo/factory.cpp.o.provides
+
+CMakeFiles/demo.dir/demo/factory.cpp.o.provides.build: CMakeFiles/demo.dir/demo/factory.cpp.o
+
+CMakeFiles/demo.dir/demo/map.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/demo/map.cpp.o: ../demo/map.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/demo/map.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo/map.cpp.o -c /home/naomi/Desktop/framework_gl/demo/map.cpp
+
+CMakeFiles/demo.dir/demo/map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/demo/map.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/demo/map.cpp > CMakeFiles/demo.dir/demo/map.cpp.i
+
+CMakeFiles/demo.dir/demo/map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/demo/map.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/demo/map.cpp -o CMakeFiles/demo.dir/demo/map.cpp.s
+
+CMakeFiles/demo.dir/demo/map.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/demo/map.cpp.o.requires
+
+CMakeFiles/demo.dir/demo/map.cpp.o.provides: CMakeFiles/demo.dir/demo/map.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/map.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/demo/map.cpp.o.provides
+
+CMakeFiles/demo.dir/demo/map.cpp.o.provides.build: CMakeFiles/demo.dir/demo/map.cpp.o
+
+CMakeFiles/demo.dir/demo/bullet.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/demo/bullet.cpp.o: ../demo/bullet.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/demo/bullet.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo/bullet.cpp.o -c /home/naomi/Desktop/framework_gl/demo/bullet.cpp
+
+CMakeFiles/demo.dir/demo/bullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/demo/bullet.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/demo/bullet.cpp > CMakeFiles/demo.dir/demo/bullet.cpp.i
+
+CMakeFiles/demo.dir/demo/bullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/demo/bullet.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/demo/bullet.cpp -o CMakeFiles/demo.dir/demo/bullet.cpp.s
+
+CMakeFiles/demo.dir/demo/bullet.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/demo/bullet.cpp.o.requires
+
+CMakeFiles/demo.dir/demo/bullet.cpp.o.provides: CMakeFiles/demo.dir/demo/bullet.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/bullet.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/demo/bullet.cpp.o.provides
+
+CMakeFiles/demo.dir/demo/bullet.cpp.o.provides.build: CMakeFiles/demo.dir/demo/bullet.cpp.o
+
+CMakeFiles/demo.dir/demo/building.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/demo/building.cpp.o: ../demo/building.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/demo/building.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo/building.cpp.o -c /home/naomi/Desktop/framework_gl/demo/building.cpp
+
+CMakeFiles/demo.dir/demo/building.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/demo/building.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/demo/building.cpp > CMakeFiles/demo.dir/demo/building.cpp.i
+
+CMakeFiles/demo.dir/demo/building.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/demo/building.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/demo/building.cpp -o CMakeFiles/demo.dir/demo/building.cpp.s
+
+CMakeFiles/demo.dir/demo/building.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/demo/building.cpp.o.requires
+
+CMakeFiles/demo.dir/demo/building.cpp.o.provides: CMakeFiles/demo.dir/demo/building.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/building.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/demo/building.cpp.o.provides
+
+CMakeFiles/demo.dir/demo/building.cpp.o.provides.build: CMakeFiles/demo.dir/demo/building.cpp.o
+
+CMakeFiles/demo.dir/demo/base.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/demo/base.cpp.o: ../demo/base.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/demo/base.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo/base.cpp.o -c /home/naomi/Desktop/framework_gl/demo/base.cpp
+
+CMakeFiles/demo.dir/demo/base.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/demo/base.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/demo/base.cpp > CMakeFiles/demo.dir/demo/base.cpp.i
+
+CMakeFiles/demo.dir/demo/base.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/demo/base.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/demo/base.cpp -o CMakeFiles/demo.dir/demo/base.cpp.s
+
+CMakeFiles/demo.dir/demo/base.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/demo/base.cpp.o.requires
+
+CMakeFiles/demo.dir/demo/base.cpp.o.provides: CMakeFiles/demo.dir/demo/base.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/base.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/demo/base.cpp.o.provides
+
+CMakeFiles/demo.dir/demo/base.cpp.o.provides.build: CMakeFiles/demo.dir/demo/base.cpp.o
+
+CMakeFiles/demo.dir/demo/healthsystem.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/demo/healthsystem.cpp.o: ../demo/healthsystem.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/demo/healthsystem.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/demo/healthsystem.cpp.o -c /home/naomi/Desktop/framework_gl/demo/healthsystem.cpp
+
+CMakeFiles/demo.dir/demo/healthsystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/demo/healthsystem.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/demo/healthsystem.cpp > CMakeFiles/demo.dir/demo/healthsystem.cpp.i
+
+CMakeFiles/demo.dir/demo/healthsystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/demo/healthsystem.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/demo/healthsystem.cpp -o CMakeFiles/demo.dir/demo/healthsystem.cpp.s
+
+CMakeFiles/demo.dir/demo/healthsystem.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/demo/healthsystem.cpp.o.requires
+
+CMakeFiles/demo.dir/demo/healthsystem.cpp.o.provides: CMakeFiles/demo.dir/demo/healthsystem.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/healthsystem.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/demo/healthsystem.cpp.o.provides
+
+CMakeFiles/demo.dir/demo/healthsystem.cpp.o.provides.build: CMakeFiles/demo.dir/demo/healthsystem.cpp.o
+
 CMakeFiles/demo.dir/common/shader.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/shader.cpp.o: ../common/shader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/shader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/shader.cpp.o -c /home/naomi/Desktop/framework_gl/common/shader.cpp
 
@@ -143,7 +281,7 @@ CMakeFiles/demo.dir/common/shader.cpp.o.provides.build: CMakeFiles/demo.dir/comm
 
 CMakeFiles/demo.dir/common/camera.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/camera.cpp.o: ../common/camera.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/camera.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/camera.cpp.o -c /home/naomi/Desktop/framework_gl/common/camera.cpp
 
@@ -166,7 +304,7 @@ CMakeFiles/demo.dir/common/camera.cpp.o.provides.build: CMakeFiles/demo.dir/comm
 
 CMakeFiles/demo.dir/common/texture.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/texture.cpp.o: ../common/texture.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/texture.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/texture.cpp.o -c /home/naomi/Desktop/framework_gl/common/texture.cpp
 
@@ -189,7 +327,7 @@ CMakeFiles/demo.dir/common/texture.cpp.o.provides.build: CMakeFiles/demo.dir/com
 
 CMakeFiles/demo.dir/common/renderer.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/renderer.cpp.o: ../common/renderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/renderer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/renderer.cpp.o -c /home/naomi/Desktop/framework_gl/common/renderer.cpp
 
@@ -212,7 +350,7 @@ CMakeFiles/demo.dir/common/renderer.cpp.o.provides.build: CMakeFiles/demo.dir/co
 
 CMakeFiles/demo.dir/common/vector2.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/vector2.cpp.o: ../common/vector2.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/vector2.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/vector2.cpp.o -c /home/naomi/Desktop/framework_gl/common/vector2.cpp
 
@@ -235,7 +373,7 @@ CMakeFiles/demo.dir/common/vector2.cpp.o.provides.build: CMakeFiles/demo.dir/com
 
 CMakeFiles/demo.dir/common/mesh.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/mesh.cpp.o: ../common/mesh.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/mesh.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/mesh.cpp.o -c /home/naomi/Desktop/framework_gl/common/mesh.cpp
 
@@ -258,7 +396,7 @@ CMakeFiles/demo.dir/common/mesh.cpp.o.provides.build: CMakeFiles/demo.dir/common
 
 CMakeFiles/demo.dir/common/entity.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/entity.cpp.o: ../common/entity.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/entity.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/entity.cpp.o -c /home/naomi/Desktop/framework_gl/common/entity.cpp
 
@@ -281,7 +419,7 @@ CMakeFiles/demo.dir/common/entity.cpp.o.provides.build: CMakeFiles/demo.dir/comm
 
 CMakeFiles/demo.dir/common/scene.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/scene.cpp.o: ../common/scene.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/scene.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/scene.cpp.o -c /home/naomi/Desktop/framework_gl/common/scene.cpp
 
@@ -304,7 +442,7 @@ CMakeFiles/demo.dir/common/scene.cpp.o.provides.build: CMakeFiles/demo.dir/commo
 
 CMakeFiles/demo.dir/common/sprite.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/sprite.cpp.o: ../common/sprite.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/sprite.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/sprite.cpp.o -c /home/naomi/Desktop/framework_gl/common/sprite.cpp
 
@@ -327,7 +465,7 @@ CMakeFiles/demo.dir/common/sprite.cpp.o.provides.build: CMakeFiles/demo.dir/comm
 
 CMakeFiles/demo.dir/common/core.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/core.cpp.o: ../common/core.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/core.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/core.cpp.o -c /home/naomi/Desktop/framework_gl/common/core.cpp
 
@@ -350,7 +488,7 @@ CMakeFiles/demo.dir/common/core.cpp.o.provides.build: CMakeFiles/demo.dir/common
 
 CMakeFiles/demo.dir/common/collision.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/collision.cpp.o: ../common/collision.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/collision.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/collision.cpp.o -c /home/naomi/Desktop/framework_gl/common/collision.cpp
 
@@ -373,7 +511,7 @@ CMakeFiles/demo.dir/common/collision.cpp.o.provides.build: CMakeFiles/demo.dir/c
 
 CMakeFiles/demo.dir/common/spritesheet.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/common/spritesheet.cpp.o: ../common/spritesheet.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/spritesheet.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/spritesheet.cpp.o -c /home/naomi/Desktop/framework_gl/common/spritesheet.cpp
 
@@ -399,6 +537,12 @@ demo_OBJECTS = \
 "CMakeFiles/demo.dir/demo/demo.cpp.o" \
 "CMakeFiles/demo.dir/demo/mainscene.cpp.o" \
 "CMakeFiles/demo.dir/demo/ai.cpp.o" \
+"CMakeFiles/demo.dir/demo/factory.cpp.o" \
+"CMakeFiles/demo.dir/demo/map.cpp.o" \
+"CMakeFiles/demo.dir/demo/bullet.cpp.o" \
+"CMakeFiles/demo.dir/demo/building.cpp.o" \
+"CMakeFiles/demo.dir/demo/base.cpp.o" \
+"CMakeFiles/demo.dir/demo/healthsystem.cpp.o" \
 "CMakeFiles/demo.dir/common/shader.cpp.o" \
 "CMakeFiles/demo.dir/common/camera.cpp.o" \
 "CMakeFiles/demo.dir/common/texture.cpp.o" \
@@ -418,6 +562,12 @@ demo_EXTERNAL_OBJECTS =
 demo: CMakeFiles/demo.dir/demo/demo.cpp.o
 demo: CMakeFiles/demo.dir/demo/mainscene.cpp.o
 demo: CMakeFiles/demo.dir/demo/ai.cpp.o
+demo: CMakeFiles/demo.dir/demo/factory.cpp.o
+demo: CMakeFiles/demo.dir/demo/map.cpp.o
+demo: CMakeFiles/demo.dir/demo/bullet.cpp.o
+demo: CMakeFiles/demo.dir/demo/building.cpp.o
+demo: CMakeFiles/demo.dir/demo/base.cpp.o
+demo: CMakeFiles/demo.dir/demo/healthsystem.cpp.o
 demo: CMakeFiles/demo.dir/common/shader.cpp.o
 demo: CMakeFiles/demo.dir/common/camera.cpp.o
 demo: CMakeFiles/demo.dir/common/texture.cpp.o
@@ -461,6 +611,12 @@ CMakeFiles/demo.dir/build: demo
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/demo.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/mainscene.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/ai.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/factory.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/map.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/bullet.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/building.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/base.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/demo/healthsystem.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/shader.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/camera.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/texture.cpp.o.requires

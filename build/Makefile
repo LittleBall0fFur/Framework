@@ -449,6 +449,78 @@ demo/ai.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/ai.cpp.s
 .PHONY : demo/ai.cpp.s
 
+demo/base.o: demo/base.cpp.o
+.PHONY : demo/base.o
+
+# target to build an object file
+demo/base.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/base.cpp.o
+.PHONY : demo/base.cpp.o
+
+demo/base.i: demo/base.cpp.i
+.PHONY : demo/base.i
+
+# target to preprocess a source file
+demo/base.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/base.cpp.i
+.PHONY : demo/base.cpp.i
+
+demo/base.s: demo/base.cpp.s
+.PHONY : demo/base.s
+
+# target to generate assembly for a file
+demo/base.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/base.cpp.s
+.PHONY : demo/base.cpp.s
+
+demo/building.o: demo/building.cpp.o
+.PHONY : demo/building.o
+
+# target to build an object file
+demo/building.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/building.cpp.o
+.PHONY : demo/building.cpp.o
+
+demo/building.i: demo/building.cpp.i
+.PHONY : demo/building.i
+
+# target to preprocess a source file
+demo/building.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/building.cpp.i
+.PHONY : demo/building.cpp.i
+
+demo/building.s: demo/building.cpp.s
+.PHONY : demo/building.s
+
+# target to generate assembly for a file
+demo/building.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/building.cpp.s
+.PHONY : demo/building.cpp.s
+
+demo/bullet.o: demo/bullet.cpp.o
+.PHONY : demo/bullet.o
+
+# target to build an object file
+demo/bullet.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/bullet.cpp.o
+.PHONY : demo/bullet.cpp.o
+
+demo/bullet.i: demo/bullet.cpp.i
+.PHONY : demo/bullet.i
+
+# target to preprocess a source file
+demo/bullet.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/bullet.cpp.i
+.PHONY : demo/bullet.cpp.i
+
+demo/bullet.s: demo/bullet.cpp.s
+.PHONY : demo/bullet.s
+
+# target to generate assembly for a file
+demo/bullet.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/bullet.cpp.s
+.PHONY : demo/bullet.cpp.s
+
 demo/demo.o: demo/demo.cpp.o
 .PHONY : demo/demo.o
 
@@ -473,6 +545,54 @@ demo/demo.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/demo.cpp.s
 .PHONY : demo/demo.cpp.s
 
+demo/factory.o: demo/factory.cpp.o
+.PHONY : demo/factory.o
+
+# target to build an object file
+demo/factory.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/factory.cpp.o
+.PHONY : demo/factory.cpp.o
+
+demo/factory.i: demo/factory.cpp.i
+.PHONY : demo/factory.i
+
+# target to preprocess a source file
+demo/factory.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/factory.cpp.i
+.PHONY : demo/factory.cpp.i
+
+demo/factory.s: demo/factory.cpp.s
+.PHONY : demo/factory.s
+
+# target to generate assembly for a file
+demo/factory.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/factory.cpp.s
+.PHONY : demo/factory.cpp.s
+
+demo/healthsystem.o: demo/healthsystem.cpp.o
+.PHONY : demo/healthsystem.o
+
+# target to build an object file
+demo/healthsystem.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/healthsystem.cpp.o
+.PHONY : demo/healthsystem.cpp.o
+
+demo/healthsystem.i: demo/healthsystem.cpp.i
+.PHONY : demo/healthsystem.i
+
+# target to preprocess a source file
+demo/healthsystem.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/healthsystem.cpp.i
+.PHONY : demo/healthsystem.cpp.i
+
+demo/healthsystem.s: demo/healthsystem.cpp.s
+.PHONY : demo/healthsystem.s
+
+# target to generate assembly for a file
+demo/healthsystem.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/healthsystem.cpp.s
+.PHONY : demo/healthsystem.cpp.s
+
 demo/mainscene.o: demo/mainscene.cpp.o
 .PHONY : demo/mainscene.o
 
@@ -496,6 +616,30 @@ demo/mainscene.s: demo/mainscene.cpp.s
 demo/mainscene.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/mainscene.cpp.s
 .PHONY : demo/mainscene.cpp.s
+
+demo/map.o: demo/map.cpp.o
+.PHONY : demo/map.o
+
+# target to build an object file
+demo/map.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/map.cpp.o
+.PHONY : demo/map.cpp.o
+
+demo/map.i: demo/map.cpp.i
+.PHONY : demo/map.i
+
+# target to preprocess a source file
+demo/map.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/map.cpp.i
+.PHONY : demo/map.cpp.i
+
+demo/map.s: demo/map.cpp.s
+.PHONY : demo/map.s
+
+# target to generate assembly for a file
+demo/map.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/map.cpp.s
+.PHONY : demo/map.cpp.s
 
 # Help Target
 help:
@@ -547,12 +691,30 @@ help:
 	@echo "... demo/ai.o"
 	@echo "... demo/ai.i"
 	@echo "... demo/ai.s"
+	@echo "... demo/base.o"
+	@echo "... demo/base.i"
+	@echo "... demo/base.s"
+	@echo "... demo/building.o"
+	@echo "... demo/building.i"
+	@echo "... demo/building.s"
+	@echo "... demo/bullet.o"
+	@echo "... demo/bullet.i"
+	@echo "... demo/bullet.s"
 	@echo "... demo/demo.o"
 	@echo "... demo/demo.i"
 	@echo "... demo/demo.s"
+	@echo "... demo/factory.o"
+	@echo "... demo/factory.i"
+	@echo "... demo/factory.s"
+	@echo "... demo/healthsystem.o"
+	@echo "... demo/healthsystem.i"
+	@echo "... demo/healthsystem.s"
 	@echo "... demo/mainscene.o"
 	@echo "... demo/mainscene.i"
 	@echo "... demo/mainscene.s"
+	@echo "... demo/map.o"
+	@echo "... demo/map.i"
+	@echo "... demo/map.s"
 .PHONY : help
 
 

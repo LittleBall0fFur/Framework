@@ -17,8 +17,14 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/naomi/Desktop/framework_gl/common/texture.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/texture.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/vector2.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/vector2.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/ai.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/ai.cpp.o"
+  "/home/naomi/Desktop/framework_gl/demo/base.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/base.cpp.o"
+  "/home/naomi/Desktop/framework_gl/demo/building.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/building.cpp.o"
+  "/home/naomi/Desktop/framework_gl/demo/bullet.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/bullet.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/demo.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/demo.cpp.o"
+  "/home/naomi/Desktop/framework_gl/demo/factory.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/factory.cpp.o"
+  "/home/naomi/Desktop/framework_gl/demo/healthsystem.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/healthsystem.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/mainscene.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/mainscene.cpp.o"
+  "/home/naomi/Desktop/framework_gl/demo/map.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/map.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

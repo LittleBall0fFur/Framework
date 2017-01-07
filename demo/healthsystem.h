@@ -14,6 +14,7 @@ public:
 	int getDamage(){return damage;}
 
 	void applyDamage(int _damage);
+	bool deathCheck();
 
 private:
 	int totalHealth;

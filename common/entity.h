@@ -48,8 +48,8 @@ public:
 
 	virtual void update(float _deltaTime) = 0;
 
-private:
 	int guid;
+private:
 	int nextGuid;
 
 	Entity* parent;

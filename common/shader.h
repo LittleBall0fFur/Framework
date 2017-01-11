@@ -13,6 +13,21 @@
 
 #include <GL/glew.h>
 
-GLuint loadShaders(const char * vertex_file_path, const char * fragment_file_path);
+class Shader
+{
+public:
+  Shader();
+  ~Shader();
+  GLuint loadShaders(const char * vertex_file_path, const char * fragment_file_path);
+  GLuint getProgramID(){return programID;};
+  GLuint getUvOffsetID(){return uvOffsetID;};
 
+private:
+  GLuint uvOffsetID;
+
+  GLuint programID;
+	GLuint matrixID;
+	GLuint textureID;
+	void attachID();
+};
 #endif

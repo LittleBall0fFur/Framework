@@ -1,6 +1,26 @@
 #include "shader.h"
 
-GLuint loadShaders(const char * vertex_file_path, const char * fragment_file_path)
+Shader::Shader(){
+	uvOffsetID = -1;
+	programID = -1;
+	textureID = -1;
+	matrixID = -1;
+}
+
+Shader::~Shader(){
+
+}
+
+void Shader::attachID()
+{
+	// Get handles for our uniforms and buffers and send them to the shader
+	matrixID = glGetUniformLocation(programID, "MVP"); // MVP uniform in vertex shader
+
+	textureID  =    glGetUniformLocation(programID, "textureSampler"); // textureSampler uniform in fragment shader
+	uvOffsetID = 	 glGetUniformLocation(programID, "UVoffset"); // UVoffset uniform in fragment shader
+}
+
+GLuint Shader::loadShaders(const char * vertex_file_path, const char * fragment_file_path)
 {
 	// Create the shaders
 	GLuint VertexShaderID = glCreateShader(GL_VERTEX_SHADER);
@@ -81,6 +101,8 @@ GLuint loadShaders(const char * vertex_file_path, const char * fragment_file_pat
 
 	glDeleteShader(VertexShaderID);
 	glDeleteShader(FragmentShaderID);
+
+	attachID();
 
 	return ProgramID;
 }

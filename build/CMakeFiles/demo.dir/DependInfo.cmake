@@ -19,6 +19,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/naomi/Desktop/framework_gl/demo/ai.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/ai.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/base.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/base.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/building.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/building.cpp.o"
+  "/home/naomi/Desktop/framework_gl/demo/buildsystem.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/buildsystem.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/bullet.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/bullet.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/demo.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/demo.cpp.o"
   "/home/naomi/Desktop/framework_gl/demo/factory.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/demo/factory.cpp.o"

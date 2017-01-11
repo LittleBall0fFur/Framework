@@ -13,6 +13,7 @@ public:
 
 	void update(float _deltaTime);
 	void setKost(int _i);
+	int getKost(){return kost;};
 
 private:
 	HealthSystem* healthSystem;

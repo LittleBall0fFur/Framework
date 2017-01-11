@@ -497,6 +497,30 @@ demo/building.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/building.cpp.s
 .PHONY : demo/building.cpp.s
 
+demo/buildsystem.o: demo/buildsystem.cpp.o
+.PHONY : demo/buildsystem.o
+
+# target to build an object file
+demo/buildsystem.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/buildsystem.cpp.o
+.PHONY : demo/buildsystem.cpp.o
+
+demo/buildsystem.i: demo/buildsystem.cpp.i
+.PHONY : demo/buildsystem.i
+
+# target to preprocess a source file
+demo/buildsystem.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/buildsystem.cpp.i
+.PHONY : demo/buildsystem.cpp.i
+
+demo/buildsystem.s: demo/buildsystem.cpp.s
+.PHONY : demo/buildsystem.s
+
+# target to generate assembly for a file
+demo/buildsystem.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/buildsystem.cpp.s
+.PHONY : demo/buildsystem.cpp.s
+
 demo/bullet.o: demo/bullet.cpp.o
 .PHONY : demo/bullet.o
 
@@ -697,6 +721,9 @@ help:
 	@echo "... demo/building.o"
 	@echo "... demo/building.i"
 	@echo "... demo/building.s"
+	@echo "... demo/buildsystem.o"
+	@echo "... demo/buildsystem.i"
+	@echo "... demo/buildsystem.s"
 	@echo "... demo/bullet.o"
 	@echo "... demo/bullet.i"
 	@echo "... demo/bullet.s"

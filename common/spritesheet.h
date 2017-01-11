@@ -17,24 +17,29 @@ public:
 	void setAnimateFrames(int startFrame, int endFrame);
 	void animate(float _deltaTime, float _step);
 
+	int setFrame(int _f);
 	void play();
 	void stop();
 
 	Sprite* getSprite() {return sprite;}
+	int getCels(){return spritesPerRow;}
+	int getRows(){return rows;}
+	Vector2 getUvOffset(){return uvOffset;}
 
 private:
 	Sprite* sprite;
 
-	int startFrame;
-	int endFrame;
-	int curFrame;
 	int spritesPerRow;
 	int rows;
-	int curSpriteId;
-	float animateCounter;
+	int frame;
+	int f;
 
 	bool playing;
 	bool loop;
+
+	float animateCounter;
+
+	Vector2 uvOffset;
 };
 
 #endif

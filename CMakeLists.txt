@@ -68,6 +68,8 @@ add_executable(demo
   demo/base.h
   demo/healthsystem.cpp
   demo/healthsystem.h
+  demo/buildsystem.cpp
+  demo/buildsystem.h
 
 	common/shader.cpp
   common/shader.h

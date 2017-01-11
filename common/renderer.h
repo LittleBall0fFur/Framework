@@ -61,6 +61,7 @@ private:
 
 	Texture* texture;
 	Mesh* mesh;
+	Shader s;
 
   void init();
   void renderMesh(Mesh* _mesh, glm::mat4 _MVP);

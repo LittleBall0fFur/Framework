@@ -41,9 +41,17 @@ void Renderer::renderEntity(glm::mat4 &modelmatrix, Entity* _entity, Camera* _ca
   modelmatrix *= this->getModelMatrix(_entity->getPosition(), _entity->getScale(), _entity->getRotation());
   if(_entity->getSprite() != NULL){
     texture = _entity->getSprite()->getTexture();
-  	mesh = new Mesh(texture->getWidth() , texture->getHeight(), _entity->getSprite()->getTexture()->getTextureBuffer());
+    if(texture == NULL)
+      return;
+    // als spritesheet, dan uvwidth en height meegeven
+    float uvWidth = 1;
+    float uvHeight = 1;
+    if(_entity->getSpriteSheet() != NULL){
+      uvWidth = _entity->getSpriteSheet()->getUvOffset().x;
+      uvHeight = _entity->getSpriteSheet()->getUvOffset().y;
+    }
+  	mesh = new Mesh(texture->getWidth() , texture->getHeight(), _entity->getSprite()->getTexture()->getTextureBuffer(), uvWidth, uvHeight);
   	glm::mat4 MVP = projectionMatrix * _camera->getViewMatrix() * modelmatrix;
-
   	_entity->getSprite()->setTextureSize(Vector2(texture->getWidth(), texture->getHeight()));
   	if (_entity->getSprite()->getSpriteScale().x == 0 && _entity->getSprite()->getSpriteScale().y == 0)
   	{
@@ -173,7 +181,7 @@ void Renderer::init()
 
   // Create and compile our GLSL program from the shaders
   // see: shader.h/cpp
-  programID = loadShaders(vertex_shader.c_str(), fragment_shader.c_str());
+  programID = s.loadShaders(vertex_shader.c_str(), fragment_shader.c_str());
 
   // Get a handle for our buffers
   vertexPosition_modelspaceID = glGetAttribLocation(programID, "vertexPosition_modelspace");

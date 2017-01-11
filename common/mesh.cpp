@@ -1,6 +1,6 @@
 #include <common/mesh.h>
-
-Mesh::Mesh(int _width, int _height, GLuint _texture)
+#include <iostream>
+Mesh::Mesh(int _width, int _height, GLuint _texture, float _uvWidth, float _uvHeight)
 {
   // Our vertices. Tree consecutive floats give a 3D vertex; Three consecutive vertices give a triangle.
 	// A sprite has 1 face (quad) with 2 triangles each, so this makes 1*2=2 triangles, and 2*3 vertices
@@ -11,19 +11,27 @@ Mesh::Mesh(int _width, int _height, GLuint _texture)
 		 0.5f * sprite_width, -0.5f * sprite_height, 0.0f,
 		-0.5f * sprite_width, -0.5f * sprite_height, 0.0f,
 		-0.5f * sprite_width,  0.5f * sprite_height, 0.0f,
+
 		-0.5f * sprite_width,  0.5f * sprite_height, 0.0f,
 		 0.5f * sprite_width,  0.5f * sprite_height, 0.0f,
 		 0.5f * sprite_width, -0.5f * sprite_height, 0.0f
 	};
 
+  float u = _uvWidth;
+  float v = _uvHeight;
+  //u = 0.5f;
+  //v = 0.5f;
+  //std::cout << v << std::endl;
+  //std::cout << u << std::endl;
 	// Two UV coordinates for each vertex.
 	GLfloat g_uv_buffer_data[] = {
-		1.0f, 1.0f,
-		0.0f, 1.0f,
+		u, v,
+		0.0f, v,
 		0.0f, 0.0f,
+
 		0.0f, 0.0f,
-		1.0f, 0.0f,
-		1.0f, 1.0f
+		u, 0.0f,
+		u, v
 	};
 
 	glGenBuffers(1, &vertexbuffer);

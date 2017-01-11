@@ -16,6 +16,7 @@ public:
 	virtual ~Sprite();
 
 	GLuint setupSprite(const std::string& filename);
+	void setupSpriteForSpriteSheet(const std::string& _filePath, float _uvWidth, float _uvHeight, int _filter, int _wrap);
 	void setSpriteScale(Vector2 _scale);
 	void setTextureSize(Vector2 _size);
 	void setUvSize(Vector2 _size);
@@ -23,9 +24,11 @@ public:
 
 	Vector2 getSpriteScale(){return scale;};
 	Vector2 getUvOffset(){return uvOffset;};
-	Vector2 getUvSize(){return uvSize;};
+	Vector2 getUvDim(){return uvdim;};
 
 	Texture* getTexture(){return texture;};
+	std::string getTextureName(){return texturename;}
+
 private:
 	Vector2 scale;
 	Vector2 uvOffset;
@@ -33,7 +36,10 @@ private:
 	std::string texturename;
 	Texture* texture;
 
-	Vector2 uvSize;
+	Vector2 uvdim;
+
+	int wrap;
+	int filter;
 };
 
 #endif

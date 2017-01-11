@@ -2,6 +2,7 @@
 #define MAP_H
 
 #include <common/entity.h>
+#include <common/vector2.h>
 
 class Map: public Entity
 {

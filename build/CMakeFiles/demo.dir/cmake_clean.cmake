@@ -8,6 +8,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/demo.dir/demo/building.cpp.o"
   "CMakeFiles/demo.dir/demo/base.cpp.o"
   "CMakeFiles/demo.dir/demo/healthsystem.cpp.o"
+  "CMakeFiles/demo.dir/demo/buildsystem.cpp.o"
   "CMakeFiles/demo.dir/common/shader.cpp.o"
   "CMakeFiles/demo.dir/common/camera.cpp.o"
   "CMakeFiles/demo.dir/common/texture.cpp.o"

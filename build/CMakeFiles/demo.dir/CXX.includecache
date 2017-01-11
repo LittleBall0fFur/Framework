@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+.././common/camera.h
+glfw3.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+
 .././common/collision.h
 common/vector2.h
 -
@@ -36,6 +44,12 @@ common/sprite.h
 common/spritesheet.h
 -
 common/collision.h
+-
+
+.././common/scene.h
+common/entity.h
+-
+common/camera.h
 -
 
 .././common/sprite.h
@@ -838,21 +852,21 @@ detail/type_vec4.hpp
 detail/func_vector_relational.hpp
 ../external/glm-0.9.7.0/glm/detail/func_vector_relational.hpp
 
+/home/naomi/Desktop/framework_gl/common/spritesheet.cpp
+spritesheet.h
+/home/naomi/Desktop/framework_gl/common/spritesheet.h
+
+/home/naomi/Desktop/framework_gl/common/spritesheet.h
+iostream
+-
+common/sprite.h
+-
+common/vector2.h
+-
+
 /home/naomi/Desktop/framework_gl/demo/ai.h
 common/entity.h
 -
-
-/home/naomi/Desktop/framework_gl/demo/base.cpp
-base.h
-/home/naomi/Desktop/framework_gl/demo/base.h
-
-/home/naomi/Desktop/framework_gl/demo/base.h
-building.h
-/home/naomi/Desktop/framework_gl/demo/building.h
-
-/home/naomi/Desktop/framework_gl/demo/building.cpp
-building.h
-/home/naomi/Desktop/framework_gl/demo/building.h
 
 /home/naomi/Desktop/framework_gl/demo/building.h
 common/entity.h
@@ -860,13 +874,15 @@ common/entity.h
 demo/healthsystem.h
 -
 
+/home/naomi/Desktop/framework_gl/demo/buildsystem.h
+building.h
+/home/naomi/Desktop/framework_gl/demo/building.h
+factory.h
+/home/naomi/Desktop/framework_gl/demo/factory.h
+
 /home/naomi/Desktop/framework_gl/demo/bullet.h
 common/entity.h
 -
-
-/home/naomi/Desktop/framework_gl/demo/factory.cpp
-factory.h
-/home/naomi/Desktop/framework_gl/demo/factory.h
 
 /home/naomi/Desktop/framework_gl/demo/factory.h
 stdio.h
@@ -890,13 +906,21 @@ bullet.h
 building.h
 /home/naomi/Desktop/framework_gl/demo/building.h
 
-/home/naomi/Desktop/framework_gl/demo/healthsystem.cpp
-healthsystem.h
-/home/naomi/Desktop/framework_gl/demo/healthsystem.h
+/home/naomi/Desktop/framework_gl/demo/mainscene.cpp
+mainscene.h
+/home/naomi/Desktop/framework_gl/demo/mainscene.h
 
-/home/naomi/Desktop/framework_gl/demo/healthsystem.h
+/home/naomi/Desktop/framework_gl/demo/mainscene.h
+common/scene.h
+-
+factory.h
+/home/naomi/Desktop/framework_gl/demo/factory.h
+buildsystem.h
+/home/naomi/Desktop/framework_gl/demo/buildsystem.h
 
 /home/naomi/Desktop/framework_gl/demo/map.h
 common/entity.h
+-
+common/vector2.h
 -
 

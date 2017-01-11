@@ -12,7 +12,7 @@ Entity::Entity(){
 	scale = Vector2(1.0f, 1.0f);
 
 	parent = NULL;
-	spritesheet = new Spritesheet();
+	spritesheet = NULL;
 }
 
 Entity::~Entity(){
@@ -51,9 +51,11 @@ void Entity::addSprite(std::string _path)
 	sprite->setupSprite(_path);
 }
 
-void Entity::addSpriteAsSpriteSheet(std::string _path, int _spriteWidth, int _spriteHeight, int _spritesPerRow, int _rows)
+void Entity::addSpriteAsSpriteSheet(std::string _path, int _spriteWidth, int _spriteHeight, int _cols, int _rows)
 {
-	spritesheet->setUpSpriteSheet(_path, _spriteWidth, _spriteHeight, _spritesPerRow, _rows);
+	//addSprite(_path);
+	spritesheet = new Spritesheet();
+	spritesheet->setUpSpriteSheet(_path, _spriteWidth, _spriteHeight, _cols, _rows);
 	this->sprite = spritesheet->getSprite();
 }
 

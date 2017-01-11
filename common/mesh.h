@@ -7,7 +7,7 @@
 class Mesh
 {
 public:
-  Mesh(int _width, int _height, GLuint _texture);
+  Mesh(int _width, int _height, GLuint _texture, float _uvWidth = 1, float _uvHeight = 1);
   virtual ~Mesh();
 
   void run();

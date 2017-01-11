@@ -1,16 +1,22 @@
 #include "texture.h"
 
 Texture::Texture(){
+  glTexture[0] = 0;
 
+  width = 0;
+	height = 0;
+	depth = 3;
+
+	warrantybit = 1;
 }
 
 Texture::~Texture(){
-
+  glDeleteTextures(1, &glTexture[0]);
 }
 
 GLuint Texture::loadTGA(const std::string& imagepath)
 {
-    std::cout << "Loading TGA: " << imagepath << std::endl;
+  std::cout << "Loading TGA: " << imagepath << std::endl;
 
 	FILE *file;
 	unsigned char type[4];
@@ -233,7 +239,7 @@ GLuint loadBMP_custom(const char * imagepath)
 #define FOURCC_DXT3 0x33545844 // Equivalent to "DXT3" in ASCII
 #define FOURCC_DXT5 0x35545844 // Equivalent to "DXT5" in ASCII
 
-GLuint loadDDS(const char * imagepath)
+GLuint Texture::loadDDS(const char * imagepath)
 {
 	unsigned char header[124];
 

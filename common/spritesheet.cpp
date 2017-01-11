@@ -2,109 +2,63 @@
 
 Spritesheet::Spritesheet(){
   animateCounter = 0;
-	startFrame = 0;
-	endFrame = 0;
 	spritesPerRow = 0;
 	rows = 0;
-	curSpriteId = 0;
 	loop = true;
+  sprite = NULL;
+  f = 0;
 }
 
 Spritesheet::~Spritesheet(){
-  if(sprite != NULL)delete sprite; //segmentation fault on delete
+  if(sprite != NULL) delete sprite; //segmentation fault on delete
 }
 
 void Spritesheet::setUpSpriteSheet(std::string _path, int _width, int _height, int _spritesPerRow, int _rows)
 {
-  if(sprite != NULL){
+  if(sprite == NULL){
     sprite = new Sprite();
+    sprite->setupSprite(_path);
   	sprite->setSpriteScale(Vector2(_width, _height));
-  	Vector2 uvSize = Vector2();
-  	uvSize.x = 1.0f / (float)_spritesPerRow;
-  	uvSize.y = 1.0f / (float)_rows;
-
-  	sprite->setUvSize(uvSize);
-
+    sprite->setUvSize(Vector2(_spritesPerRow, _rows));
   	spritesPerRow = _spritesPerRow;
   	rows = _rows;
-
-    sprite->setupSprite(_path);
+    sprite->setupSpriteForSpriteSheet(_path, 1/sprite->getUvDim().x, 1/sprite->getUvDim().y, 3, 1);
   }
 }
 
-void Spritesheet::animate(float _deltaTime, float _step)
+void Spritesheet::animate(float _deltaTime, float _step){
+	this->setFrame(frame);
+  animateCounter += _deltaTime;
+	if (animateCounter >= _step) {
+		frame++;
+    animateCounter = 0;
+	}
+}
+
+int Spritesheet::setFrame(int _f)
 {
-	if(playing) {
-		animateCounter += _deltaTime;
-		if(animateCounter >= _step)
-		{
-			animateCounter = fmod(animateCounter, _step);
-			curFrame++;
-			if(curFrame > endFrame) curFrame = startFrame;
-			if(curSpriteId != curFrame)
-			{
-				setSprite(curFrame);
-        animateCounter = 0;
-			}
-		}
-		if(!loop)
-		{
-			if(curFrame == endFrame){
-        stop();
-      }
-		}
-    else{
-      if(curFrame == endFrame){
-        curFrame = startFrame;
-      }
-    }
-	}
-}
+	int width = 1.0f / sprite->getUvDim().x;
+	int height = 1.0f / sprite->getUvDim().y;
 
-void Spritesheet::play(){
-  stop();
-	playing = true;
-	animateCounter = 0.0f;
-	curFrame = startFrame;
-	setSprite(startFrame);
-}
+  uvOffset = sprite->getUvOffset();
 
-void Spritesheet::stop(){
-  playing = false;
-  setSprite(endFrame);
-}
+	if (_f >= width*height) {
+		frame = 0;
+    animateCounter = 0;
+		uvOffset.x = 0;
+		uvOffset.y = 0;
 
-void Spritesheet::setSprite(int _spriteId)
-{
-	if (_spriteId == curSpriteId) {
-		return;
-	}
-	Vector2 offset = Vector2();
-	if (_spriteId <= 0)
-	{
-		curSpriteId = 0;
-		sprite->setUvOffset(offset);
-		return;
+		return frame;
 	}
 
-	int totalSprites = spritesPerRow * rows;
-	if (_spriteId > totalSprites) {
-		_spriteId = totalSprites;
-	}
+	int ypos = _f/width;
+	int xpos = _f%width;
 
-	int row = floor((float)_spriteId / (float)spritesPerRow);
-	int placeInRow = (_spriteId % spritesPerRow);
-	offset = Vector2(placeInRow * (1.0f / (float)spritesPerRow), row * (1.0f / (float)rows));
 
-	sprite->setUvOffset(offset);
-	curSpriteId = _spriteId;
-	curFrame = _spriteId;
-  std::cout<<&totalSprites<<std::endl;
-}
+	uvOffset.y = ypos * sprite->getUvDim().y;
+  uvOffset.x = xpos * sprite->getUvDim().x;
+  //std::cout<<xpos<<std::endl;
+	frame = _f;
 
-void Spritesheet::setAnimateFrames(int _startFrame, int _endFrame)
-{
-	this->startFrame = _startFrame;
-	this->endFrame = _endFrame;
-	curFrame = _startFrame;
+	return frame;
 }

@@ -3,6 +3,9 @@
 
 #include <common/scene.h>
 
+#include "factory.h"
+#include "buildsystem.h"
+
 class MainScene: public Scene
 {
 public:
@@ -10,9 +13,12 @@ public:
 	virtual ~MainScene();
 
 	void update(float _deltaTime);
+	void addMap();
 
 private:
-
+	Factory factory;
+	BuildSystem buildSystem;
+	Ai* spritesheet;
 };
 
 #endif

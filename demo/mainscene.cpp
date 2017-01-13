@@ -9,7 +9,10 @@ MainScene::MainScene(): Scene(){
 
 void MainScene::update(float _deltaTime){
   buildSystem.building();
-  spritesheet->getSpriteSheet()->animate(_deltaTime, 1);
+  spritesheet->getSpriteSheet()->animate(_deltaTime, 0.5f);
+  //static int fr = 0;
+  //spritesheet->getSpriteSheet()->setFrame(fr);
+  //fr++;
 }
 
 void MainScene::addMap(){

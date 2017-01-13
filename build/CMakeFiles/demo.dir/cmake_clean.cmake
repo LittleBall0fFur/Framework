@@ -21,6 +21,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/demo.dir/common/core.cpp.o"
   "CMakeFiles/demo.dir/common/collision.cpp.o"
   "CMakeFiles/demo.dir/common/spritesheet.cpp.o"
+  "CMakeFiles/demo.dir/common/input.cpp.o"
   "demo.pdb"
   "demo"
 )

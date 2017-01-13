@@ -95,6 +95,8 @@ add_executable(demo
   common/collision.h
   common/spritesheet.cpp
   common/spritesheet.h
+  common/input.cpp
+  common/input.h
 )
 target_link_libraries(demo
 	${ALL_LIBS}

@@ -187,6 +187,7 @@ CMakeFiles/demo.dir/common/collision.cpp.o: ../common/collision.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/camera.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/collision.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/entity.h
+CMakeFiles/demo.dir/common/core.cpp.o: .././common/input.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/mesh.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/renderer.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/scene.h
@@ -388,6 +389,10 @@ CMakeFiles/demo.dir/common/entity.cpp.o: ../external/glm-0.9.7.0/glm/vector_rela
 CMakeFiles/demo.dir/common/entity.cpp.o: ../common/entity.cpp
 CMakeFiles/demo.dir/common/entity.cpp.o: ../common/entity.h
 
+CMakeFiles/demo.dir/common/input.cpp.o: .././common/input.h
+CMakeFiles/demo.dir/common/input.cpp.o: ../external/glfw-3.0.3/include/GLFW/glfw3.h
+CMakeFiles/demo.dir/common/input.cpp.o: ../common/input.cpp
+
 CMakeFiles/demo.dir/common/mesh.cpp.o: .././common/mesh.h
 CMakeFiles/demo.dir/common/mesh.cpp.o: ../external/glew-1.9.0/include/GL/glew.h
 CMakeFiles/demo.dir/common/mesh.cpp.o: ../common/mesh.cpp
@@ -395,6 +400,7 @@ CMakeFiles/demo.dir/common/mesh.cpp.o: ../common/mesh.cpp
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/camera.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/collision.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/entity.h
+CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/input.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/mesh.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/scene.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/shader.h
@@ -499,6 +505,7 @@ CMakeFiles/demo.dir/common/renderer.cpp.o: ../common/renderer.h
 CMakeFiles/demo.dir/common/scene.cpp.o: .././common/camera.h
 CMakeFiles/demo.dir/common/scene.cpp.o: .././common/collision.h
 CMakeFiles/demo.dir/common/scene.cpp.o: .././common/entity.h
+CMakeFiles/demo.dir/common/scene.cpp.o: .././common/input.h
 CMakeFiles/demo.dir/common/scene.cpp.o: .././common/sprite.h
 CMakeFiles/demo.dir/common/scene.cpp.o: .././common/spritesheet.h
 CMakeFiles/demo.dir/common/scene.cpp.o: .././common/texture.h
@@ -1400,6 +1407,7 @@ CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/camera.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/collision.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/core.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/entity.h
+CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/input.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/mesh.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/renderer.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/scene.h
@@ -1501,6 +1509,7 @@ CMakeFiles/demo.dir/demo/demo.cpp.o: ../external/glm-0.9.7.0/glm/vec3.hpp
 CMakeFiles/demo.dir/demo/demo.cpp.o: ../external/glm-0.9.7.0/glm/vec4.hpp
 CMakeFiles/demo.dir/demo/demo.cpp.o: ../external/glm-0.9.7.0/glm/vector_relational.hpp
 CMakeFiles/demo.dir/demo/demo.cpp.o: ../demo/ai.h
+CMakeFiles/demo.dir/demo/demo.cpp.o: ../demo/base.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: ../demo/building.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: ../demo/buildsystem.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: ../demo/bullet.h
@@ -1620,6 +1629,7 @@ CMakeFiles/demo.dir/demo/healthsystem.cpp.o: ../demo/healthsystem.h
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: .././common/camera.h
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: .././common/collision.h
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: .././common/entity.h
+CMakeFiles/demo.dir/demo/mainscene.cpp.o: .././common/input.h
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: .././common/scene.h
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: .././common/sprite.h
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: .././common/spritesheet.h
@@ -1718,6 +1728,7 @@ CMakeFiles/demo.dir/demo/mainscene.cpp.o: ../external/glm-0.9.7.0/glm/vec3.hpp
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: ../external/glm-0.9.7.0/glm/vec4.hpp
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: ../external/glm-0.9.7.0/glm/vector_relational.hpp
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: ../demo/ai.h
+CMakeFiles/demo.dir/demo/mainscene.cpp.o: ../demo/base.h
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: ../demo/building.h
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: ../demo/buildsystem.h
 CMakeFiles/demo.dir/demo/mainscene.cpp.o: ../demo/bullet.h

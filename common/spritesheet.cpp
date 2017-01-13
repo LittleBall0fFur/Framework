@@ -7,6 +7,7 @@ Spritesheet::Spritesheet(){
 	loop = true;
   sprite = NULL;
   f = 0;
+  uvOffset = Vector2(0,0);
 }
 
 Spritesheet::~Spritesheet(){
@@ -27,9 +28,9 @@ void Spritesheet::setUpSpriteSheet(std::string _path, int _width, int _height, i
 }
 
 void Spritesheet::animate(float _deltaTime, float _step){
-	this->setFrame(frame);
   animateCounter += _deltaTime;
 	if (animateCounter >= _step) {
+    this->setFrame(frame);
 		frame++;
     animateCounter = 0;
 	}
@@ -39,8 +40,6 @@ int Spritesheet::setFrame(int _f)
 {
 	int width = 1.0f / sprite->getUvDim().x;
 	int height = 1.0f / sprite->getUvDim().y;
-
-  uvOffset = sprite->getUvOffset();
 
 	if (_f >= width*height) {
 		frame = 0;
@@ -54,10 +53,9 @@ int Spritesheet::setFrame(int _f)
 	int ypos = _f/width;
 	int xpos = _f%width;
 
-
 	uvOffset.y = ypos * sprite->getUvDim().y;
   uvOffset.x = xpos * sprite->getUvDim().x;
-  //std::cout<<xpos<<std::endl;
+
 	frame = _f;
 
 	return frame;

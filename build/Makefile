@@ -233,6 +233,30 @@ common/entity.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/entity.cpp.s
 .PHONY : common/entity.cpp.s
 
+common/input.o: common/input.cpp.o
+.PHONY : common/input.o
+
+# target to build an object file
+common/input.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/input.cpp.o
+.PHONY : common/input.cpp.o
+
+common/input.i: common/input.cpp.i
+.PHONY : common/input.i
+
+# target to preprocess a source file
+common/input.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/input.cpp.i
+.PHONY : common/input.cpp.i
+
+common/input.s: common/input.cpp.s
+.PHONY : common/input.s
+
+# target to generate assembly for a file
+common/input.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/input.cpp.s
+.PHONY : common/input.cpp.s
+
 common/mesh.o: common/mesh.cpp.o
 .PHONY : common/mesh.o
 
@@ -688,6 +712,9 @@ help:
 	@echo "... common/entity.o"
 	@echo "... common/entity.i"
 	@echo "... common/entity.s"
+	@echo "... common/input.o"
+	@echo "... common/input.i"
+	@echo "... common/input.s"
 	@echo "... common/mesh.o"
 	@echo "... common/mesh.i"
 	@echo "... common/mesh.s"

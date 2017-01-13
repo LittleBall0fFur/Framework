@@ -3,7 +3,7 @@
 
 #include <common/entity.h>
 #include <common/camera.h>
-//#include <common/input.h>
+#include <common/input.h>
 
 class Scene: public Entity
 {
@@ -14,11 +14,12 @@ public:
 	void updateScene(float deltaTime);
 
 	Camera* getCamera() { return camera; };
-
-	Camera* camera;
-
+	Input* getInput() { return input; };
 private:
 	void updateEntity(Entity* entity, float deltaTime);
+
+	Camera* camera;
+	Input* input;
 };
 
 #endif

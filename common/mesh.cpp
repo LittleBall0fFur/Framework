@@ -17,21 +17,19 @@ Mesh::Mesh(int _width, int _height, GLuint _texture, float _uvWidth, float _uvHe
 		 0.5f * sprite_width, -0.5f * sprite_height, 0.0f
 	};
 
-  float u = _uvWidth;
-  float v = _uvHeight;
-  //u = 0.5f;
-  //v = 0.5f;
+  float u = _uvHeight;
+  float v = _uvWidth;
   //std::cout << v << std::endl;
   //std::cout << u << std::endl;
 	// Two UV coordinates for each vertex.
 	GLfloat g_uv_buffer_data[] = {
-		u, v,
-		0.0f, v,
+		v, u,
+		0.0f, u,
 		0.0f, 0.0f,
 
 		0.0f, 0.0f,
-		u, 0.0f,
-		u, v
+		v, 0.0f,
+	  v, u
 	};
 
 	glGenBuffers(1, &vertexbuffer);

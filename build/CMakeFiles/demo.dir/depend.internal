@@ -188,6 +188,7 @@ CMakeFiles/demo.dir/common/core.cpp.o
  .././common/camera.h
  .././common/collision.h
  .././common/entity.h
+ .././common/input.h
  .././common/mesh.h
  .././common/renderer.h
  .././common/scene.h
@@ -388,6 +389,10 @@ CMakeFiles/demo.dir/common/entity.cpp.o
  ../external/glm-0.9.7.0/glm/vector_relational.hpp
  /home/naomi/Desktop/framework_gl/common/entity.cpp
  /home/naomi/Desktop/framework_gl/common/entity.h
+CMakeFiles/demo.dir/common/input.cpp.o
+ .././common/input.h
+ ../external/glfw-3.0.3/include/GLFW/glfw3.h
+ /home/naomi/Desktop/framework_gl/common/input.cpp
 CMakeFiles/demo.dir/common/mesh.cpp.o
  .././common/mesh.h
  ../external/glew-1.9.0/include/GL/glew.h
@@ -396,6 +401,7 @@ CMakeFiles/demo.dir/common/renderer.cpp.o
  .././common/camera.h
  .././common/collision.h
  .././common/entity.h
+ .././common/input.h
  .././common/mesh.h
  .././common/scene.h
  .././common/shader.h
@@ -500,6 +506,7 @@ CMakeFiles/demo.dir/common/scene.cpp.o
  .././common/camera.h
  .././common/collision.h
  .././common/entity.h
+ .././common/input.h
  .././common/sprite.h
  .././common/spritesheet.h
  .././common/texture.h
@@ -1401,6 +1408,7 @@ CMakeFiles/demo.dir/demo/demo.cpp.o
  .././common/collision.h
  .././common/core.h
  .././common/entity.h
+ .././common/input.h
  .././common/mesh.h
  .././common/renderer.h
  .././common/scene.h
@@ -1502,6 +1510,7 @@ CMakeFiles/demo.dir/demo/demo.cpp.o
  ../external/glm-0.9.7.0/glm/vec4.hpp
  ../external/glm-0.9.7.0/glm/vector_relational.hpp
  /home/naomi/Desktop/framework_gl/demo/ai.h
+ /home/naomi/Desktop/framework_gl/demo/base.h
  /home/naomi/Desktop/framework_gl/demo/building.h
  /home/naomi/Desktop/framework_gl/demo/buildsystem.h
  /home/naomi/Desktop/framework_gl/demo/bullet.h
@@ -1621,6 +1630,7 @@ CMakeFiles/demo.dir/demo/mainscene.cpp.o
  .././common/camera.h
  .././common/collision.h
  .././common/entity.h
+ .././common/input.h
  .././common/scene.h
  .././common/sprite.h
  .././common/spritesheet.h
@@ -1719,6 +1729,7 @@ CMakeFiles/demo.dir/demo/mainscene.cpp.o
  ../external/glm-0.9.7.0/glm/vec4.hpp
  ../external/glm-0.9.7.0/glm/vector_relational.hpp
  /home/naomi/Desktop/framework_gl/demo/ai.h
+ /home/naomi/Desktop/framework_gl/demo/base.h
  /home/naomi/Desktop/framework_gl/demo/building.h
  /home/naomi/Desktop/framework_gl/demo/buildsystem.h
  /home/naomi/Desktop/framework_gl/demo/bullet.h

@@ -5,6 +5,7 @@
 
 #include "factory.h"
 #include "buildsystem.h"
+#include "base.h"
 
 class MainScene: public Scene
 {
@@ -18,6 +19,8 @@ public:
 private:
 	Factory factory;
 	BuildSystem buildSystem;
+
+	Building* base;
 	Ai* spritesheet;
 };
 

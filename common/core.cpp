@@ -15,16 +15,12 @@ void Core::run(Scene* _scene){
   do{
     // update our _deltaTime
     calculateDeltaTime();
-
-    // Update input instance in Scene
-  //	scene->input()->updateInput(_renderer.window());
-
     // Update camera instance in Scene
     _scene->getCamera()->updateCamera((float)deltaTime);
-
+    //Update the input instance in the Scene
+    _scene->getInput()->updateInput(renderer.getWindow());
     // Update Scene (and recursively all children)
     _scene->updateScene((float)deltaTime);
-
     // Render Scene
     renderer.renderScene(_scene);
   }

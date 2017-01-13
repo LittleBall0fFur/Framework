@@ -47,8 +47,9 @@ void Renderer::renderEntity(glm::mat4 &modelmatrix, Entity* _entity, Camera* _ca
     float uvWidth = 1;
     float uvHeight = 1;
     if(_entity->getSpriteSheet() != NULL){
-      uvWidth = _entity->getSpriteSheet()->getUvOffset().x;
-      uvHeight = _entity->getSpriteSheet()->getUvOffset().y;
+      uvWidth = _entity->getSpriteSheet()->getUvOffset().x + _entity->getSpriteSheet()->getSprite()->getUvDim().x;
+      uvHeight = _entity->getSpriteSheet()->getUvOffset().y + _entity->getSpriteSheet()->getSprite()->getUvDim().x;
+      glUniform2f(shader.getUvOffsetID(), uvWidth, uvHeight);
     }
   	mesh = new Mesh(texture->getWidth() , texture->getHeight(), _entity->getSprite()->getTexture()->getTextureBuffer(), uvWidth, uvHeight);
   	glm::mat4 MVP = projectionMatrix * _camera->getViewMatrix() * modelmatrix;
@@ -181,7 +182,7 @@ void Renderer::init()
 
   // Create and compile our GLSL program from the shaders
   // see: shader.h/cpp
-  programID = s.loadShaders(vertex_shader.c_str(), fragment_shader.c_str());
+  programID = shader.loadShaders(vertex_shader.c_str(), fragment_shader.c_str());
 
   // Get a handle for our buffers
   vertexPosition_modelspaceID = glGetAttribLocation(programID, "vertexPosition_modelspace");

@@ -35,6 +35,7 @@ public:
 
 	int getWindowWidth(){return window_width;}
 	int getWindowHeight(){return window_height;}
+	GLFWwindow* getWindow(){return window;}
 
 private:
 	GLFWwindow* window;
@@ -61,7 +62,7 @@ private:
 
 	Texture* texture;
 	Mesh* mesh;
-	Shader s;
+	Shader shader;
 
   void init();
   void renderMesh(Mesh* _mesh, glm::mat4 _MVP);

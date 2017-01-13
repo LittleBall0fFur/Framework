@@ -3,6 +3,7 @@
 Scene::Scene(): Entity(){
   std::cout << "################ new Scene ################" << std::endl;
   camera = new Camera();
+  input = new Input();
 }
 
 Scene::~Scene(){

@@ -190,6 +190,7 @@ CMakeFiles/demo.dir/common/core.cpp.o: .././common/entity.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/input.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/mesh.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/renderer.h
+CMakeFiles/demo.dir/common/core.cpp.o: .././common/resourcemanager.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/scene.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/shader.h
 CMakeFiles/demo.dir/common/core.cpp.o: .././common/sprite.h
@@ -402,6 +403,7 @@ CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/collision.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/entity.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/input.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/mesh.h
+CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/resourcemanager.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/scene.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/shader.h
 CMakeFiles/demo.dir/common/renderer.cpp.o: .././common/sprite.h
@@ -501,6 +503,11 @@ CMakeFiles/demo.dir/common/renderer.cpp.o: ../external/glm-0.9.7.0/glm/vec4.hpp
 CMakeFiles/demo.dir/common/renderer.cpp.o: ../external/glm-0.9.7.0/glm/vector_relational.hpp
 CMakeFiles/demo.dir/common/renderer.cpp.o: ../common/renderer.cpp
 CMakeFiles/demo.dir/common/renderer.cpp.o: ../common/renderer.h
+
+CMakeFiles/demo.dir/common/resourcemanager.cpp.o: .././common/shader.h
+CMakeFiles/demo.dir/common/resourcemanager.cpp.o: ../external/glew-1.9.0/include/GL/glew.h
+CMakeFiles/demo.dir/common/resourcemanager.cpp.o: ../common/resourcemanager.cpp
+CMakeFiles/demo.dir/common/resourcemanager.cpp.o: ../common/resourcemanager.h
 
 CMakeFiles/demo.dir/common/scene.cpp.o: .././common/camera.h
 CMakeFiles/demo.dir/common/scene.cpp.o: .././common/collision.h
@@ -1410,6 +1417,7 @@ CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/entity.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/input.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/mesh.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/renderer.h
+CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/resourcemanager.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/scene.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/shader.h
 CMakeFiles/demo.dir/demo/demo.cpp.o: .././common/sprite.h

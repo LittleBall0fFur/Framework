@@ -97,6 +97,10 @@ add_executable(demo
   common/spritesheet.h
   common/input.cpp
   common/input.h
+  common/resourcemanager.cpp
+  common/resourcemanager.h
+#  common/headsupdisplay.cpp
+#  common/headsupdisplay.h
 )
 target_link_libraries(demo
 	${ALL_LIBS}

@@ -191,6 +191,7 @@ CMakeFiles/demo.dir/common/core.cpp.o
  .././common/input.h
  .././common/mesh.h
  .././common/renderer.h
+ .././common/resourcemanager.h
  .././common/scene.h
  .././common/shader.h
  .././common/sprite.h
@@ -403,6 +404,7 @@ CMakeFiles/demo.dir/common/renderer.cpp.o
  .././common/entity.h
  .././common/input.h
  .././common/mesh.h
+ .././common/resourcemanager.h
  .././common/scene.h
  .././common/shader.h
  .././common/sprite.h
@@ -502,6 +504,11 @@ CMakeFiles/demo.dir/common/renderer.cpp.o
  ../external/glm-0.9.7.0/glm/vector_relational.hpp
  /home/naomi/Desktop/framework_gl/common/renderer.cpp
  /home/naomi/Desktop/framework_gl/common/renderer.h
+CMakeFiles/demo.dir/common/resourcemanager.cpp.o
+ .././common/shader.h
+ ../external/glew-1.9.0/include/GL/glew.h
+ /home/naomi/Desktop/framework_gl/common/resourcemanager.cpp
+ /home/naomi/Desktop/framework_gl/common/resourcemanager.h
 CMakeFiles/demo.dir/common/scene.cpp.o
  .././common/camera.h
  .././common/collision.h
@@ -1411,6 +1418,7 @@ CMakeFiles/demo.dir/demo/demo.cpp.o
  .././common/input.h
  .././common/mesh.h
  .././common/renderer.h
+ .././common/resourcemanager.h
  .././common/scene.h
  .././common/shader.h
  .././common/sprite.h

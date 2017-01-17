@@ -22,15 +22,15 @@ public:
   GLuint loadTGAImage(const std::string& _filePath, int _filter, int _wrap);
   GLuint loadDDS(const char * imagepath);
 
-  float getHeight(){return height;};
-  float getWidth(){return width;};
+  int getHeight(){return height;};
+  int getWidth(){return width;};
   GLuint getTextureBuffer() {return textureBuffer;};
   GLuint getGLTexture() {return glTexture[0];};
 
 
 private:
-  float height;
-  float width;
+  int height;
+  int width;
   int depth;
   GLuint textureBuffer;
   GLuint glTexture[1];

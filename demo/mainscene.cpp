@@ -1,24 +1,31 @@
 #include "mainscene.h"
 
 MainScene::MainScene(): Scene(){
-  //addMap();
   spritesheet = new Ai();
-  spritesheet->addSpriteAsSpriteSheet("assets/spritesheet.tga",128, 128, 4 ,4);
+  spritesheet->addSpriteAsSpriteSheet("assets/smurf_sprite.tga",128, 128, 4 ,4);
   this->addChild(spritesheet);
+  spritesheet->position.y = 540;
 }
 
 void MainScene::update(float _deltaTime){
   buildSystem.building();
-  spritesheet->getSpriteSheet()->animate(_deltaTime, 0.5f);
-  //static int fr = 0;
-  //spritesheet->getSpriteSheet()->setFrame(fr);
-  //fr++;
+  if (this->getInput()->getKey(263)) {
+		spritesheet->position.x -= 80.0f * _deltaTime;
+    spritesheet->setScale(Vector2(-1, 1));
+    spritesheet->getSpriteSheet()->animate(_deltaTime, 0.05f);
+  }
+  if (this->getInput()->getKey(262)) {
+		spritesheet->position.x += 80.0f * _deltaTime;
+    spritesheet->setScale(Vector2(1, 1));
+    spritesheet->getSpriteSheet()->animate(_deltaTime, 0.05f);
+  }
 }
 
 void MainScene::addMap(){
-  //Factory::getInstance()->mapInstance().alpha = 0;
   this->addChild(factory.getInstance()->mapInstance());
 }
 
 MainScene::~MainScene(){
+  //delete spritesheet;
+  //delete hud;
 }

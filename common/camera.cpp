@@ -13,17 +13,7 @@ void Camera::updateCamera(float _deltaTime){
 	this->deltaTime = _deltaTime;
 }
 
-glm::mat4 Camera::getViewMatrix(){
-	return ViewMatrix;
-}
-
-glm::vec3 Camera::getCursor(){
-	return cursor;
-}
-
 float speed = 300.0f; // 300 units / second
-
-
 
 void Camera::computeMatricesFromInputs(GLFWwindow* window)
 {
@@ -37,7 +27,7 @@ void Camera::computeMatricesFromInputs(GLFWwindow* window)
 	glm::vec3 up = glm::vec3(0, -1, 0);
 
 	// Move up
-	if (glfwGetKey( window, GLFW_KEY_UP ) == GLFW_PRESS){
+	/*if (glfwGetKey( window, GLFW_KEY_UP ) == GLFW_PRESS){
 		position += up * deltaTime * speed;
 	}
 	// Move down
@@ -51,7 +41,7 @@ void Camera::computeMatricesFromInputs(GLFWwindow* window)
 	// Strafe left
 	if (glfwGetKey( window, GLFW_KEY_LEFT ) == GLFW_PRESS){
 		position -= right * deltaTime * speed;
-	}
+	}*/
 
 	// View matrix
 	ViewMatrix = glm::lookAt(

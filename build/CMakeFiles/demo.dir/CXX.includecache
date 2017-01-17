@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 .././common/camera.h
+vector
+-
 glfw3.h
 -
 glm/glm.hpp
@@ -43,10 +45,6 @@ vector
 -
 algorithm
 -
-glm/glm.hpp
--
-common/vector2.h
--
 common/texture.h
 -
 common/sprite.h
@@ -54,6 +52,8 @@ common/sprite.h
 common/spritesheet.h
 -
 common/collision.h
+-
+common/vector2.h
 -
 
 .././common/input.h
@@ -92,6 +92,18 @@ common/scene.h
 common/vector2.h
 -
 common/mesh.h
+-
+common/resourcemanager.h
+-
+
+.././common/resourcemanager.h
+iostream
+-
+string
+-
+map
+-
+common/shader.h
 -
 
 .././common/scene.h
@@ -936,6 +948,10 @@ common/scene.h
 glfw3.h
 -
 
+/home/naomi/Desktop/framework_gl/common/input.cpp
+common/input.h
+-
+
 /home/naomi/Desktop/framework_gl/common/renderer.cpp
 renderer.h
 /home/naomi/Desktop/framework_gl/common/renderer.h
@@ -968,6 +984,8 @@ common/scene.h
 common/vector2.h
 -
 common/mesh.h
+-
+common/resourcemanager.h
 -
 
 /home/naomi/Desktop/framework_gl/common/scene.cpp
@@ -1043,12 +1061,16 @@ mainscene.h
 /home/naomi/Desktop/framework_gl/demo/mainscene.h
 common/scene.h
 -
+common/vector2.h
+-
 factory.h
 /home/naomi/Desktop/framework_gl/demo/factory.h
 buildsystem.h
 /home/naomi/Desktop/framework_gl/demo/buildsystem.h
 base.h
 /home/naomi/Desktop/framework_gl/demo/base.h
+ai.h
+/home/naomi/Desktop/framework_gl/demo/ai.h
 
 /home/naomi/Desktop/framework_gl/demo/map.h
 common/entity.h

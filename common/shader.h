@@ -23,11 +23,11 @@ public:
   GLuint getUvOffsetID(){return uvOffsetID;};
 
 private:
-  GLuint uvOffsetID;
-
   GLuint programID;
 	GLuint matrixID;
 	GLuint textureID;
+  GLuint uvOffsetID;
+  
 	void attachID();
 };
 #endif

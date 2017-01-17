@@ -11,6 +11,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/naomi/Desktop/framework_gl/common/input.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/input.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/mesh.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/mesh.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/renderer.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/renderer.cpp.o"
+  "/home/naomi/Desktop/framework_gl/common/resourcemanager.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/resourcemanager.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/scene.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/scene.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/shader.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/shader.cpp.o"
   "/home/naomi/Desktop/framework_gl/common/sprite.cpp" "/home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir/common/sprite.cpp.o"

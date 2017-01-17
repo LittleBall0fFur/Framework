@@ -56,3 +56,8 @@ Vector2 Vector2::operator*(const float rhs) const
 {
 	return Vector2(x*rhs, y*rhs);
 }
+
+Vector2 Vector2::operator/(const float rhs) const
+{
+	return Vector2(x/rhs, y/rhs);
+}

@@ -23,6 +23,7 @@
 #include <common/scene.h>
 #include <common/vector2.h>
 #include <common/mesh.h>
+#include <common/resourcemanager.h>
 
 class Renderer
 {
@@ -39,6 +40,7 @@ public:
 
 private:
 	GLFWwindow* window;
+	ResourceManager resman;
 
   int window_width;
   int window_height;
@@ -51,6 +53,7 @@ private:
   // Get a handle for our buffers
   GLuint vertexPosition_modelspaceID;
   GLuint vertexUVID;
+	GLuint vertexUvOffsetID;
 
   // Get a handle for our "MVP" uniform
   GLuint matrixID;
@@ -62,7 +65,12 @@ private:
 
 	Texture* texture;
 	Mesh* mesh;
-	Shader shader;
+	//Shader* shader;
+
+	float uvWidth;
+	float uvHeight;
+
+	Shader* uberShader;
 
   void init();
   void renderMesh(Mesh* _mesh, glm::mat4 _MVP);

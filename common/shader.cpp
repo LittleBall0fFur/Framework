@@ -1,23 +1,24 @@
 #include "shader.h"
 
 Shader::Shader(){
-	uvOffsetID = -1;
 	programID = -1;
+	uvOffsetID = -1;
 	textureID = -1;
 	matrixID = -1;
 }
 
 Shader::~Shader(){
-
+	glDeleteProgram(programID);
 }
 
 void Shader::attachID()
 {
+	//std::cout<<programID<<std::endl;
 	// Get handles for our uniforms and buffers and send them to the shader
 	matrixID = glGetUniformLocation(programID, "MVP"); // MVP uniform in vertex shader
+	textureID = glGetUniformLocation(programID, "myTextureSampler"); // textureSampler uniform in fragment shader
+	uvOffsetID = glGetUniformLocation(programID, "UvOffset"); // UVoffset uniform in fragment shader
 
-	textureID  =    glGetUniformLocation(programID, "textureSampler"); // textureSampler uniform in fragment shader
-	uvOffsetID = 	 glGetUniformLocation(programID, "UVoffset"); // UVoffset uniform in fragment shader
 }
 
 GLuint Shader::loadShaders(const char * vertex_file_path, const char * fragment_file_path)
@@ -39,7 +40,6 @@ GLuint Shader::loadShaders(const char * vertex_file_path, const char * fragment_
 		getchar();
 		return 0;
 	}
-
 	// Read the Fragment Shader code from the file
 	std::string FragmentShaderCode;
 	std::ifstream FragmentShaderStream(fragment_file_path, std::ios::in);
@@ -85,24 +85,26 @@ GLuint Shader::loadShaders(const char * vertex_file_path, const char * fragment_
 
 	// Link the program
 	printf("Linking program\n");
-	GLuint ProgramID = glCreateProgram();
-	glAttachShader(ProgramID, VertexShaderID);
-	glAttachShader(ProgramID, FragmentShaderID);
-	glLinkProgram(ProgramID);
+	programID = glCreateProgram();
+
+	glAttachShader(programID, VertexShaderID);
+	glAttachShader(programID, FragmentShaderID);
+	glLinkProgram(programID);
 
 	// Check the program
-	glGetProgramiv(ProgramID, GL_LINK_STATUS, &Result);
-	glGetProgramiv(ProgramID, GL_INFO_LOG_LENGTH, &InfoLogLength);
+	glGetProgramiv(programID, GL_LINK_STATUS, &Result);
+	glGetProgramiv(programID, GL_INFO_LOG_LENGTH, &InfoLogLength);
+
 	if ( InfoLogLength > 0 ){
 		std::vector<char> ProgramErrorMessage(InfoLogLength+1);
-		glGetProgramInfoLog(ProgramID, InfoLogLength, NULL, &ProgramErrorMessage[0]);
+		glGetProgramInfoLog(programID, InfoLogLength, NULL, &ProgramErrorMessage[0]);
 		printf("%s\n", &ProgramErrorMessage[0]);
 	}
 
 	glDeleteShader(VertexShaderID);
 	glDeleteShader(FragmentShaderID);
 
-	attachID();
+	this->attachID();
 
-	return ProgramID;
+	return programID;
 }

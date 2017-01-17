@@ -5,6 +5,7 @@ Renderer::Renderer(){
   window_height = 1080;
 
   window = NULL;
+  uberShader = NULL;
 
   fragment_shader	= "shaders/sprite.frag";
   vertex_shader	= "shaders/sprite.vert";
@@ -44,12 +45,11 @@ void Renderer::renderEntity(glm::mat4 &modelmatrix, Entity* _entity, Camera* _ca
     if(texture == NULL)
       return;
     // als spritesheet, dan uvwidth en height meegeven
-    float uvWidth = 1;
-    float uvHeight = 1;
+    uvWidth = 1;
+    uvHeight = 1;
     if(_entity->getSpriteSheet() != NULL){
-      uvWidth = _entity->getSpriteSheet()->getUvOffset().x + _entity->getSpriteSheet()->getSprite()->getUvDim().x;
-      uvHeight = _entity->getSpriteSheet()->getUvOffset().y + _entity->getSpriteSheet()->getSprite()->getUvDim().x;
-      glUniform2f(shader.getUvOffsetID(), uvWidth, uvHeight);
+      uvWidth =  _entity->getSpriteSheet()->getSprite()->getUvDim().x;
+      uvHeight = _entity->getSpriteSheet()->getSprite()->getUvDim().y;
     }
   	mesh = new Mesh(texture->getWidth() , texture->getHeight(), _entity->getSprite()->getTexture()->getTextureBuffer(), uvWidth, uvHeight);
   	glm::mat4 MVP = projectionMatrix * _camera->getViewMatrix() * modelmatrix;
@@ -59,7 +59,8 @@ void Renderer::renderEntity(glm::mat4 &modelmatrix, Entity* _entity, Camera* _ca
   		_entity->getSprite()->setSpriteScale(Vector2(texture->getWidth(), texture->getHeight()));
   		_entity->setScale(_entity->getScale());
   	}
-
+    uberShader = resman.getShader(vertex_shader, fragment_shader);
+    glUniform2f(uberShader->getUvOffsetID(), _entity->getSpriteSheet()->getUvOffset().x, _entity->getSpriteSheet()->getUvOffset().y);
 	  renderMesh(mesh, MVP);
     delete mesh;
   }
@@ -75,7 +76,6 @@ void Renderer::renderEntity(glm::mat4 &modelmatrix, Entity* _entity, Camera* _ca
     modelmatrix = this->getModelMatrix(_entity->getParent()->getPosition(), _entity->getParent()->getScale(), _entity->getParent()->getRotation());
   }
 }
-
 
 void Renderer::renderMesh(Mesh* _mesh, glm::mat4 _MVP)
 {
@@ -180,13 +180,15 @@ void Renderer::init()
   // Cull triangles which normal is not towards the camera
   //glEnable(GL_CULL_FACE);
 
+  uberShader = resman.getShader(vertex_shader, fragment_shader);
   // Create and compile our GLSL program from the shaders
   // see: shader.h/cpp
-  programID = shader.loadShaders(vertex_shader.c_str(), fragment_shader.c_str());
+  programID = uberShader->loadShaders(vertex_shader.c_str(), fragment_shader.c_str());
 
   // Get a handle for our buffers
   vertexPosition_modelspaceID = glGetAttribLocation(programID, "vertexPosition_modelspace");
   vertexUVID = glGetAttribLocation(programID, "vertexUV");
+  vertexUvOffsetID = glGetAttribLocation(programID, "UvOffset");
 
   // Get a handle for our "MVP" uniform
   matrixID = glGetUniformLocation(programID, "MVP");

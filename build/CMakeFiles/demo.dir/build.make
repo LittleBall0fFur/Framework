@@ -578,6 +578,29 @@ CMakeFiles/demo.dir/common/input.cpp.o.provides: CMakeFiles/demo.dir/common/inpu
 
 CMakeFiles/demo.dir/common/input.cpp.o.provides.build: CMakeFiles/demo.dir/common/input.cpp.o
 
+CMakeFiles/demo.dir/common/resourcemanager.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/common/resourcemanager.cpp.o: ../common/resourcemanager.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/resourcemanager.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/resourcemanager.cpp.o -c /home/naomi/Desktop/framework_gl/common/resourcemanager.cpp
+
+CMakeFiles/demo.dir/common/resourcemanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/common/resourcemanager.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/common/resourcemanager.cpp > CMakeFiles/demo.dir/common/resourcemanager.cpp.i
+
+CMakeFiles/demo.dir/common/resourcemanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/common/resourcemanager.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/common/resourcemanager.cpp -o CMakeFiles/demo.dir/common/resourcemanager.cpp.s
+
+CMakeFiles/demo.dir/common/resourcemanager.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/common/resourcemanager.cpp.o.requires
+
+CMakeFiles/demo.dir/common/resourcemanager.cpp.o.provides: CMakeFiles/demo.dir/common/resourcemanager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/resourcemanager.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/common/resourcemanager.cpp.o.provides
+
+CMakeFiles/demo.dir/common/resourcemanager.cpp.o.provides.build: CMakeFiles/demo.dir/common/resourcemanager.cpp.o
+
 # Object files for target demo
 demo_OBJECTS = \
 "CMakeFiles/demo.dir/demo/demo.cpp.o" \
@@ -602,7 +625,8 @@ demo_OBJECTS = \
 "CMakeFiles/demo.dir/common/core.cpp.o" \
 "CMakeFiles/demo.dir/common/collision.cpp.o" \
 "CMakeFiles/demo.dir/common/spritesheet.cpp.o" \
-"CMakeFiles/demo.dir/common/input.cpp.o"
+"CMakeFiles/demo.dir/common/input.cpp.o" \
+"CMakeFiles/demo.dir/common/resourcemanager.cpp.o"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
@@ -630,6 +654,7 @@ demo: CMakeFiles/demo.dir/common/core.cpp.o
 demo: CMakeFiles/demo.dir/common/collision.cpp.o
 demo: CMakeFiles/demo.dir/common/spritesheet.cpp.o
 demo: CMakeFiles/demo.dir/common/input.cpp.o
+demo: CMakeFiles/demo.dir/common/resourcemanager.cpp.o
 demo: CMakeFiles/demo.dir/build.make
 demo: /usr/lib/x86_64-linux-gnu/libGLU.so
 demo: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -681,6 +706,7 @@ CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/core.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/collision.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/spritesheet.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/input.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/resourcemanager.cpp.o.requires
 .PHONY : CMakeFiles/demo.dir/requires
 
 CMakeFiles/demo.dir/clean:

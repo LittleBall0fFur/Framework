@@ -305,6 +305,30 @@ common/renderer.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/renderer.cpp.s
 .PHONY : common/renderer.cpp.s
 
+common/resourcemanager.o: common/resourcemanager.cpp.o
+.PHONY : common/resourcemanager.o
+
+# target to build an object file
+common/resourcemanager.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/resourcemanager.cpp.o
+.PHONY : common/resourcemanager.cpp.o
+
+common/resourcemanager.i: common/resourcemanager.cpp.i
+.PHONY : common/resourcemanager.i
+
+# target to preprocess a source file
+common/resourcemanager.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/resourcemanager.cpp.i
+.PHONY : common/resourcemanager.cpp.i
+
+common/resourcemanager.s: common/resourcemanager.cpp.s
+.PHONY : common/resourcemanager.s
+
+# target to generate assembly for a file
+common/resourcemanager.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/resourcemanager.cpp.s
+.PHONY : common/resourcemanager.cpp.s
+
 common/scene.o: common/scene.cpp.o
 .PHONY : common/scene.o
 
@@ -721,6 +745,9 @@ help:
 	@echo "... common/renderer.o"
 	@echo "... common/renderer.i"
 	@echo "... common/renderer.s"
+	@echo "... common/resourcemanager.o"
+	@echo "... common/resourcemanager.i"
+	@echo "... common/resourcemanager.s"
 	@echo "... common/scene.o"
 	@echo "... common/scene.i"
 	@echo "... common/scene.s"

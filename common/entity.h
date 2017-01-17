@@ -8,13 +8,13 @@
 #include <vector>
 #include <algorithm>
 
-#include <glm/glm.hpp>
-#include <common/vector2.h>
+//#include <glm/glm.hpp>
 
 #include <common/texture.h>
 #include <common/sprite.h>
 #include <common/spritesheet.h>
 #include <common/collision.h>
+#include <common/vector2.h>
 
 class Entity
 {

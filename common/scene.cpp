@@ -8,13 +8,13 @@ Scene::Scene(): Entity(){
 
 Scene::~Scene(){
   delete camera;
+  delete input;
 }
 
 void Scene::updateScene(float deltaTime)
 {
 	this->updateEntity(this, deltaTime);
 }
-
 
 void Scene::updateEntity(Entity* entity, float deltaTime)
 {

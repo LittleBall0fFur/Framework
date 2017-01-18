@@ -27,7 +27,7 @@ private:
 	GLuint matrixID;
 	GLuint textureID;
   GLuint uvOffsetID;
-  
+
 	void attachID();
 };
 #endif

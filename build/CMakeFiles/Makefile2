@@ -53,14 +53,52 @@ CMAKE_SOURCE_DIR = /home/naomi/Desktop/framework_gl
 CMAKE_BINARY_DIR = /home/naomi/Desktop/framework_gl/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/altonegenrt.dir
+
+# All Build rule for target.
+CMakeFiles/altonegenrt.dir/all: external/openal/CMakeFiles/common.dir/all
+CMakeFiles/altonegenrt.dir/all: external/openal/CMakeFiles/openal.dir/all
+	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/depend
+	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  20 21
+	@echo "Built target altonegenrt"
+.PHONY : CMakeFiles/altonegenrt.dir/all
+
+# Include target in all.
+all: CMakeFiles/altonegenrt.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/altonegenrt.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 53
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/altonegenrt.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 0
+.PHONY : CMakeFiles/altonegenrt.dir/rule
+
+# Convenience name for target.
+altonegenrt: CMakeFiles/altonegenrt.dir/rule
+.PHONY : altonegenrt
+
+# clean rule for target.
+CMakeFiles/altonegenrt.dir/clean:
+	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/clean
+.PHONY : CMakeFiles/altonegenrt.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/altonegenrt.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/demo.dir
 
 # All Build rule for target.
 CMakeFiles/demo.dir/all: external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/all
 CMakeFiles/demo.dir/all: external/CMakeFiles/GLEW_190.dir/all
+CMakeFiles/demo.dir/all: external/openal/CMakeFiles/common.dir/all
+CMakeFiles/demo.dir/all: external/openal/CMakeFiles/openal.dir/all
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/depend
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53
 	@echo "Built target demo"
 .PHONY : CMakeFiles/demo.dir/all
 
@@ -70,7 +108,7 @@ all: CMakeFiles/demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 97
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 0
 .PHONY : CMakeFiles/demo.dir/rule
@@ -203,6 +241,93 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/clean:
 
 # clean rule for target.
 clean: external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory external/openal
+
+# Convenience name for "all" pass in the directory.
+external/openal/all: external/openal/CMakeFiles/common.dir/all
+external/openal/all: external/openal/CMakeFiles/openal.dir/all
+.PHONY : external/openal/all
+
+# Convenience name for "clean" pass in the directory.
+external/openal/clean: external/openal/CMakeFiles/common.dir/clean
+external/openal/clean: external/openal/CMakeFiles/openal.dir/clean
+.PHONY : external/openal/clean
+
+# Convenience name for "preinstall" pass in the directory.
+external/openal/preinstall:
+.PHONY : external/openal/preinstall
+
+#=============================================================================
+# Target rules for target external/openal/CMakeFiles/common.dir
+
+# All Build rule for target.
+external/openal/CMakeFiles/common.dir/all:
+	$(MAKE) -f external/openal/CMakeFiles/common.dir/build.make external/openal/CMakeFiles/common.dir/depend
+	$(MAKE) -f external/openal/CMakeFiles/common.dir/build.make external/openal/CMakeFiles/common.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  22 23 24 25 26
+	@echo "Built target common"
+.PHONY : external/openal/CMakeFiles/common.dir/all
+
+# Include target in all.
+all: external/openal/CMakeFiles/common.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+external/openal/CMakeFiles/common.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 external/openal/CMakeFiles/common.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 0
+.PHONY : external/openal/CMakeFiles/common.dir/rule
+
+# Convenience name for target.
+common: external/openal/CMakeFiles/common.dir/rule
+.PHONY : common
+
+# clean rule for target.
+external/openal/CMakeFiles/common.dir/clean:
+	$(MAKE) -f external/openal/CMakeFiles/common.dir/build.make external/openal/CMakeFiles/common.dir/clean
+.PHONY : external/openal/CMakeFiles/common.dir/clean
+
+# clean rule for target.
+clean: external/openal/CMakeFiles/common.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target external/openal/CMakeFiles/openal.dir
+
+# All Build rule for target.
+external/openal/CMakeFiles/openal.dir/all: external/openal/CMakeFiles/common.dir/all
+	$(MAKE) -f external/openal/CMakeFiles/openal.dir/build.make external/openal/CMakeFiles/openal.dir/depend
+	$(MAKE) -f external/openal/CMakeFiles/openal.dir/build.make external/openal/CMakeFiles/openal.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99
+	@echo "Built target openal"
+.PHONY : external/openal/CMakeFiles/openal.dir/all
+
+# Include target in all.
+all: external/openal/CMakeFiles/openal.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+external/openal/CMakeFiles/openal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 51
+	$(MAKE) -f CMakeFiles/Makefile2 external/openal/CMakeFiles/openal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 0
+.PHONY : external/openal/CMakeFiles/openal.dir/rule
+
+# Convenience name for target.
+openal: external/openal/CMakeFiles/openal.dir/rule
+.PHONY : openal
+
+# clean rule for target.
+external/openal/CMakeFiles/openal.dir/clean:
+	$(MAKE) -f external/openal/CMakeFiles/openal.dir/build.make external/openal/CMakeFiles/openal.dir/clean
+.PHONY : external/openal/CMakeFiles/openal.dir/clean
+
+# clean rule for target.
+clean: external/openal/CMakeFiles/openal.dir/clean
 .PHONY : clean
 
 #=============================================================================

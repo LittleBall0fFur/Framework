@@ -9,6 +9,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/clipboard.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/clipboard.c
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -16,7 +17,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/clipboard.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/wgl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/context.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -24,6 +24,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/context.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/context.c
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
@@ -32,7 +33,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/context.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/wgl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/gamma.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -40,6 +40,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/gamma.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/gamma.c
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
@@ -48,7 +49,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/gamma.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/wgl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/glx_context.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -56,6 +56,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/glx_context.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_context.c
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
@@ -64,7 +65,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/glx_context.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/wgl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/init.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -72,6 +72,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/init.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/init.c
@@ -80,7 +81,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/init.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/wgl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/input.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -88,6 +88,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/input.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/input.c
@@ -96,7 +97,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/input.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/wgl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/joystick.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -104,6 +104,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/joystick.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -112,7 +113,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/joystick.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/wgl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/monitor.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -120,6 +120,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/monitor.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -128,7 +129,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/monitor.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/wgl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/time.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -136,6 +136,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/time.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -144,7 +145,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/time.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/wgl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/window.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -152,6 +152,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/window.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -160,7 +161,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/window.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/window.c
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_clipboard.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -168,6 +168,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_clipboard.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -176,7 +177,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_clipboard.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_clipboard.c
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_gamma.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -184,6 +184,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_gamma.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -192,7 +193,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_gamma.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_gamma.c
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_init.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -200,6 +200,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_init.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -208,7 +209,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_init.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_init.c
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_joystick.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -216,6 +216,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_joystick.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -224,7 +225,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_joystick.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_joystick.c
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_monitor.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -232,6 +232,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_monitor.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -240,7 +241,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_monitor.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_monitor.c
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_time.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -248,6 +248,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_time.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -256,7 +257,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_time.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_time.c
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_unicode.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -264,6 +264,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_unicode.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -272,7 +273,6 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_unicode.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_unicode.c
- external/glfw-3.0.3/src/config.h
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_window.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/EGL/eglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/glext.h
@@ -280,6 +280,7 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_window.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/deps/GL/wglext.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/include/GLFW/glfw3.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/cocoa_platform.h
+ /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/egl_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/glx_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -288,4 +289,3 @@ external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/x11_window.c.o
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/win32_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_platform.h
  /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/x11_window.c
- external/glfw-3.0.3/src/config.h

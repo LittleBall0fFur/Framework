@@ -23,6 +23,9 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/demo.dir/common/spritesheet.cpp.o"
   "CMakeFiles/demo.dir/common/input.cpp.o"
   "CMakeFiles/demo.dir/common/resourcemanager.cpp.o"
+  "CMakeFiles/demo.dir/common/audio.cpp.o"
+  "CMakeFiles/demo.dir/common/wav.cpp.o"
+  "CMakeFiles/demo.dir/common/sound.cpp.o"
   "demo.pdb"
   "demo"
 )

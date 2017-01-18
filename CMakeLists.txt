@@ -1,6 +1,6 @@
 # CMake entry point
 cmake_minimum_required (VERSION 2.6)
-project (RT2D)
+project (Framework)
 
 find_package(OpenGL REQUIRED)
 
@@ -15,6 +15,17 @@ if( CMAKE_BINARY_DIR MATCHES " " )
 	message( "Your Build Directory contains spaces. If you experience problems when compiling, this can be the cause." )
 endif()
 
+if(UNIX)
+	#set(CMAKE_CXX_FLAGS "-Wall -std=c++0x -pedantic -O2 -g -pg")
+	#set(CMAKE_CXX_FLAGS "-Wall -Wstrict-aliasing -std=c++0x -O2")
+
+	set(CMAKE_CXX_FLAGS "-Wall -std=c++11")
+
+	# valgrind --leak-check=full ./demo
+	# ./demo # creates cmon.out
+	# gprof demo gmon.out > analysis.txt
+	#set(CMAKE_CXX_FLAGS "-Wall -pg -std=c++11")
+endif(UNIX)
 
 # Compile external dependencies
 add_subdirectory (external)
@@ -48,6 +59,30 @@ add_definitions(
 	-DGLEW_STATIC
 	-D_CRT_SECURE_NO_WARNINGS
 )
+
+add_subdirectory (external/openal)
+include_directories(
+	${CMAKE_SOURCE_DIR}/external/openal/include/
+)
+
+link_directories(
+	${CMAKE_SOURCE_DIR}/external/openal/
+)
+
+IF(WIN32)
+	SET(OPENAL OpenAL32)
+ELSE()
+	SET(OPENAL openal)
+ENDIF()
+
+add_executable(altonegenrt
+		external/openal/examples/altonegen.c
+		external/openal/examples/common/alhelpers.c
+	)
+	target_link_libraries(altonegenrt
+		${OPENAL}
+	)
+
 
 # Demo
 add_executable(demo
@@ -99,11 +134,18 @@ add_executable(demo
   common/input.h
   common/resourcemanager.cpp
   common/resourcemanager.h
+  common/audio.cpp
+  common/audio.h
+  common/wav.cpp
+  common/wav.h
+  common/sound.cpp
+  common/sound.h
 #  common/headsupdisplay.cpp
 #  common/headsupdisplay.h
 )
 target_link_libraries(demo
 	${ALL_LIBS}
+  ${OPENAL}
 )
 # Xcode and Visual working directories
 set_target_properties(demo PROPERTIES XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/demo/")

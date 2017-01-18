@@ -94,6 +94,8 @@ IOKit/hid/IOHIDLib.h
 IOKit/hid/IOHIDKeys.h
 -
 
+/home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/config.h
+
 /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/context.c
 internal.h
 /home/naomi/Desktop/framework_gl/external/glfw-3.0.3/src/internal.h
@@ -341,6 +343,4 @@ stdlib.h
 -
 limits.h
 -
-
-external/glfw-3.0.3/src/config.h
 

@@ -1,3 +1,6 @@
 /home/naomi/Desktop/framework_gl/build/external/CMakeFiles/GLEW_190.dir
 /home/naomi/Desktop/framework_gl/build/external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir
+/home/naomi/Desktop/framework_gl/build/CMakeFiles/altonegenrt.dir
+/home/naomi/Desktop/framework_gl/build/external/openal/CMakeFiles/common.dir
 /home/naomi/Desktop/framework_gl/build/CMakeFiles/demo.dir
+/home/naomi/Desktop/framework_gl/build/external/openal/CMakeFiles/openal.dir

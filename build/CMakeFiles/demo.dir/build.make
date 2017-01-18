@@ -601,6 +601,75 @@ CMakeFiles/demo.dir/common/resourcemanager.cpp.o.provides: CMakeFiles/demo.dir/c
 
 CMakeFiles/demo.dir/common/resourcemanager.cpp.o.provides.build: CMakeFiles/demo.dir/common/resourcemanager.cpp.o
 
+CMakeFiles/demo.dir/common/audio.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/common/audio.cpp.o: ../common/audio.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/audio.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/audio.cpp.o -c /home/naomi/Desktop/framework_gl/common/audio.cpp
+
+CMakeFiles/demo.dir/common/audio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/common/audio.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/common/audio.cpp > CMakeFiles/demo.dir/common/audio.cpp.i
+
+CMakeFiles/demo.dir/common/audio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/common/audio.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/common/audio.cpp -o CMakeFiles/demo.dir/common/audio.cpp.s
+
+CMakeFiles/demo.dir/common/audio.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/common/audio.cpp.o.requires
+
+CMakeFiles/demo.dir/common/audio.cpp.o.provides: CMakeFiles/demo.dir/common/audio.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/audio.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/common/audio.cpp.o.provides
+
+CMakeFiles/demo.dir/common/audio.cpp.o.provides.build: CMakeFiles/demo.dir/common/audio.cpp.o
+
+CMakeFiles/demo.dir/common/wav.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/common/wav.cpp.o: ../common/wav.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/wav.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/wav.cpp.o -c /home/naomi/Desktop/framework_gl/common/wav.cpp
+
+CMakeFiles/demo.dir/common/wav.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/common/wav.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/common/wav.cpp > CMakeFiles/demo.dir/common/wav.cpp.i
+
+CMakeFiles/demo.dir/common/wav.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/common/wav.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/common/wav.cpp -o CMakeFiles/demo.dir/common/wav.cpp.s
+
+CMakeFiles/demo.dir/common/wav.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/common/wav.cpp.o.requires
+
+CMakeFiles/demo.dir/common/wav.cpp.o.provides: CMakeFiles/demo.dir/common/wav.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/wav.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/common/wav.cpp.o.provides
+
+CMakeFiles/demo.dir/common/wav.cpp.o.provides.build: CMakeFiles/demo.dir/common/wav.cpp.o
+
+CMakeFiles/demo.dir/common/sound.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/common/sound.cpp.o: ../common/sound.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/demo.dir/common/sound.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/common/sound.cpp.o -c /home/naomi/Desktop/framework_gl/common/sound.cpp
+
+CMakeFiles/demo.dir/common/sound.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/common/sound.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/naomi/Desktop/framework_gl/common/sound.cpp > CMakeFiles/demo.dir/common/sound.cpp.i
+
+CMakeFiles/demo.dir/common/sound.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/common/sound.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/naomi/Desktop/framework_gl/common/sound.cpp -o CMakeFiles/demo.dir/common/sound.cpp.s
+
+CMakeFiles/demo.dir/common/sound.cpp.o.requires:
+.PHONY : CMakeFiles/demo.dir/common/sound.cpp.o.requires
+
+CMakeFiles/demo.dir/common/sound.cpp.o.provides: CMakeFiles/demo.dir/common/sound.cpp.o.requires
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/sound.cpp.o.provides.build
+.PHONY : CMakeFiles/demo.dir/common/sound.cpp.o.provides
+
+CMakeFiles/demo.dir/common/sound.cpp.o.provides.build: CMakeFiles/demo.dir/common/sound.cpp.o
+
 # Object files for target demo
 demo_OBJECTS = \
 "CMakeFiles/demo.dir/demo/demo.cpp.o" \
@@ -626,7 +695,10 @@ demo_OBJECTS = \
 "CMakeFiles/demo.dir/common/collision.cpp.o" \
 "CMakeFiles/demo.dir/common/spritesheet.cpp.o" \
 "CMakeFiles/demo.dir/common/input.cpp.o" \
-"CMakeFiles/demo.dir/common/resourcemanager.cpp.o"
+"CMakeFiles/demo.dir/common/resourcemanager.cpp.o" \
+"CMakeFiles/demo.dir/common/audio.cpp.o" \
+"CMakeFiles/demo.dir/common/wav.cpp.o" \
+"CMakeFiles/demo.dir/common/sound.cpp.o"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
@@ -655,6 +727,9 @@ demo: CMakeFiles/demo.dir/common/collision.cpp.o
 demo: CMakeFiles/demo.dir/common/spritesheet.cpp.o
 demo: CMakeFiles/demo.dir/common/input.cpp.o
 demo: CMakeFiles/demo.dir/common/resourcemanager.cpp.o
+demo: CMakeFiles/demo.dir/common/audio.cpp.o
+demo: CMakeFiles/demo.dir/common/wav.cpp.o
+demo: CMakeFiles/demo.dir/common/sound.cpp.o
 demo: CMakeFiles/demo.dir/build.make
 demo: /usr/lib/x86_64-linux-gnu/libGLU.so
 demo: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -664,6 +739,7 @@ demo: /usr/lib/x86_64-linux-gnu/libX11.so
 demo: /usr/lib/x86_64-linux-gnu/libXext.so
 demo: external/glfw-3.0.3/src/libglfw3.a
 demo: external/libGLEW_190.a
+demo: external/openal/libopenal.so.1.17.2
 demo: /usr/lib/x86_64-linux-gnu/libGLU.so
 demo: /usr/lib/x86_64-linux-gnu/libXrandr.so
 demo: /usr/lib/x86_64-linux-gnu/libXi.so
@@ -675,6 +751,7 @@ demo: /usr/lib/x86_64-linux-gnu/libSM.so
 demo: /usr/lib/x86_64-linux-gnu/libICE.so
 demo: /usr/lib/x86_64-linux-gnu/libX11.so
 demo: /usr/lib/x86_64-linux-gnu/libXext.so
+demo: external/openal/libcommon.a
 demo: CMakeFiles/demo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/demo.dir/link.txt --verbose=$(VERBOSE)
@@ -707,6 +784,9 @@ CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/collision.cpp.o.require
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/spritesheet.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/input.cpp.o.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/resourcemanager.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/audio.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/wav.cpp.o.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/common/sound.cpp.o.requires
 .PHONY : CMakeFiles/demo.dir/requires
 
 CMakeFiles/demo.dir/clean:

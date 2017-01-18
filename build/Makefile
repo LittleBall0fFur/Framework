@@ -99,6 +99,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named altonegenrt
+
+# Build rule for target.
+altonegenrt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 altonegenrt
+.PHONY : altonegenrt
+
+# fast build rule for target.
+altonegenrt/fast:
+	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/build
+.PHONY : altonegenrt/fast
+
+#=============================================================================
 # Target rules for targets named demo
 
 # Build rule for target.
@@ -136,6 +149,56 @@ GLFW_303: cmake_check_build_system
 GLFW_303/fast:
 	$(MAKE) -f external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/build.make external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/build
 .PHONY : GLFW_303/fast
+
+#=============================================================================
+# Target rules for targets named common
+
+# Build rule for target.
+common: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 common
+.PHONY : common
+
+# fast build rule for target.
+common/fast:
+	$(MAKE) -f external/openal/CMakeFiles/common.dir/build.make external/openal/CMakeFiles/common.dir/build
+.PHONY : common/fast
+
+#=============================================================================
+# Target rules for targets named openal
+
+# Build rule for target.
+openal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 openal
+.PHONY : openal
+
+# fast build rule for target.
+openal/fast:
+	$(MAKE) -f external/openal/CMakeFiles/openal.dir/build.make external/openal/CMakeFiles/openal.dir/build
+.PHONY : openal/fast
+
+common/audio.o: common/audio.cpp.o
+.PHONY : common/audio.o
+
+# target to build an object file
+common/audio.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/audio.cpp.o
+.PHONY : common/audio.cpp.o
+
+common/audio.i: common/audio.cpp.i
+.PHONY : common/audio.i
+
+# target to preprocess a source file
+common/audio.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/audio.cpp.i
+.PHONY : common/audio.cpp.i
+
+common/audio.s: common/audio.cpp.s
+.PHONY : common/audio.s
+
+# target to generate assembly for a file
+common/audio.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/audio.cpp.s
+.PHONY : common/audio.cpp.s
 
 common/camera.o: common/camera.cpp.o
 .PHONY : common/camera.o
@@ -377,6 +440,30 @@ common/shader.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/shader.cpp.s
 .PHONY : common/shader.cpp.s
 
+common/sound.o: common/sound.cpp.o
+.PHONY : common/sound.o
+
+# target to build an object file
+common/sound.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/sound.cpp.o
+.PHONY : common/sound.cpp.o
+
+common/sound.i: common/sound.cpp.i
+.PHONY : common/sound.i
+
+# target to preprocess a source file
+common/sound.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/sound.cpp.i
+.PHONY : common/sound.cpp.i
+
+common/sound.s: common/sound.cpp.s
+.PHONY : common/sound.s
+
+# target to generate assembly for a file
+common/sound.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/sound.cpp.s
+.PHONY : common/sound.cpp.s
+
 common/sprite.o: common/sprite.cpp.o
 .PHONY : common/sprite.o
 
@@ -472,6 +559,30 @@ common/vector2.s: common/vector2.cpp.s
 common/vector2.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/vector2.cpp.s
 .PHONY : common/vector2.cpp.s
+
+common/wav.o: common/wav.cpp.o
+.PHONY : common/wav.o
+
+# target to build an object file
+common/wav.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/wav.cpp.o
+.PHONY : common/wav.cpp.o
+
+common/wav.i: common/wav.cpp.i
+.PHONY : common/wav.i
+
+# target to preprocess a source file
+common/wav.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/wav.cpp.i
+.PHONY : common/wav.cpp.i
+
+common/wav.s: common/wav.cpp.s
+.PHONY : common/wav.s
+
+# target to generate assembly for a file
+common/wav.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/wav.cpp.s
+.PHONY : common/wav.cpp.s
 
 demo/ai.o: demo/ai.cpp.o
 .PHONY : demo/ai.o
@@ -713,17 +824,71 @@ demo/map.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/map.cpp.s
 .PHONY : demo/map.cpp.s
 
+external/openal/examples/altonegen.o: external/openal/examples/altonegen.c.o
+.PHONY : external/openal/examples/altonegen.o
+
+# target to build an object file
+external/openal/examples/altonegen.c.o:
+	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/external/openal/examples/altonegen.c.o
+.PHONY : external/openal/examples/altonegen.c.o
+
+external/openal/examples/altonegen.i: external/openal/examples/altonegen.c.i
+.PHONY : external/openal/examples/altonegen.i
+
+# target to preprocess a source file
+external/openal/examples/altonegen.c.i:
+	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/external/openal/examples/altonegen.c.i
+.PHONY : external/openal/examples/altonegen.c.i
+
+external/openal/examples/altonegen.s: external/openal/examples/altonegen.c.s
+.PHONY : external/openal/examples/altonegen.s
+
+# target to generate assembly for a file
+external/openal/examples/altonegen.c.s:
+	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/external/openal/examples/altonegen.c.s
+.PHONY : external/openal/examples/altonegen.c.s
+
+external/openal/examples/common/alhelpers.o: external/openal/examples/common/alhelpers.c.o
+.PHONY : external/openal/examples/common/alhelpers.o
+
+# target to build an object file
+external/openal/examples/common/alhelpers.c.o:
+	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/external/openal/examples/common/alhelpers.c.o
+.PHONY : external/openal/examples/common/alhelpers.c.o
+
+external/openal/examples/common/alhelpers.i: external/openal/examples/common/alhelpers.c.i
+.PHONY : external/openal/examples/common/alhelpers.i
+
+# target to preprocess a source file
+external/openal/examples/common/alhelpers.c.i:
+	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/external/openal/examples/common/alhelpers.c.i
+.PHONY : external/openal/examples/common/alhelpers.c.i
+
+external/openal/examples/common/alhelpers.s: external/openal/examples/common/alhelpers.c.s
+.PHONY : external/openal/examples/common/alhelpers.s
+
+# target to generate assembly for a file
+external/openal/examples/common/alhelpers.c.s:
+	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/external/openal/examples/common/alhelpers.c.s
+.PHONY : external/openal/examples/common/alhelpers.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... altonegenrt"
 	@echo "... demo"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GLEW_190"
 	@echo "... GLFW_303"
+	@echo "... common"
+	@echo "... openal"
+	@echo "... common/audio.o"
+	@echo "... common/audio.i"
+	@echo "... common/audio.s"
 	@echo "... common/camera.o"
 	@echo "... common/camera.i"
 	@echo "... common/camera.s"
@@ -754,6 +919,9 @@ help:
 	@echo "... common/shader.o"
 	@echo "... common/shader.i"
 	@echo "... common/shader.s"
+	@echo "... common/sound.o"
+	@echo "... common/sound.i"
+	@echo "... common/sound.s"
 	@echo "... common/sprite.o"
 	@echo "... common/sprite.i"
 	@echo "... common/sprite.s"
@@ -766,6 +934,9 @@ help:
 	@echo "... common/vector2.o"
 	@echo "... common/vector2.i"
 	@echo "... common/vector2.s"
+	@echo "... common/wav.o"
+	@echo "... common/wav.i"
+	@echo "... common/wav.s"
 	@echo "... demo/ai.o"
 	@echo "... demo/ai.i"
 	@echo "... demo/ai.s"
@@ -796,6 +967,12 @@ help:
 	@echo "... demo/map.o"
 	@echo "... demo/map.i"
 	@echo "... demo/map.s"
+	@echo "... external/openal/examples/altonegen.o"
+	@echo "... external/openal/examples/altonegen.i"
+	@echo "... external/openal/examples/altonegen.s"
+	@echo "... external/openal/examples/common/alhelpers.o"
+	@echo "... external/openal/examples/common/alhelpers.i"
+	@echo "... external/openal/examples/common/alhelpers.s"
 .PHONY : help
 
 

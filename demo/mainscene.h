@@ -7,10 +7,9 @@
 #include <common/audio.h>
 #include <common/sound.h>
 
-#include "factory.h"
-#include "buildsystem.h"
-#include "base.h"
 #include "ai.h"
+#include "factory.h"
+#include "canvas.h"
 
 class MainScene: public Scene
 {
@@ -21,17 +20,23 @@ public:
 	void update(float _deltaTime);
 	void addMap();
 
+	void addLayers();
+	void setTopLayer(int _i);
 private:
-	Factory factory;
-	BuildSystem buildSystem;
-
 	Ai* spritesheet;
 
-	Vector2 vector;
+	Factory factory;
+
+	unsigned int topLayer;
+	std::vector<Ai*> layers;
 
 	std::vector<Sound*> sounds;
 
 	void loadSounds();
+	void moveHamster(float _deltaTime);
+	void addCanvas();
+
+	Canvas* canvas;
 };
 
 #endif

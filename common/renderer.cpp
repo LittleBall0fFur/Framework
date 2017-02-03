@@ -25,7 +25,6 @@ void Renderer::renderScene(Scene* _scene)
 {
   // Clear the screen
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
   // Compute the ViewMatrix from keyboard and mouse input (see: camera.h/cpp)
   _scene->getCamera()->computeMatricesFromInputs(window);
 
@@ -42,25 +41,37 @@ void Renderer::renderEntity(glm::mat4 &modelmatrix, Entity* _entity, Camera* _ca
   modelmatrix *= this->getModelMatrix(_entity->getPosition(), _entity->getScale(), _entity->getRotation());
   if(_entity->getSprite() != NULL){
     texture = _entity->getSprite()->getTexture();
-    if(texture == NULL)
-      return;
-    // als spritesheet, dan uvwidth en height meegeven
+    if(texture == NULL) return;
+
+    // Get the globals
+  	glm::vec3 scale;
+  	glm::quat rotation;
+  	glm::vec3 position;
+  	glm::vec3 skew;
+  	glm::vec4 perspective;
+  	glm::decompose(modelmatrix, scale, rotation, position, skew, perspective);
+
+  	_entity->setGlobals(Vector2(position.x, position.y), Vector2(scale.x, scale.y), rotation.z * 57.2957795);//fix this rotatio * RAD_TO_DEG
+
     uvWidth = 1;
     uvHeight = 1;
     if(_entity->getSpriteSheet() != NULL){
       uvWidth =  _entity->getSpriteSheet()->getSprite()->getUvDim().x;
       uvHeight = _entity->getSpriteSheet()->getSprite()->getUvDim().y;
+      uberShader = resman.getShader(vertex_shader, fragment_shader);
+      glUniform2f(uberShader->getUvOffsetID(), _entity->getSpriteSheet()->getUvOffset().x, _entity->getSpriteSheet()->getUvOffset().y);
+    }
+    else if(_entity->getSpriteSheet() == NULL){
+      glUniform2f(uberShader->getUvOffsetID(), _entity->getSprite()->getUvOffset().x, _entity->getSprite()->getUvOffset().y);
     }
   	mesh = new Mesh(texture->getWidth() , texture->getHeight(), _entity->getSprite()->getTexture()->getTextureBuffer(), uvWidth, uvHeight);
-  	glm::mat4 MVP = projectionMatrix * _camera->getViewMatrix() * modelmatrix;
+  	MVP = projectionMatrix * _camera->getViewMatrix() * modelmatrix;
   	_entity->getSprite()->setTextureSize(Vector2(texture->getWidth(), texture->getHeight()));
   	if (_entity->getSprite()->getSpriteScale().x == 0 && _entity->getSprite()->getSpriteScale().y == 0)
   	{
   		_entity->getSprite()->setSpriteScale(Vector2(texture->getWidth(), texture->getHeight()));
   		_entity->setScale(_entity->getScale());
   	}
-    uberShader = resman.getShader(vertex_shader, fragment_shader);
-    glUniform2f(uberShader->getUvOffsetID(), _entity->getSpriteSheet()->getUvOffset().x, _entity->getSpriteSheet()->getUvOffset().y);
 	  renderMesh(mesh, MVP);
     delete mesh;
   }

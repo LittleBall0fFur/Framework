@@ -13,11 +13,12 @@ Sprite::~Sprite(){
 
 GLuint Sprite::setupSprite(const std::string& _filename)
 {
-	texturename = _filename;
+
+	//texturename = _filename;
   Texture* texture = new Texture();
   this->texture = texture;
-  this->texture->loadTGA(texturename);
-  return this->texture->getTextureBuffer();
+  this->texture->loadTGA(_filename);//texturename);
+  //return this->texture->getTextureBuffer();
 }
 
 void Sprite::setupSpriteForSpriteSheet(const std::string& _filePath, float _uvWidth, float _uvHeight, int _filter, int _wrap)
@@ -36,6 +37,24 @@ void Sprite::setupSpriteForSpriteSheet(const std::string& _filePath, float _uvWi
 	uvdim.x = _uvWidth;
 	uvdim.y = _uvHeight;
 }
+
+void Sprite::setupSpriteTGAPixelBuffer(const std::string& _filePath, int _filter, int _wrap)
+{
+	std::cout << "Sprite::setupSpriteByPixelBuffer() " <<  std::endl;
+
+	dynTexture = new Texture();
+	dynTexture->loadTGAImage(_filePath, _filter, _wrap);
+  texture = dynTexture;
+  std::cout<<dynTexture<<std::endl;
+	dynamic = true;
+
+	size.x = (float) dynTexture->getWidth();
+	size.y = (float) dynTexture->getHeight();
+
+	filter = _filter;
+	wrap = _wrap;
+}
+
 
 void Sprite::setSpriteScale(Vector2 _scale){
   scale = _scale;

@@ -15,6 +15,7 @@ public:
 
 	void showFps();
   float getDeltaTime(){return deltaTime;};
+	Renderer getRenderer(){return renderer;};
 	void run(Scene* scene);
 
 private:
@@ -25,6 +26,8 @@ private:
 	float fpsCounter;
   int fps;
   double deltaTime;
+
+	Scene* scene;
 };
 
 #endif

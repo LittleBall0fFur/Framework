@@ -152,4 +152,5 @@ bool loadWavFile(const std::string filename, ALuint* buffer)
         //return false to indicate the failure to load wave
         return false;
     }
+    delete data;
 }

@@ -18,6 +18,15 @@ Entity::Entity(){
 Entity::~Entity(){
 	delete sprite;
 	delete spritesheet;
+	//deleteSpritebatch();
+	//deleteLine();
+}
+
+void Entity::setGlobals(Vector2 pos, Vector2 scal, float rot)
+{
+	this->globalPosition = pos;
+	this->globalScale = scal;
+	this->globalRotation = rot;
 }
 
 void Entity::addChild(Entity* _child){
@@ -40,6 +49,23 @@ void Entity::removeChild(Entity* _child)
 	}
 	//child->parent = this;
 }
+
+/*void Entity::addLine(const std::string& _filename)
+{
+//	if(line != NULL)deleteLine();
+	line = new Line(_filename);
+}
+
+void Entity::addLine(Line* _line)
+{
+	std::cout<<4<<std::endl;
+	//if(line != NULL)deleteLine();
+	std::cout<<5<<std::endl;
+	line = new Line();
+	std::cout<<6<<std::endl;
+	*line = *_line;
+	std::cout<<7<<std::endl;
+}*/
 
 void Entity::addSprite(std::string _path)
 {
@@ -70,3 +96,32 @@ void Entity::setPosition(Vector2 _newPos){
 bool Entity::hitTestObject(Entity* _entity){
 	return collider.collided(_entity->position, _entity->getSprite()->getTexture(), this->position, this->getSprite()->getTexture());
 }
+
+bool Entity::hitTestPoint(Vector2 _mousePos, Vector2 _entityWorldPos, Vector2 _textureSize){
+	return collider.collidedWithPoint(_mousePos, _entityWorldPos, _textureSize);
+}
+
+void Entity::addGrid(const std::string& _filePath, int _u, int _v, int _collums, int _rows, int _cellSizeX, int _cellSizeY){
+	deleteSpritebatch();
+	for (int y = 0; y < _rows; y++) {
+		for (int x = 0; x < _collums; x++) {
+			Sprite* s = new Sprite();
+			//s->useCulling(1); implement culling after grid is succesfull
+			s->spritePosition.x = x * _cellSizeX;
+			s->spritePosition.y = y * _cellSizeY;
+			float uvwidth = 1.0f / _u;
+			float uvheight = 1.0f / _v;
+			s->setupSpriteForSpriteSheet(_filePath, uvwidth, uvheight, 3, 1); // this could cause a problem see: rt2d sprite class
+			spritebatch.push_back(s);
+		}
+	}
+	std::cout << "grid added: " << spritebatch.size() << " sprites." << std::endl;
+}
+
+void Entity::deleteSpritebatch() {
+	int s = spritebatch.size();
+	for (int i = 0; i < s; i++) {
+		delete spritebatch[i];
+	}
+	spritebatch.clear();
+};

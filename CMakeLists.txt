@@ -103,8 +103,14 @@ add_executable(demo
   demo/base.h
   demo/healthsystem.cpp
   demo/healthsystem.h
-  demo/buildsystem.cpp
-  demo/buildsystem.h
+  demo/canvas.cpp
+  demo/canvas.h
+  demo/hudelement.cpp
+  demo/hudelement.h
+  demo/buildmenu.cpp
+  demo/buildmenu.h
+  demo/button.cpp
+  demo/button.h
 
 	common/shader.cpp
   common/shader.h
@@ -140,8 +146,8 @@ add_executable(demo
   common/wav.h
   common/sound.cpp
   common/sound.h
-#  common/headsupdisplay.cpp
-#  common/headsupdisplay.h
+  common/line.cpp
+  common/line.h
 )
 target_link_libraries(demo
 	${ALL_LIBS}

@@ -17,6 +17,8 @@ public:
 
 	GLuint setupSprite(const std::string& filename);
 	void setupSpriteForSpriteSheet(const std::string& _filePath, float _uvWidth, float _uvHeight, int _filter, int _wrap);
+	void setupSpriteTGAPixelBuffer(const std::string& _filePath, int _filter, int _wrap);
+
 	void setSpriteScale(Vector2 _scale);
 	void setTextureSize(Vector2 _size);
 	void setUvSize(Vector2 _size);
@@ -29,14 +31,23 @@ public:
 	Texture* getTexture(){return texture;};
 	std::string getTextureName(){return texturename;}
 
+	Vector2 spritePosition;
+	float spriteRotation;
+	Vector2 size;
+
 private:
 	Vector2 scale;
 	Vector2 uvOffset;
 	Vector2 textureSize;
 	std::string texturename;
+
 	Texture* texture;
+	Texture* dynTexture;
 
 	Vector2 uvdim;
+
+	bool culling;
+	bool dynamic;
 
 	int wrap;
 	int filter;

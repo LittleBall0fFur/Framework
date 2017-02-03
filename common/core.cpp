@@ -12,7 +12,9 @@ Core::~Core(){
 }
 
 void Core::run(Scene* _scene){
+  scene = _scene;
   do{
+    //this->showFps();
     // update our _deltaTime
     calculateDeltaTime();
     // Update camera instance in Scene
@@ -37,7 +39,6 @@ double Core::calculateDeltaTime(){
 }
 
 void Core::showFps() {
-  calculateDeltaTime();
 	fpsCounter += deltaTime;
 	fps++;
 	if (fpsCounter >= 1.0f) {

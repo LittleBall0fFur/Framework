@@ -11,6 +11,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/euler_angles.hpp>
+#include <glm/gtx/matrix_decompose.hpp>
 
 #include <iostream>
 #include <stdio.h>
@@ -38,6 +39,8 @@ public:
 	int getWindowHeight(){return window_height;}
 	GLFWwindow* getWindow(){return window;}
 
+	void setVerticalSync(int _sync);
+
 private:
 	GLFWwindow* window;
 	ResourceManager resman;
@@ -62,6 +65,7 @@ private:
 	glm::mat4 getModelMatrix(Vector2 position, Vector2 scale, float rotation);
 
   glm::mat4 projectionMatrix;
+	glm::mat4 MVP;
 
 	Texture* texture;
 	Mesh* mesh;
@@ -75,6 +79,9 @@ private:
   void init();
   void renderMesh(Mesh* _mesh, glm::mat4 _MVP);
 	void renderEntity(glm::mat4 &modelmatrix, Entity* _entity, Camera* camera);
+	void renderLine(const glm::mat4& _modelMatrix, Line* _line, glm::mat4 _MVP);
+
+	int sync;
 };
 
 #endif

@@ -60,7 +60,7 @@ CMakeFiles/altonegenrt.dir/all: external/openal/CMakeFiles/common.dir/all
 CMakeFiles/altonegenrt.dir/all: external/openal/CMakeFiles/openal.dir/all
 	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/depend
 	$(MAKE) -f CMakeFiles/altonegenrt.dir/build.make CMakeFiles/altonegenrt.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  20 21
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  19 20
 	@echo "Built target altonegenrt"
 .PHONY : CMakeFiles/altonegenrt.dir/all
 
@@ -70,7 +70,7 @@ all: CMakeFiles/altonegenrt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/altonegenrt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 52
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/altonegenrt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 0
 .PHONY : CMakeFiles/altonegenrt.dir/rule
@@ -92,13 +92,13 @@ clean: CMakeFiles/altonegenrt.dir/clean
 # Target rules for target CMakeFiles/demo.dir
 
 # All Build rule for target.
-CMakeFiles/demo.dir/all: external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/all
-CMakeFiles/demo.dir/all: external/CMakeFiles/GLEW_190.dir/all
 CMakeFiles/demo.dir/all: external/openal/CMakeFiles/common.dir/all
+CMakeFiles/demo.dir/all: external/CMakeFiles/GLEW_190.dir/all
+CMakeFiles/demo.dir/all: external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/all
 CMakeFiles/demo.dir/all: external/openal/CMakeFiles/openal.dir/all
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/depend
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55
 	@echo "Built target demo"
 .PHONY : CMakeFiles/demo.dir/all
 
@@ -108,7 +108,7 @@ all: CMakeFiles/demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 98
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 0
 .PHONY : CMakeFiles/demo.dir/rule
@@ -150,7 +150,7 @@ external/preinstall: external/glfw-3.0.3/preinstall
 external/CMakeFiles/GLEW_190.dir/all:
 	$(MAKE) -f external/CMakeFiles/GLEW_190.dir/build.make external/CMakeFiles/GLEW_190.dir/depend
 	$(MAKE) -f external/CMakeFiles/GLEW_190.dir/build.make external/CMakeFiles/GLEW_190.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles 
 	@echo "Built target GLEW_190"
 .PHONY : external/CMakeFiles/GLEW_190.dir/all
 
@@ -160,7 +160,7 @@ all: external/CMakeFiles/GLEW_190.dir/all
 
 # Build rule for subdir invocation for target.
 external/CMakeFiles/GLEW_190.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 external/CMakeFiles/GLEW_190.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 0
 .PHONY : external/CMakeFiles/GLEW_190.dir/rule
@@ -215,7 +215,7 @@ external/glfw-3.0.3/src/preinstall:
 external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/all:
 	$(MAKE) -f external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/build.make external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/depend
 	$(MAKE) -f external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/build.make external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
 	@echo "Built target GLFW_303"
 .PHONY : external/glfw-3.0.3/src/CMakeFiles/GLFW_303.dir/all
 
@@ -267,7 +267,7 @@ external/openal/preinstall:
 external/openal/CMakeFiles/common.dir/all:
 	$(MAKE) -f external/openal/CMakeFiles/common.dir/build.make external/openal/CMakeFiles/common.dir/depend
 	$(MAKE) -f external/openal/CMakeFiles/common.dir/build.make external/openal/CMakeFiles/common.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  22 23 24 25 26
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  21 22 23 24 25
 	@echo "Built target common"
 .PHONY : external/openal/CMakeFiles/common.dir/all
 
@@ -302,7 +302,7 @@ clean: external/openal/CMakeFiles/common.dir/clean
 external/openal/CMakeFiles/openal.dir/all: external/openal/CMakeFiles/common.dir/all
 	$(MAKE) -f external/openal/CMakeFiles/openal.dir/build.make external/openal/CMakeFiles/openal.dir/depend
 	$(MAKE) -f external/openal/CMakeFiles/openal.dir/build.make external/openal/CMakeFiles/openal.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/naomi/Desktop/framework_gl/build/CMakeFiles  56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
 	@echo "Built target openal"
 .PHONY : external/openal/CMakeFiles/openal.dir/all
 
@@ -312,7 +312,7 @@ all: external/openal/CMakeFiles/openal.dir/all
 
 # Build rule for subdir invocation for target.
 external/openal/CMakeFiles/openal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 external/openal/CMakeFiles/openal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/naomi/Desktop/framework_gl/build/CMakeFiles 0
 .PHONY : external/openal/CMakeFiles/openal.dir/rule

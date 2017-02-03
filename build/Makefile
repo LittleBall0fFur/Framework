@@ -320,6 +320,30 @@ common/input.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/input.cpp.s
 .PHONY : common/input.cpp.s
 
+common/line.o: common/line.cpp.o
+.PHONY : common/line.o
+
+# target to build an object file
+common/line.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/line.cpp.o
+.PHONY : common/line.cpp.o
+
+common/line.i: common/line.cpp.i
+.PHONY : common/line.i
+
+# target to preprocess a source file
+common/line.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/line.cpp.i
+.PHONY : common/line.cpp.i
+
+common/line.s: common/line.cpp.s
+.PHONY : common/line.s
+
+# target to generate assembly for a file
+common/line.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/common/line.cpp.s
+.PHONY : common/line.cpp.s
+
 common/mesh.o: common/mesh.cpp.o
 .PHONY : common/mesh.o
 
@@ -656,29 +680,29 @@ demo/building.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/building.cpp.s
 .PHONY : demo/building.cpp.s
 
-demo/buildsystem.o: demo/buildsystem.cpp.o
-.PHONY : demo/buildsystem.o
+demo/buildmenu.o: demo/buildmenu.cpp.o
+.PHONY : demo/buildmenu.o
 
 # target to build an object file
-demo/buildsystem.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/buildsystem.cpp.o
-.PHONY : demo/buildsystem.cpp.o
+demo/buildmenu.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/buildmenu.cpp.o
+.PHONY : demo/buildmenu.cpp.o
 
-demo/buildsystem.i: demo/buildsystem.cpp.i
-.PHONY : demo/buildsystem.i
+demo/buildmenu.i: demo/buildmenu.cpp.i
+.PHONY : demo/buildmenu.i
 
 # target to preprocess a source file
-demo/buildsystem.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/buildsystem.cpp.i
-.PHONY : demo/buildsystem.cpp.i
+demo/buildmenu.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/buildmenu.cpp.i
+.PHONY : demo/buildmenu.cpp.i
 
-demo/buildsystem.s: demo/buildsystem.cpp.s
-.PHONY : demo/buildsystem.s
+demo/buildmenu.s: demo/buildmenu.cpp.s
+.PHONY : demo/buildmenu.s
 
 # target to generate assembly for a file
-demo/buildsystem.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/buildsystem.cpp.s
-.PHONY : demo/buildsystem.cpp.s
+demo/buildmenu.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/buildmenu.cpp.s
+.PHONY : demo/buildmenu.cpp.s
 
 demo/bullet.o: demo/bullet.cpp.o
 .PHONY : demo/bullet.o
@@ -703,6 +727,54 @@ demo/bullet.s: demo/bullet.cpp.s
 demo/bullet.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/bullet.cpp.s
 .PHONY : demo/bullet.cpp.s
+
+demo/button.o: demo/button.cpp.o
+.PHONY : demo/button.o
+
+# target to build an object file
+demo/button.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/button.cpp.o
+.PHONY : demo/button.cpp.o
+
+demo/button.i: demo/button.cpp.i
+.PHONY : demo/button.i
+
+# target to preprocess a source file
+demo/button.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/button.cpp.i
+.PHONY : demo/button.cpp.i
+
+demo/button.s: demo/button.cpp.s
+.PHONY : demo/button.s
+
+# target to generate assembly for a file
+demo/button.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/button.cpp.s
+.PHONY : demo/button.cpp.s
+
+demo/canvas.o: demo/canvas.cpp.o
+.PHONY : demo/canvas.o
+
+# target to build an object file
+demo/canvas.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/canvas.cpp.o
+.PHONY : demo/canvas.cpp.o
+
+demo/canvas.i: demo/canvas.cpp.i
+.PHONY : demo/canvas.i
+
+# target to preprocess a source file
+demo/canvas.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/canvas.cpp.i
+.PHONY : demo/canvas.cpp.i
+
+demo/canvas.s: demo/canvas.cpp.s
+.PHONY : demo/canvas.s
+
+# target to generate assembly for a file
+demo/canvas.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/canvas.cpp.s
+.PHONY : demo/canvas.cpp.s
 
 demo/demo.o: demo/demo.cpp.o
 .PHONY : demo/demo.o
@@ -775,6 +847,30 @@ demo/healthsystem.s: demo/healthsystem.cpp.s
 demo/healthsystem.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/healthsystem.cpp.s
 .PHONY : demo/healthsystem.cpp.s
+
+demo/hudelement.o: demo/hudelement.cpp.o
+.PHONY : demo/hudelement.o
+
+# target to build an object file
+demo/hudelement.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/hudelement.cpp.o
+.PHONY : demo/hudelement.cpp.o
+
+demo/hudelement.i: demo/hudelement.cpp.i
+.PHONY : demo/hudelement.i
+
+# target to preprocess a source file
+demo/hudelement.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/hudelement.cpp.i
+.PHONY : demo/hudelement.cpp.i
+
+demo/hudelement.s: demo/hudelement.cpp.s
+.PHONY : demo/hudelement.s
+
+# target to generate assembly for a file
+demo/hudelement.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/hudelement.cpp.s
+.PHONY : demo/hudelement.cpp.s
 
 demo/mainscene.o: demo/mainscene.cpp.o
 .PHONY : demo/mainscene.o
@@ -904,6 +1000,9 @@ help:
 	@echo "... common/input.o"
 	@echo "... common/input.i"
 	@echo "... common/input.s"
+	@echo "... common/line.o"
+	@echo "... common/line.i"
+	@echo "... common/line.s"
 	@echo "... common/mesh.o"
 	@echo "... common/mesh.i"
 	@echo "... common/mesh.s"
@@ -946,12 +1045,18 @@ help:
 	@echo "... demo/building.o"
 	@echo "... demo/building.i"
 	@echo "... demo/building.s"
-	@echo "... demo/buildsystem.o"
-	@echo "... demo/buildsystem.i"
-	@echo "... demo/buildsystem.s"
+	@echo "... demo/buildmenu.o"
+	@echo "... demo/buildmenu.i"
+	@echo "... demo/buildmenu.s"
 	@echo "... demo/bullet.o"
 	@echo "... demo/bullet.i"
 	@echo "... demo/bullet.s"
+	@echo "... demo/button.o"
+	@echo "... demo/button.i"
+	@echo "... demo/button.s"
+	@echo "... demo/canvas.o"
+	@echo "... demo/canvas.i"
+	@echo "... demo/canvas.s"
 	@echo "... demo/demo.o"
 	@echo "... demo/demo.i"
 	@echo "... demo/demo.s"
@@ -961,6 +1066,9 @@ help:
 	@echo "... demo/healthsystem.o"
 	@echo "... demo/healthsystem.i"
 	@echo "... demo/healthsystem.s"
+	@echo "... demo/hudelement.o"
+	@echo "... demo/hudelement.i"
+	@echo "... demo/hudelement.s"
 	@echo "... demo/mainscene.o"
 	@echo "... demo/mainscene.i"
 	@echo "... demo/mainscene.s"

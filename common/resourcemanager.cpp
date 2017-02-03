@@ -30,6 +30,25 @@ Shader* ResourceManager::getShader(const std::string& _vs, const std::string& _f
 	return NULL;
 }
 
+/*Mesh* ResourceManager::getLineMesh(Line* _line)
+{
+	std::string meshname = _line->getFileName();
+
+	if (meshes[meshname] != NULL) {
+		//std::cout << "return existing resource: " << meshname << " (mesh)" << std::endl;
+		return meshes[meshname];
+	} else {
+		Mesh* m = new Mesh();
+		m->generateLineMesh(_line);
+		meshes[meshname] = m;
+
+		std::cout << "return new resource: " << meshname << " (mesh)" << std::endl;
+		return m;
+	}
+	std::cout<<"no mesh returned"<<std::endl;
+	return NULL;
+}*/
+
 ResourceManager::~ResourceManager(){
 
 }

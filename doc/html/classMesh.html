@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,9 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a27a78aaeeed1fa8f5497718359cbaaab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27a78aaeeed1fa8f5497718359cbaaab"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (int _width, int _height, GLuint _texture)</td></tr>
-<tr class="separator:a27a78aaeeed1fa8f5497718359cbaaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b117f8bb066db0b61c68d3447b955b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45b117f8bb066db0b61c68d3447b955b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (int _width, int _height, GLuint _texture, float _uvWidth=1, float _uvHeight=1)</td></tr>
+<tr class="separator:a45b117f8bb066db0b61c68d3447b955b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d24667389151d1d502e049c1dbaa2fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d24667389151d1d502e049c1dbaa2fd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
 <tr class="separator:a8d24667389151d1d502e049c1dbaa2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,6 +119,9 @@ GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>uvbuffer</b></td></
 <tr class="memitem:a4326d09815140ed31ee617eb6b208fc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4326d09815140ed31ee617eb6b208fc9"></a>
 GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b></td></tr>
 <tr class="separator:a4326d09815140ed31ee617eb6b208fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5593f8b4cdf1465807f01699cf4ab42d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5593f8b4cdf1465807f01699cf4ab42d"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>numverts</b></td></tr>
+<tr class="separator:a5593f8b4cdf1465807f01699cf4ab42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>common/<a class="el" href="mesh_8h_source.html">mesh.h</a></li>
@@ -126,7 +130,7 @@ GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2016 09:22:11 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 4 2017 14:35:09 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

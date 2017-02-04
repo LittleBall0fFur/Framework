@@ -65,6 +65,7 @@ private:
 	glm::mat4 getModelMatrix(Vector2 position, Vector2 scale, float rotation);
 
   glm::mat4 projectionMatrix;
+	glm::mat4 viewMatrix;
 	glm::mat4 MVP;
 
 	Texture* texture;

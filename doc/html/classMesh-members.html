@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,7 +91,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getTexture</b>() (defined in <a class="el" href="classMesh.html">Mesh</a>)</td><td class="entry"><a class="el" href="classMesh.html">Mesh</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>getUvbuffer</b>() (defined in <a class="el" href="classMesh.html">Mesh</a>)</td><td class="entry"><a class="el" href="classMesh.html">Mesh</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getVertexbuffer</b>() (defined in <a class="el" href="classMesh.html">Mesh</a>)</td><td class="entry"><a class="el" href="classMesh.html">Mesh</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Mesh</b>(int _width, int _height, GLuint _texture) (defined in <a class="el" href="classMesh.html">Mesh</a>)</td><td class="entry"><a class="el" href="classMesh.html">Mesh</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Mesh</b>() (defined in <a class="el" href="classMesh.html">Mesh</a>)</td><td class="entry"><a class="el" href="classMesh.html">Mesh</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Mesh</b>(int _width, int _height, GLuint _texture, float _uvWidth=1, float _uvHeight=1) (defined in <a class="el" href="classMesh.html">Mesh</a>)</td><td class="entry"><a class="el" href="classMesh.html">Mesh</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>numverts</b> (defined in <a class="el" href="classMesh.html">Mesh</a>)</td><td class="entry"><a class="el" href="classMesh.html">Mesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>run</b>() (defined in <a class="el" href="classMesh.html">Mesh</a>)</td><td class="entry"><a class="el" href="classMesh.html">Mesh</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>texture</b> (defined in <a class="el" href="classMesh.html">Mesh</a>)</td><td class="entry"><a class="el" href="classMesh.html">Mesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>uvbuffer</b> (defined in <a class="el" href="classMesh.html">Mesh</a>)</td><td class="entry"><a class="el" href="classMesh.html">Mesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -99,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2016 09:22:11 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 4 2017 14:35:09 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

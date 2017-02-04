@@ -25,10 +25,15 @@ void Renderer::renderScene(Scene* _scene)
 {
   // Clear the screen
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+  // get viewMatrix from Camera (Camera position and direction)
+  viewMatrix = _scene->getCamera()->getViewMatrix();
+  // Our Projection Matrix (orthographic or perspective camera)
+  projectionMatrix = _scene->getCamera()->getProjectionMatrix();
   // Compute the ViewMatrix from keyboard and mouse input (see: camera.h/cpp)
   _scene->getCamera()->computeMatricesFromInputs(window);
 
-  glm::mat4 modelMatrix = this->getModelMatrix(_scene->position,_scene->scale, _scene->rotation);
+  glm::mat4 modelMatrix = glm::mat4(1.0f);//this->getModelMatrix(_scene->position,_scene->scale, _scene->rotation);
 
   this->renderEntity(modelMatrix, _scene, _scene->getCamera());
   // Swap buffers

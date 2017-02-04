@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,21 +88,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classTexture.html">Texture</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getHeight</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getTextureBuffer</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getTGA</b>(const std::string &amp;imagepath) (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getWidth</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>BGR2RGB</b>(PixelBuffer *_pixels) (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>createFromBuffer</b>(PixelBuffer *_pixels) (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>deletePixelBuffer</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>depth</b> (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getGLTexture</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getHeight</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getPixelBuffer</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getPixels</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getTextureBuffer</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getTGA</b>(const std::string &amp;imagepath) (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getWidth</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>glTexture</b> (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>height</b> (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>loadBMP_custom</b>(const char *imagepath) (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>loadTGA</b>(const std::string &amp;imagepath) (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Texture</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>textureBuffer</b> (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>loadDDS</b>(const char *imagepath) (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>loadTGA</b>(const std::string &amp;imagepath) (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>loadTGAImage</b>(const std::string &amp;_filePath, int _filter, int _wrap) (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>pixelbuffer</b> (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Texture</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>textureBuffer</b> (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>warrantybit</b> (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>width</b> (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Texture</b>() (defined in <a class="el" href="classTexture.html">Texture</a>)</td><td class="entry"><a class="el" href="classTexture.html">Texture</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2016 09:22:11 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 4 2017 14:35:09 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

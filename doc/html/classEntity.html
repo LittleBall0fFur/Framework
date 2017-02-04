@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,10 +84,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classEntity-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Entity Class Reference</div>  </div>
+<div class="title">Entity Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -107,12 +109,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addChild</b> (<a clas
 <tr class="memitem:a734bc0becd01b611739df2ce8632bd16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a734bc0becd01b611739df2ce8632bd16"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeChild</b> (<a class="el" href="classEntity.html">Entity</a> *_child)</td></tr>
 <tr class="separator:a734bc0becd01b611739df2ce8632bd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52778ad39381daf477b986fb36cd6a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa52778ad39381daf477b986fb36cd6a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteSpritebatch</b> ()</td></tr>
+<tr class="separator:aa52778ad39381daf477b986fb36cd6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfbd58518c6c546bba720f8ba42c3a9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfbd58518c6c546bba720f8ba42c3a9a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addSprite</b> (std::string path)</td></tr>
 <tr class="separator:adfbd58518c6c546bba720f8ba42c3a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e4fb0ce5970f9dbac78bf1859c733e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47e4fb0ce5970f9dbac78bf1859c733e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (<a class="el" href="classVector2.html">Vector2</a> newPos)</td></tr>
-<tr class="separator:a47e4fb0ce5970f9dbac78bf1859c733e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5768504ef2348438c7315defa77c33b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5768504ef2348438c7315defa77c33b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addGrid</b> (const std::string &amp;_filePath, int _u, int _v, int _collums, int _rows, int _cellSizeX, int _cellSizeY)</td></tr>
+<tr class="separator:a5768504ef2348438c7315defa77c33b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ff497768233230aa451e2f0e551064"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4ff497768233230aa451e2f0e551064"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addSpriteAsSpriteSheet</b> (std::string _path, int _spriteWidth, int _spriteHeight, int _spritesPerRow, int _rows)</td></tr>
+<tr class="separator:ae4ff497768233230aa451e2f0e551064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900ed8ad945a6b912d8dd3c825372c74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a900ed8ad945a6b912d8dd3c825372c74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (<a class="el" href="classVector2.html">Vector2</a> _newPos)</td></tr>
+<tr class="separator:a900ed8ad945a6b912d8dd3c825372c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a94ab4a7717da34edcb100e62f721cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a94ab4a7717da34edcb100e62f721cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setGlobals</b> (<a class="el" href="classVector2.html">Vector2</a> pos, <a class="el" href="classVector2.html">Vector2</a> scal, float rot)</td></tr>
+<tr class="separator:a4a94ab4a7717da34edcb100e62f721cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29d0d4ff82ccdc48c2c5ad9ad739d02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa29d0d4ff82ccdc48c2c5ad9ad739d02"></a>
 <a class="el" href="classVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPosition</b> ()</td></tr>
 <tr class="separator:aa29d0d4ff82ccdc48c2c5ad9ad739d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,9 +136,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (<a c
 <tr class="memitem:ad20b2987d4ed5e324ee494a0599f4bad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad20b2987d4ed5e324ee494a0599f4bad"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getRotation</b> ()</td></tr>
 <tr class="separator:ad20b2987d4ed5e324ee494a0599f4bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176d3cfb61ba3dab593654959ae158ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a176d3cfb61ba3dab593654959ae158ae"></a>
+<a class="el" href="classSpritesheet.html">Spritesheet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSpriteSheet</b> ()</td></tr>
+<tr class="separator:a176d3cfb61ba3dab593654959ae158ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2ae62f7c643dd1a16c7ccf4eb5ef4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd2ae62f7c643dd1a16c7ccf4eb5ef4f"></a>
 const std::vector&lt; <a class="el" href="classEntity.html">Entity</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getChildren</b> ()</td></tr>
 <tr class="separator:acd2ae62f7c643dd1a16c7ccf4eb5ef4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f804684a5afa37ccb5f48caa67a2500"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f804684a5afa37ccb5f48caa67a2500"></a>
+std::vector&lt; <a class="el" href="classSprite.html">Sprite</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSpriteBatch</b> ()</td></tr>
+<tr class="separator:a4f804684a5afa37ccb5f48caa67a2500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7fcb0257ccb28895837fc57b36b055"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c7fcb0257ccb28895837fc57b36b055"></a>
 <a class="el" href="classEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getParent</b> ()</td></tr>
 <tr class="separator:a4c7fcb0257ccb28895837fc57b36b055"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +154,15 @@ const std::vector&lt; <a class="el" href="classEntity.html">Entity</a> * &gt; &a
 <tr class="memitem:af47a943dcc7a5485e35df55bc64a4416"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af47a943dcc7a5485e35df55bc64a4416"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setScale</b> (<a class="el" href="classVector2.html">Vector2</a> _scale)</td></tr>
 <tr class="separator:af47a943dcc7a5485e35df55bc64a4416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e724af4d6a4702b838cbaf8d3e10a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6e724af4d6a4702b838cbaf8d3e10a8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hitTestObject</b> (<a class="el" href="classEntity.html">Entity</a> *_entity)</td></tr>
+<tr class="separator:aa6e724af4d6a4702b838cbaf8d3e10a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2023ca71e9ceb9f9b83d1bd7ed13324d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2023ca71e9ceb9f9b83d1bd7ed13324d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hitTestPoint</b> (<a class="el" href="classVector2.html">Vector2</a> _mousePos, <a class="el" href="classVector2.html">Vector2</a> _entityWorldPos, <a class="el" href="classVector2.html">Vector2</a> _textureSize)</td></tr>
+<tr class="separator:a2023ca71e9ceb9f9b83d1bd7ed13324d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f43f219c1fb32dcef162b55a4c8a73f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f43f219c1fb32dcef162b55a4c8a73f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (float _deltaTime)=0</td></tr>
+<tr class="separator:a6f43f219c1fb32dcef162b55a4c8a73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -146,12 +175,27 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>rotation</b></td></t
 <tr class="memitem:ab801e410df9b1e675f835c77bd10453a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab801e410df9b1e675f835c77bd10453a"></a>
 <a class="el" href="classVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>scale</b></td></tr>
 <tr class="separator:ab801e410df9b1e675f835c77bd10453a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
 <tr class="memitem:a3ab44061c3134ce05c4e893a050cfd2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ab44061c3134ce05c4e893a050cfd2c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>guid</b></td></tr>
 <tr class="separator:a3ab44061c3134ce05c4e893a050cfd2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09ca8afdc76636d5d1773fa43ce32bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab09ca8afdc76636d5d1773fa43ce32bc"></a>
+<a class="el" href="classVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>globalScale</b></td></tr>
+<tr class="separator:ab09ca8afdc76636d5d1773fa43ce32bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdae059faa202de36515bd395913131"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfdae059faa202de36515bd395913131"></a>
+<a class="el" href="classVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>globalPosition</b></td></tr>
+<tr class="separator:adfdae059faa202de36515bd395913131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ccab9a6cd5a7e18959e1f25eeb0c7bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ccab9a6cd5a7e18959e1f25eeb0c7bf"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>globalRotation</b></td></tr>
+<tr class="separator:a1ccab9a6cd5a7e18959e1f25eeb0c7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a82cea7d8d7aac07d2150c0527762655c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82cea7d8d7aac07d2150c0527762655c"></a>
+std::vector&lt; <a class="el" href="classSprite.html">Sprite</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>spritebatch</b></td></tr>
+<tr class="separator:a82cea7d8d7aac07d2150c0527762655c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:a85a91d38ea04518936b91d8b30402b6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85a91d38ea04518936b91d8b30402b6a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>nextGuid</b></td></tr>
 <tr class="separator:a85a91d38ea04518936b91d8b30402b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,9 +205,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>nextGuid</b></td></tr>
 <tr class="memitem:a4da30cea569f19c66c033358e1e99c04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4da30cea569f19c66c033358e1e99c04"></a>
 <a class="el" href="classSprite.html">Sprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sprite</b></td></tr>
 <tr class="separator:a4da30cea569f19c66c033358e1e99c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b775656e62ba08deec4d2586f81cbb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b775656e62ba08deec4d2586f81cbb0"></a>
+<a class="el" href="classSpritesheet.html">Spritesheet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spritesheet</b></td></tr>
+<tr class="separator:a1b775656e62ba08deec4d2586f81cbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a749ae2e6ee4096df25d04943ad7ba537"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a749ae2e6ee4096df25d04943ad7ba537"></a>
 std::vector&lt; <a class="el" href="classEntity.html">Entity</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>children</b></td></tr>
 <tr class="separator:a749ae2e6ee4096df25d04943ad7ba537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610d3276d325bfe978ade3535580f654"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a610d3276d325bfe978ade3535580f654"></a>
+<a class="el" href="classCollision.html">Collision</a>&#160;</td><td class="memItemRight" valign="bottom"><b>collider</b></td></tr>
+<tr class="separator:a610d3276d325bfe978ade3535580f654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>common/<a class="el" href="entity_8h_source.html">entity.h</a></li>
@@ -172,7 +222,7 @@ std::vector&lt; <a class="el" href="classEntity.html">Entity</a> * &gt;&#160;</t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2016 09:22:11 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 4 2017 14:35:09 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

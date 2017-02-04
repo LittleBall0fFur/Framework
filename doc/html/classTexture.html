@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classTexture-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -98,6 +100,12 @@ GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>loadBMP_custom</b> 
 <tr class="memitem:a17a3b14728d9da6b20a5927abb160fa3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17a3b14728d9da6b20a5927abb160fa3"></a>
 GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>loadTGA</b> (const std::string &amp;imagepath)</td></tr>
 <tr class="separator:a17a3b14728d9da6b20a5927abb160fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f51ba35b8bcba2a7ed57a9e42a740a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f51ba35b8bcba2a7ed57a9e42a740a2"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>loadTGAImage</b> (const std::string &amp;_filePath, int _filter, int _wrap)</td></tr>
+<tr class="separator:a5f51ba35b8bcba2a7ed57a9e42a740a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b4fad36efe7c6da7e0ed9d9174b3d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39b4fad36efe7c6da7e0ed9d9174b3d3"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>loadDDS</b> (const char *imagepath)</td></tr>
+<tr class="separator:a39b4fad36efe7c6da7e0ed9d9174b3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28d8a67f1258d4a051a95bee616f7db5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28d8a67f1258d4a051a95bee616f7db5"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getHeight</b> ()</td></tr>
 <tr class="separator:a28d8a67f1258d4a051a95bee616f7db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,12 +115,33 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>getWidth</b> ()</td>
 <tr class="memitem:a11c341ee828fdc4cd79add062293c1c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11c341ee828fdc4cd79add062293c1c3"></a>
 GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>getTextureBuffer</b> ()</td></tr>
 <tr class="separator:a11c341ee828fdc4cd79add062293c1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b249ba6e453fbd44c9ea424eb52cb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00b249ba6e453fbd44c9ea424eb52cb4"></a>
+<a class="el" href="structPixelBuffer.html">PixelBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPixelBuffer</b> ()</td></tr>
+<tr class="separator:a00b249ba6e453fbd44c9ea424eb52cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c27269ad25e0d90b7bab79deaf39769"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c27269ad25e0d90b7bab79deaf39769"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>getGLTexture</b> ()</td></tr>
+<tr class="separator:a0c27269ad25e0d90b7bab79deaf39769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4481cafb7329849385d410edd905ebf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4481cafb7329849385d410edd905ebf2"></a>
+<a class="el" href="structPixelBuffer.html">PixelBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPixels</b> ()</td></tr>
+<tr class="separator:a4481cafb7329849385d410edd905ebf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadebd65b82edb54dbc7d003aed6e0560"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadebd65b82edb54dbc7d003aed6e0560"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BGR2RGB</b> (<a class="el" href="structPixelBuffer.html">PixelBuffer</a> *_pixels)</td></tr>
+<tr class="separator:aadebd65b82edb54dbc7d003aed6e0560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372c7cdc5b40bcb40a9cdf80c053bb73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a372c7cdc5b40bcb40a9cdf80c053bb73"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createFromBuffer</b> (<a class="el" href="structPixelBuffer.html">PixelBuffer</a> *_pixels)</td></tr>
+<tr class="separator:a372c7cdc5b40bcb40a9cdf80c053bb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4616751bd21131540a4bf6783fc9deb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4616751bd21131540a4bf6783fc9deb"></a>
 static GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>getTGA</b> (const std::string &amp;imagepath)</td></tr>
 <tr class="separator:aa4616751bd21131540a4bf6783fc9deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6ee9e4d2d68340882c5fdeb94a9b4bf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ee9e4d2d68340882c5fdeb94a9b4bf9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deletePixelBuffer</b> ()</td></tr>
+<tr class="separator:a6ee9e4d2d68340882c5fdeb94a9b4bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -122,9 +151,21 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 <tr class="memitem:af80a35ff26c465f06cc0878444d1026c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af80a35ff26c465f06cc0878444d1026c"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
 <tr class="separator:af80a35ff26c465f06cc0878444d1026c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ed9e5741b73449ec59fae12ffc6e8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4ed9e5741b73449ec59fae12ffc6e8a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>depth</b></td></tr>
+<tr class="separator:af4ed9e5741b73449ec59fae12ffc6e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13f7e93a0413bfffb43a50015941571"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa13f7e93a0413bfffb43a50015941571"></a>
 GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>textureBuffer</b></td></tr>
 <tr class="separator:aa13f7e93a0413bfffb43a50015941571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8dff68188b3c5e5d7d4740c4e2d826"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc8dff68188b3c5e5d7d4740c4e2d826"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>glTexture</b> [1]</td></tr>
+<tr class="separator:abc8dff68188b3c5e5d7d4740c4e2d826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490fe887207ef00f704f2c147e59a266"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a490fe887207ef00f704f2c147e59a266"></a>
+<a class="el" href="structPixelBuffer.html">PixelBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pixelbuffer</b></td></tr>
+<tr class="separator:a490fe887207ef00f704f2c147e59a266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a9b561c1907cd48a0bf79e1282a89e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72a9b561c1907cd48a0bf79e1282a89e"></a>
+unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>warrantybit</b></td></tr>
+<tr class="separator:a72a9b561c1907cd48a0bf79e1282a89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>common/<a class="el" href="texture_8h_source.html">texture.h</a></li>
@@ -133,7 +174,7 @@ GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>textureBuffer</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2016 09:22:11 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 4 2017 14:35:09 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

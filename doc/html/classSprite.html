@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSprite-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -94,21 +96,51 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a583372d888870b3a2b50886cd8431a6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a583372d888870b3a2b50886cd8431a6f"></a>
 GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>setupSprite</b> (const std::string &amp;filename)</td></tr>
 <tr class="separator:a583372d888870b3a2b50886cd8431a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d3fc8c31aa81aff2fa21f05f07f865d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d3fc8c31aa81aff2fa21f05f07f865d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setupSpriteForSpriteSheet</b> (const std::string &amp;_filePath, float _uvWidth, float _uvHeight, int _filter, int _wrap)</td></tr>
+<tr class="separator:a5d3fc8c31aa81aff2fa21f05f07f865d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24296c1d6827b35b10d2ddd219722d1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24296c1d6827b35b10d2ddd219722d1a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setupSpriteTGAPixelBuffer</b> (const std::string &amp;_filePath, int _filter, int _wrap)</td></tr>
+<tr class="separator:a24296c1d6827b35b10d2ddd219722d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e7bf78de8b99a05901c30003d80c73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6e7bf78de8b99a05901c30003d80c73"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpriteScale</b> (<a class="el" href="classVector2.html">Vector2</a> _scale)</td></tr>
 <tr class="separator:ae6e7bf78de8b99a05901c30003d80c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67596895755c2ada8c50463e5efe8892"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67596895755c2ada8c50463e5efe8892"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setTextureSize</b> (<a class="el" href="classVector2.html">Vector2</a> size)</td></tr>
-<tr class="separator:a67596895755c2ada8c50463e5efe8892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03132f8d84dfd0d5ece39c2bcfe5e797"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03132f8d84dfd0d5ece39c2bcfe5e797"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTextureSize</b> (<a class="el" href="classVector2.html">Vector2</a> _size)</td></tr>
+<tr class="separator:a03132f8d84dfd0d5ece39c2bcfe5e797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31898b763f94a467d4e963342dc81dcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31898b763f94a467d4e963342dc81dcc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUvSize</b> (<a class="el" href="classVector2.html">Vector2</a> _size)</td></tr>
+<tr class="separator:a31898b763f94a467d4e963342dc81dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e98ecb7499f826d5fe616879ee3b588"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e98ecb7499f826d5fe616879ee3b588"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUvOffset</b> (<a class="el" href="classVector2.html">Vector2</a> _offset)</td></tr>
+<tr class="separator:a9e98ecb7499f826d5fe616879ee3b588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a529bfab34bddb0273338ff035a2704b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a529bfab34bddb0273338ff035a2704b4"></a>
 <a class="el" href="classVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getSpriteScale</b> ()</td></tr>
 <tr class="separator:a529bfab34bddb0273338ff035a2704b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f233d3bbf5660f253783da9aa696faa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f233d3bbf5660f253783da9aa696faa"></a>
 <a class="el" href="classVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getUvOffset</b> ()</td></tr>
 <tr class="separator:a7f233d3bbf5660f253783da9aa696faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb016b9ef52195beecbadcccfd52e9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bb016b9ef52195beecbadcccfd52e9d"></a>
+<a class="el" href="classVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getUvDim</b> ()</td></tr>
+<tr class="separator:a1bb016b9ef52195beecbadcccfd52e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a982f8f0102b36206336605329081a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29a982f8f0102b36206336605329081a"></a>
 <a class="el" href="classTexture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getTexture</b> ()</td></tr>
 <tr class="separator:a29a982f8f0102b36206336605329081a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6173376eb5246017687d993bd31a5127"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6173376eb5246017687d993bd31a5127"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getTextureName</b> ()</td></tr>
+<tr class="separator:a6173376eb5246017687d993bd31a5127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad55f6e54444b657982dfe59435d28ea2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad55f6e54444b657982dfe59435d28ea2"></a>
+<a class="el" href="classVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spritePosition</b></td></tr>
+<tr class="separator:ad55f6e54444b657982dfe59435d28ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecbf348a32da8585ac3810da4fee7a78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecbf348a32da8585ac3810da4fee7a78"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>spriteRotation</b></td></tr>
+<tr class="separator:aecbf348a32da8585ac3810da4fee7a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad54cafd74c6031d205103dd74e6d65c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad54cafd74c6031d205103dd74e6d65c3"></a>
+<a class="el" href="classVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
+<tr class="separator:ad54cafd74c6031d205103dd74e6d65c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -127,6 +159,24 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>texturename</b
 <tr class="memitem:a3d42412fa0ae1138f7f7bcf4e8d85110"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d42412fa0ae1138f7f7bcf4e8d85110"></a>
 <a class="el" href="classTexture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b></td></tr>
 <tr class="separator:a3d42412fa0ae1138f7f7bcf4e8d85110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21bab3efcc259157d5f526954357972"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab21bab3efcc259157d5f526954357972"></a>
+<a class="el" href="classTexture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dynTexture</b></td></tr>
+<tr class="separator:ab21bab3efcc259157d5f526954357972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98350971e69f69f59eec2af853a1e477"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98350971e69f69f59eec2af853a1e477"></a>
+<a class="el" href="classVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>uvdim</b></td></tr>
+<tr class="separator:a98350971e69f69f59eec2af853a1e477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89302006e3749d4df66b3ff43ff244ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89302006e3749d4df66b3ff43ff244ea"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>culling</b></td></tr>
+<tr class="separator:a89302006e3749d4df66b3ff43ff244ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc2dd36d96b83e50ff01c4bc2760f02e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc2dd36d96b83e50ff01c4bc2760f02e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dynamic</b></td></tr>
+<tr class="separator:acc2dd36d96b83e50ff01c4bc2760f02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece38ec5f5468e82bf35a74597ac85fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aece38ec5f5468e82bf35a74597ac85fd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>wrap</b></td></tr>
+<tr class="separator:aece38ec5f5468e82bf35a74597ac85fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3753922b9a96596e8a66433fcb9d954a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3753922b9a96596e8a66433fcb9d954a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>filter</b></td></tr>
+<tr class="separator:a3753922b9a96596e8a66433fcb9d954a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>common/<a class="el" href="sprite_8h_source.html">sprite.h</a></li>
@@ -135,7 +185,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>texturename</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2016 09:22:11 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 4 2017 14:35:09 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

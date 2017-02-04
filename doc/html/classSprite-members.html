@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,23 +88,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classSprite.html">Sprite</a>, including all inherited members.</p>
 <table class="directory">
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>culling</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>dynamic</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>dynTexture</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>filter</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getSpriteScale</b>() (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>getTexture</b>() (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getTextureName</b>() (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getUvDim</b>() (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getUvOffset</b>() (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>scale</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setSpriteScale</b>(Vector2 _scale) (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setTextureSize</b>(Vector2 size) (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setTextureSize</b>(Vector2 _size) (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setupSprite</b>(const std::string &amp;filename) (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Sprite</b>() (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>texture</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>texturename</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>textureSize</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setupSpriteForSpriteSheet</b>(const std::string &amp;_filePath, float _uvWidth, float _uvHeight, int _filter, int _wrap) (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setupSpriteTGAPixelBuffer</b>(const std::string &amp;_filePath, int _filter, int _wrap) (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setUvOffset</b>(Vector2 _offset) (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setUvSize</b>(Vector2 _size) (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>size</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Sprite</b>() (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>spritePosition</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>spriteRotation</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>texture</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>texturename</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>textureSize</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>uvdim</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>uvOffset</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Sprite</b>() (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>wrap</b> (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Sprite</b>() (defined in <a class="el" href="classSprite.html">Sprite</a>)</td><td class="entry"><a class="el" href="classSprite.html">Sprite</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2016 09:22:11 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 4 2017 14:35:09 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

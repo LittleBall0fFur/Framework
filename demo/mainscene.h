@@ -35,6 +35,7 @@ private:
 	void loadSounds();
 	void moveHamster(float _deltaTime);
 	void addCanvas();
+	void moveCamera(float _deltaTime);
 
 	Canvas* canvas;
 };

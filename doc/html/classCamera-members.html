@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,19 +88,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classCamera.html">Camera</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Camera</b>() (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>computeMatricesFromInputs</b>(GLFWwindow *window) (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>cursor</b> (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getCursor</b>() (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCamera.html#ae74faabd32af11d8ef807e14d3e9cb86">boom</a>(float amount)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Camera</b>() (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>computeMatricesFromInputs</b>(GLFWwindow *window) (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>cursor</b> (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>deltaTime</b> (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCamera.html#aa91491698db51f70c62199d8c2213514">direction</a></td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCamera.html#aebf74a62c750fa7720a4e7e89f58c76a">dolly</a>(float amount)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getCursor</b>() (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getPosition</b>() (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getViewMatrix</b>() (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getProjectionMatrix</b>() (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getRotation</b>() (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getViewMatrix</b>() (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>offset</b> (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCamera.html#a317120155b6e33bcd7adf84aeed2cdc2">orthogonal</a>()</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCamera.html#a0dd83a57c02c40a321dc9c325246cb47">pan</a>(float amount)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCamera.html#abdfc7c4a398da536ec903d034e10598f">perspective</a>()</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>position</b> (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>ViewMatrix</b> (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCamera.html#af080757da494dd1e4a347f527df4af9c">projectionMatrix</a></td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCamera.html#aebffcc6289dd99df7554b18d00a81161">right</a></td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCamera.html#a4288adace2836fb794e07e750d80cee0">roll</a>(float amount)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCamera.html#a323b8cfd7f1518ddac7d36eb744a729a">rotation</a></td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>tilt</b>(float amount) (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCamera.html#abe1c7445bbabf89159e7829ab56cc96a">track</a>(float amount)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCamera.html#a3fe5f351380fb118ffc600591769f049">up</a></td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>updateCamera</b>(float _deltaTime) (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCamera.html#a6e088a154066ed6f2bfca373163f21d2">viewMatrix</a></td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Camera</b>() (defined in <a class="el" href="classCamera.html">Camera</a>)</td><td class="entry"><a class="el" href="classCamera.html">Camera</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2016 09:22:11 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 4 2017 14:35:09 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -98,15 +99,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>quit</b> ()</td></tr>
 <tr class="memitem:a1c37cbe814771dd270961c9ba031b77f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c37cbe814771dd270961c9ba031b77f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>renderScene</b> (<a class="el" href="classScene.html">Scene</a> *_scene)</td></tr>
 <tr class="separator:a1c37cbe814771dd270961c9ba031b77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada934715a6ba0258bc4e496b45efc5d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada934715a6ba0258bc4e496b45efc5d4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showFps</b> ()</td></tr>
-<tr class="separator:ada934715a6ba0258bc4e496b45efc5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a150357e960ef2e269c6385eb395f3f04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a150357e960ef2e269c6385eb395f3f04"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>calculateDeltaTime</b> ()</td></tr>
-<tr class="separator:a150357e960ef2e269c6385eb395f3f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa67f6d4c6c0ef9f266cfd0157289b0f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa67f6d4c6c0ef9f266cfd0157289b0f1"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getDeltaTime</b> ()</td></tr>
-<tr class="separator:aa67f6d4c6c0ef9f266cfd0157289b0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33d66d5acd955e4400a23bc8b7efb69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae33d66d5acd955e4400a23bc8b7efb69"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getWindowWidth</b> ()</td></tr>
+<tr class="separator:ae33d66d5acd955e4400a23bc8b7efb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52762e578f39c93617eb7ea0fce4ef34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52762e578f39c93617eb7ea0fce4ef34"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getWindowHeight</b> ()</td></tr>
+<tr class="separator:a52762e578f39c93617eb7ea0fce4ef34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a010f520810ddeed719b12809a991c30c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a010f520810ddeed719b12809a991c30c"></a>
+GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><b>getWindow</b> ()</td></tr>
+<tr class="separator:a010f520810ddeed719b12809a991c30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47cea9cf413eb7baf72dc5c58274c69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab47cea9cf413eb7baf72dc5c58274c69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVerticalSync</b> (int _sync)</td></tr>
+<tr class="separator:ab47cea9cf413eb7baf72dc5c58274c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -122,12 +126,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>renderMesh</b> (<a cl
 <tr class="memitem:a4577fea82c5c483b695068741fdc12b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4577fea82c5c483b695068741fdc12b7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>renderEntity</b> (glm::mat4 &amp;modelmatrix, <a class="el" href="classEntity.html">Entity</a> *_entity, <a class="el" href="classCamera.html">Camera</a> *camera)</td></tr>
 <tr class="separator:a4577fea82c5c483b695068741fdc12b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eef9edb3cbe012cfcc64c210b9d8231"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7eef9edb3cbe012cfcc64c210b9d8231"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>renderLine</b> (const glm::mat4 &amp;_modelMatrix, <a class="el" href="classLine.html">Line</a> *_line, glm::mat4 _MVP)</td></tr>
+<tr class="separator:a7eef9edb3cbe012cfcc64c210b9d8231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a66eb441b542cf394b843ac3655e59b07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66eb441b542cf394b843ac3655e59b07"></a>
 GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><b>window</b></td></tr>
 <tr class="separator:a66eb441b542cf394b843ac3655e59b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0304824ad0b3eab98b06fc973ce126ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0304824ad0b3eab98b06fc973ce126ab"></a>
+<a class="el" href="classResourceManager.html">ResourceManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resman</b></td></tr>
+<tr class="separator:a0304824ad0b3eab98b06fc973ce126ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a530b2d00addde196bada54e51ebd4eec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a530b2d00addde196bada54e51ebd4eec"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>window_width</b></td></tr>
 <tr class="separator:a530b2d00addde196bada54e51ebd4eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +159,9 @@ GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>vertexPosition_mode
 <tr class="memitem:a5dc7be4188777420275bcbbcc96fb8a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dc7be4188777420275bcbbcc96fb8a2"></a>
 GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>vertexUVID</b></td></tr>
 <tr class="separator:a5dc7be4188777420275bcbbcc96fb8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e558af1f73f3e34f28e0f545ac06a2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e558af1f73f3e34f28e0f545ac06a2b"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>vertexUvOffsetID</b></td></tr>
+<tr class="separator:a1e558af1f73f3e34f28e0f545ac06a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3999a8124744bb167cb8b628c5cc3fe4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3999a8124744bb167cb8b628c5cc3fe4"></a>
 GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>matrixID</b></td></tr>
 <tr class="separator:a3999a8124744bb167cb8b628c5cc3fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,21 +171,30 @@ GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>textureID</b></td><
 <tr class="memitem:a7ae6513f6612250de4d7eac60c77d94d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ae6513f6612250de4d7eac60c77d94d"></a>
 glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><b>projectionMatrix</b></td></tr>
 <tr class="separator:a7ae6513f6612250de4d7eac60c77d94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47d9a017779ff7bf69edcd357eb1043"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae47d9a017779ff7bf69edcd357eb1043"></a>
+glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><b>viewMatrix</b></td></tr>
+<tr class="separator:ae47d9a017779ff7bf69edcd357eb1043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754606d7897384d37b4ea4a339ca6177"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a754606d7897384d37b4ea4a339ca6177"></a>
+glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><b>MVP</b></td></tr>
+<tr class="separator:a754606d7897384d37b4ea4a339ca6177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8516a4369944a4da5b7b4a7b4b59a380"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8516a4369944a4da5b7b4a7b4b59a380"></a>
 <a class="el" href="classTexture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b></td></tr>
 <tr class="separator:a8516a4369944a4da5b7b4a7b4b59a380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67d59a028d4772fead65fd2228d2b5a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67d59a028d4772fead65fd2228d2b5a6"></a>
 <a class="el" href="classMesh.html">Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mesh</b></td></tr>
 <tr class="separator:a67d59a028d4772fead65fd2228d2b5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a126c242d024a6cb87a40cbd9d4d05a29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a126c242d024a6cb87a40cbd9d4d05a29"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>fpsCounter</b></td></tr>
-<tr class="separator:a126c242d024a6cb87a40cbd9d4d05a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c6fb57e489a2532456a019d8dae22db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c6fb57e489a2532456a019d8dae22db"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>fps</b></td></tr>
-<tr class="separator:a1c6fb57e489a2532456a019d8dae22db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad84d66a56f3837a0e84055c30b509743"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad84d66a56f3837a0e84055c30b509743"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>deltaTime</b></td></tr>
-<tr class="separator:ad84d66a56f3837a0e84055c30b509743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c1f6b60bf865ef8435fd4a9d79748e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61c1f6b60bf865ef8435fd4a9d79748e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>uvWidth</b></td></tr>
+<tr class="separator:a61c1f6b60bf865ef8435fd4a9d79748e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3199b2f9dfa7e50f36f837afd91ff32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3199b2f9dfa7e50f36f837afd91ff32"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>uvHeight</b></td></tr>
+<tr class="separator:aa3199b2f9dfa7e50f36f837afd91ff32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefafdb46350a7e160632599ea27c9db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaefafdb46350a7e160632599ea27c9db"></a>
+<a class="el" href="classShader.html">Shader</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>uberShader</b></td></tr>
+<tr class="separator:aaefafdb46350a7e160632599ea27c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ccf9dc0d1b639d1bd09c1e282e61bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44ccf9dc0d1b639d1bd09c1e282e61bd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sync</b></td></tr>
+<tr class="separator:a44ccf9dc0d1b639d1bd09c1e282e61bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>common/<a class="el" href="renderer_8h_source.html">renderer.h</a></li>
@@ -181,7 +203,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>deltaTime</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2016 09:22:11 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 4 2017 14:35:09 for 2D Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

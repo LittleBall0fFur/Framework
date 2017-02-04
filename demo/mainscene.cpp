@@ -20,6 +20,7 @@ MainScene::MainScene(): Scene(){
 
 void MainScene::update(float _deltaTime){
   moveHamster(_deltaTime);
+  moveCamera(_deltaTime);
   canvas->getCursorPos(Vector2(this->getCamera()->getCursor().x, this->getCamera()->getCursor().y));
 }
 
@@ -41,6 +42,33 @@ void MainScene::moveHamster(float _deltaTime){
     spritesheet->setScale(Vector2(1, 1));
     spritesheet->getSpriteSheet()->animate(_deltaTime, 0.05f);
   }
+}
+
+void MainScene::moveCamera(float _deltaTime){
+  float movspeed = 500.0f; // units per second
+	float rotspeed = 3.14159265359f / 4; // radians per second
+	float rollspeed = 3.14159265359f / 400; // radians per second
+
+	// Use keyboard to move and look around
+	// tilt
+	if (getInput()->getKey( GLFW_KEY_UP )){getCamera()->tilt(_deltaTime * rotspeed);}
+	if (getInput()->getKey( GLFW_KEY_DOWN )){getCamera()->tilt(_deltaTime * -rotspeed);}
+	// pan
+	if (getInput()->getKey( GLFW_KEY_LEFT )){getCamera()->pan(_deltaTime * rotspeed);}
+	if (getInput()->getKey( GLFW_KEY_RIGHT )){getCamera()->pan(_deltaTime * -rotspeed);}
+	// roll
+	if (getInput()->getKey('I')){getCamera()->roll(_deltaTime * rollspeed);}
+	if (getInput()->getKey('O')){getCamera()->rotation.z = 0.0f;}
+	if (getInput()->getKey('P')){getCamera()->roll(_deltaTime * -rollspeed);}
+	// dolly
+	if (getInput()->getKey('W')){getCamera()->dolly(_deltaTime * movspeed / 2.0f);}
+	if (getInput()->getKey('S')){getCamera()->dolly(_deltaTime * -movspeed / 2.0f);}
+	// track
+	if (getInput()->getKey('A')){getCamera()->track(_deltaTime * -movspeed);}
+	if (getInput()->getKey('D')){getCamera()->track(_deltaTime * movspeed);}
+	// boom
+	if (getInput()->getKey('Q')){getCamera()->boom(_deltaTime * movspeed);}
+	if (getInput()->getKey('Z')){getCamera()->boom(_deltaTime * -movspeed);}
 }
 
 void MainScene::addLayers(){

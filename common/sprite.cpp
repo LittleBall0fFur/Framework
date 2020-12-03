@@ -18,7 +18,7 @@ GLuint Sprite::setupSprite(const std::string& _filename)
   Texture* texture = new Texture();
   this->texture = texture;
   this->texture->loadTGA(_filename);//texturename);
-  //return this->texture->getTextureBuffer();
+  return this->texture->getTextureBuffer();
 }
 
 void Sprite::setupSpriteForSpriteSheet(const std::string& _filePath, float _uvWidth, float _uvHeight, int _filter, int _wrap)
